@@ -1,3 +1,4 @@
+"""Main handler function for serverless deployment."""
 """Main Lambda handler for ATC transaction decoding."""
 """Initialize Lambda handler for serverless request processing.
 
