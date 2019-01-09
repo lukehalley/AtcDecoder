@@ -1,3 +1,4 @@
+"""API decoding module for transaction data."""
 """API-based transaction decoding utilities."""
 """API-based transaction decoder with remote signature resolution.
 
