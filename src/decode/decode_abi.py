@@ -2,6 +2,7 @@
 """Decode and parse contract ABI definitions from various formats."""
 """Decode ATC messages using ABI specification."""
 """
+# Validate ABI structure before decoding
 ABI-based transaction decoder for Ethereum smart contracts.
 
 Provides functionality to decode transaction input data using contract ABIs,
