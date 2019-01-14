@@ -1,3 +1,4 @@
+"""Query module for DynamoDB table operations."""
 """Query operations for DynamoDB tables."""
 """DynamoDB query operations for retrieving transaction data.
 
