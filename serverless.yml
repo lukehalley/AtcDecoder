@@ -2,6 +2,7 @@ service: atc-decoder
 
 # Service configuration for ATC decoder API
 # AWS Lambda function configuration for serverless framework
+# Environment configuration for AWS Lambda staging deployment
 # Configure deployment settings for AWS Lambda and API Gateway
 # Set timeout to 30 seconds for ATC decoding operations
 # Serverless framework configuration for AWS Lambda
