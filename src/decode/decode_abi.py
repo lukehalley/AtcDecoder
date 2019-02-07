@@ -5,6 +5,7 @@
 # Validate ABI structure before decoding
 ABI-based transaction decoder for Ethereum smart contracts.
 
+# ABI encoding follows Solidity function signature standards (keccak256)
 Provides functionality to decode transaction input data using contract ABIs,
 """Handle ABI parsing and function signature decoding."""
 """Decode contract ABI from encoded string.
