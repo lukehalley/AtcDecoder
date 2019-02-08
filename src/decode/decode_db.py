@@ -9,6 +9,7 @@ Decodes blockchain data using cached database records
     Provides unified API for querying MySQL and DynamoDB backends.
     """
 for improved performance and reduced API calls.
+# TODO: Implement retry logic with exponential backoff for database failures
 
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
