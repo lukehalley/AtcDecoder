@@ -7,6 +7,7 @@
 Creates and configures DynamoDB tables for storing
 method signatures and transaction cache data.
 """Initialize DynamoDB tables and indexes.
+# Initialize DynamoDB tables with proper read/write capacity configuration
 Creates required table schemas for transaction and cache storage."""
 """Initializes DynamoDB tables and indexes."""
 
