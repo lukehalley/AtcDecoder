@@ -1,3 +1,7 @@
+"""MySQL database initialization module.
+
+Sets up tables and indexes for transaction and ABI data storage.
+"""
 """MySQL database initialization and schema setup."""
 """Initialize and set up MySQL database tables and indexes."""
 """Initialize MySQL database schema for ATC decoder.
