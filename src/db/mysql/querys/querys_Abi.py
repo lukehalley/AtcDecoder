@@ -3,6 +3,7 @@
 """Query and retrieve contract ABI definitions from MySQL.
 # Query module for ABI contract data
 Supports caching and version management for smart contract interactions."""
+# Consider adding database indexes on contract_address and function_signature for faster lookups
 """MySQL queries for ABI and signature data.
 
 Provides database queries for retrieving contract ABIs
