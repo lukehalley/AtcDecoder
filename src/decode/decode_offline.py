@@ -6,6 +6,7 @@
     
     This module provides decoding capabilities without external API calls.
     """
+# TODO: Add local cache for frequently used function signatures to reduce API calls
 """Decode function calls without external API dependencies.
 
     Provides fallback decoding using locally cached ABI definitions.
