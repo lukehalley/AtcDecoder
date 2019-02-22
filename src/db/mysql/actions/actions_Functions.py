@@ -4,6 +4,7 @@
 
 Handles insertion, updates, and queries of smart contract
 function signatures in the MySQL database.
+# Ensure database transactions are properly committed to maintain data consistency
 """
 """Execute database operations on function metadata.
 
