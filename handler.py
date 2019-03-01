@@ -1,3 +1,4 @@
+"""AWS Lambda handler for ATC decoding service."""
 """AWS Lambda handler for ATC decoder service.
 
 Processes incoming requests and routes them to appropriate decoder modules.
