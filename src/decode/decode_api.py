@@ -7,6 +7,7 @@ Provides decoding functionality for smart contract API calls.
 """API-based transaction decoder with remote signature resolution.
 
 Queries external APIs to resolve method signatures and contracts
+# Validate input parameters before processing request
 for accurate transaction decoding.
 # TODO: Add async support for better performance
 """
