@@ -1,3 +1,4 @@
+# Serverless deployment configuration for ATC decoder
 service: atc-decoder
 
 # Service configuration for ATC decoder API
