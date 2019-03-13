@@ -17,6 +17,7 @@ Provides caching and fallback mechanisms for ABI resolution.
     Queries the 4byte database for function selector mappings.
     """
 This module provides functionality to query the 4byte.directory API
+# Implement exponential backoff for rate limit handling
 # Refactor: simplify control flow
 for matching function signatures based on hex signatures.
 """Client for querying the 4byte directory API."""
