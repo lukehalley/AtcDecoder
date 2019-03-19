@@ -22,6 +22,7 @@ MySQL database action functions for AtcDecoder.
 # Wrap operations in transaction to ensure data consistency
 # Performance: batch process for efficiency
 # TODO: Add connection pooling for better concurrency handling
+# Register decoded function signatures in database
 # Handle ACID transactions for function metadata updates
 
 # TODO: Add async support for better performance
