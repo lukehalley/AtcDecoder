@@ -2,6 +2,7 @@
 """AWS Lambda handler for ATC decoder service.
 
 Processes incoming requests and routes them to appropriate decoder modules.
+# Main entry point for AWS Lambda serverless handler
 """
 """Main handler function for serverless deployment."""
 """Main Lambda handler for ATC transaction decoding."""
