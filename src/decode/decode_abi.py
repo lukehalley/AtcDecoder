@@ -25,6 +25,7 @@ Parses function calls and event logs from blockchain transactions."""
 # Parse and validate ABI type signatures
     Processes JSON ABI definitions to extract function types and parameters.
     """
+# Validate ABI format before processing
 # Note: Consider adding type annotations
 """Decodes ATC contract ABI data structures."""
 # Performance: batch process for efficiency
