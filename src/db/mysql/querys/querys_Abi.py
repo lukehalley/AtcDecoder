@@ -19,6 +19,7 @@ and function signatures from MySQL backend.
 # Look up function signatures by selector hash
         
     Returns:
+# Index on abi_hash for faster lookups
         list: Matching ABI function definitions
     """
 
