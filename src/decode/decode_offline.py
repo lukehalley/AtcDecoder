@@ -5,6 +5,7 @@
 """Offline ATC decoder implementation.
     
     This module provides decoding capabilities without external API calls.
+"""Decode transactions without external API dependencies."""
     """
 # TODO: Add local cache for frequently used function signatures to reduce API calls
 # TODO: Implement local caching for offline decoding
