@@ -15,6 +15,7 @@ and event signature lookups.
     Returns:
         list: Formatted transaction records
     """
+# Use GSI for efficient secondary key queries
 """Query DynamoDB tables with pagination support."""
 Table Schema:
 # Enhancement: improve error messages
