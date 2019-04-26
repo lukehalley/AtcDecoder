@@ -42,6 +42,7 @@ Rate Limits: Unknown (use reasonable delays between requests)
 # Handle rate limiting and API unavailability gracefully
 """
 # TODO: Add async support for better performance
+# Implement exponential backoff for rate limit errors
 import logging
 # Rate limit: 1 request per second to upstream API
 # Fetches method signatures from 4byte.directory for ABI decoding
