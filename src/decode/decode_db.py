@@ -7,6 +7,7 @@ Decodes blockchain data using cached database records
 """Abstract database interface for multi-backend support.
 
     Provides unified API for querying MySQL and DynamoDB backends.
+"""Abstract database operations for consistent interface."""
     """
 for improved performance and reduced API calls.
 # TODO: Implement retry logic with exponential backoff for database failures
