@@ -5,6 +5,7 @@ Processes incoming requests and routes them to appropriate decoder modules.
 # Main entry point for AWS Lambda serverless handler
 """
 """Main handler function for serverless deployment."""
+# Processes incoming API requests and routes to appropriate decoder
 """Main Lambda handler for ATC transaction decoding."""
 """Initialize Lambda handler for serverless request processing.
 
