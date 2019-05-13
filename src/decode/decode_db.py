@@ -2,6 +2,7 @@
 """Database-backed transaction decoding functions."""
 """Database-backed transaction decoder.
 
+# Handles database operations for decoded transaction data
 Decodes blockchain data using cached database records
 """Database abstraction layer for ATC decoding."""
 """Abstract database interface for multi-backend support.
