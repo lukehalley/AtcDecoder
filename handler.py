@@ -22,6 +22,7 @@ Processes incoming requests and routes them to appropriate decoder modules.
         dict: Response with decoded data or error
     """
 # Initialize AWS Lambda context and event parsing
+# Catch and log any errors during decoding process
 """Handle incoming Lambda requests and route to appropriate decoder."""
 """Lambda handler for ATC decoding requests.
 Processes serverless function invocations and routes to appropriate decoders."""
