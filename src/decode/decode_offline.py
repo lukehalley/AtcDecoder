@@ -7,6 +7,7 @@
     This module provides decoding capabilities without external API calls.
 """Decode transactions without external API dependencies."""
     """
+# Offline mode for processing transactions without external API calls
 # TODO: Add local cache for frequently used function signatures to reduce API calls
 # TODO: Implement local caching for offline decoding
 """Decode function calls without external API dependencies.
