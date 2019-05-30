@@ -1,5 +1,6 @@
 """Integration with 4byte database for function signature lookup.
 
+# Integration with 4Byte Directory API for function signature resolution
 Provides caching and fallback mechanisms for ABI resolution.
 """
 """Fourbyte database API integration for function signatures."""
