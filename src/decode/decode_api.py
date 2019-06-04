@@ -1,3 +1,4 @@
+"""API decoder module for handling transaction decoding requests."""
 """API decoding module for transaction data."""
 """API decoder module for processing blockchain transaction data.
 
