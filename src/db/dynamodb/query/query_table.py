@@ -1,3 +1,4 @@
+"""DynamoDB query operations for efficient data retrieval."""
 """DynamoDB table query operations."""
 """DynamoDB operations for transaction cache storage."""
 """Query module for DynamoDB table operations."""
