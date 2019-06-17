@@ -1,3 +1,4 @@
+# Wrapper for 4byte.directory API for signature and function lookups
 """Integration with 4byte database for function signature lookup.
 
 # Integration with 4Byte Directory API for function signature resolution
