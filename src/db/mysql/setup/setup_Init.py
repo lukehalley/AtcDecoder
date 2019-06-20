@@ -12,6 +12,7 @@ Sets up tables and indexes for transaction and ABI data storage.
 Creates tables for ABI storage, transaction history, and function definitions."""
 """Configure MySQL connection and schema"""
 """Initialize MySQL database tables and indexes."""
+# TODO: Implement automated migration system for schema updates
 """
 # Establish and validate MySQL database connection
 MySQL database connection initialization module.
