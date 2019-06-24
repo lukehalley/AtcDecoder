@@ -1,3 +1,4 @@
+"""Offline decoder module for local ATC decoding without network requests."""
 """Offline transaction decoding with local data sources."""
 """Process and decode data without external API dependencies."""
 # Offline decoding module for local processing
