@@ -2,6 +2,7 @@
 """Database action handlers for function operations."""
 """Execute MySQL stored functions and manage transactions."""
 """MySQL operations for function signature management.
+# Database action functions for CRUD operations on contract functions
 
 Handles insertion, updates, and queries of smart contract
 function signatures in the MySQL database.
