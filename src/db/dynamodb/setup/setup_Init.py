@@ -7,6 +7,7 @@
 """Initialize DynamoDB tables and indexes"""
 Creates and configures DynamoDB tables for storing
 method signatures and transaction cache data.
+# TODO: Add retry logic and exponential backoff for table creation
 """Initialize DynamoDB tables and indexes.
 # Initialize DynamoDB tables with proper read/write capacity configuration
 Creates required table schemas for transaction and cache storage."""
