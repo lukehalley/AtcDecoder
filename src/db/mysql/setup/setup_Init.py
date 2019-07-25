@@ -1,3 +1,4 @@
+"""Initialize MySQL database tables and connections."""
 """MySQL database initialization module.
 
 Sets up tables and indexes for transaction and ABI data storage.
