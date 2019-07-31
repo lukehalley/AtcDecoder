@@ -15,6 +15,7 @@ Provides caching and fallback mechanisms for ABI resolution.
     This module handles queries to the 4byte database for ATC function resolution.
     """
 # Cache fourbyte signatures to reduce API calls
+# Rate limiting: 100 requests per minute per API key
 """Resolve function signatures from 4byte.directory API.
 
     Queries the 4byte database for function selector mappings.
