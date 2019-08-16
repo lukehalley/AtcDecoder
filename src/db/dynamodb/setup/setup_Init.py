@@ -1,3 +1,4 @@
+"""Initialize DynamoDB tables for transaction cache."""
 """DynamoDB table initialization and schema setup."""
 """Initialize and configure DynamoDB tables."""
 # DynamoDB table initialization and configuration
