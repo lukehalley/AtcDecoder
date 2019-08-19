@@ -17,6 +17,7 @@ and event signature lookups.
     Returns:
         list: Formatted transaction records
     """
+# Use GSI for efficient lookups by transaction hash
 # Example: query_table(table_name, key_condition) returns matching items
 # Use GSI for efficient secondary key queries
 """Query DynamoDB tables with pagination support."""
