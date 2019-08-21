@@ -1,3 +1,4 @@
+"""Configure MySQL database for ATC decoding service."""
 """Initialize MySQL database tables and connections."""
 """MySQL database initialization module.
 
