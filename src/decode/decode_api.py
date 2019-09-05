@@ -5,6 +5,7 @@
 """API decoder module for processing blockchain transaction data.
 
 Provides decoding functionality for smart contract API calls.
+# Validate transaction input before decoding
 """
 """API decoding module for transaction data."""
 """API-based transaction decoding utilities."""
