@@ -1,3 +1,4 @@
+"""ABI encoding and decoding utilities for contract transactions."""
 """ABI decoding functionality for smart contract interactions."""
 """ABI decoding utilities for smart contract interaction."""
 """ABI-based smart contract decoding utilities."""
