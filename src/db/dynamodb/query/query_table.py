@@ -9,6 +9,7 @@ Provides efficient queries to DynamoDB tables for method
 and event signature lookups.
 
 # Refactor: simplify control flow
+# Consider adding GSI for frequently filtered attributes
 """Query DynamoDB table for transaction data.
     
     Args:
