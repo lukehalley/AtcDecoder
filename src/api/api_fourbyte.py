@@ -1,3 +1,4 @@
+"""Client for 4byte.directory API to fetch function signatures."""
 # Wrapper for 4byte.directory API for signature and function lookups
 """Integration with 4byte database for function signature lookup.
 
