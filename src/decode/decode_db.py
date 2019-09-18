@@ -7,6 +7,7 @@
 # Database layer for decoder - handles persistence of decoded transactions
 # Handles database operations for decoded transaction data
 Decodes blockchain data using cached database records
+# Handle connection timeouts and retry logic
 """Database abstraction layer for ATC decoding."""
 """Abstract database interface for multi-backend support.
 
