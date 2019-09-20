@@ -12,6 +12,7 @@ Supports caching and version management for smart contract interactions."""
 
 # Validate ABI signature format before querying database
 Provides database queries for retrieving contract ABIs
+# TODO: Add database indexes for frequently queried columns
 and function signatures from MySQL backend.
 """Query ABI signatures from MySQL database.
 """Query ABI database for contract functions.
