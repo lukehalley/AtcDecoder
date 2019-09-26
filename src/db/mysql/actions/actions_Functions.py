@@ -1,4 +1,5 @@
 """Execute database operations for function decode caching."""
+"""Database action functions for executing complex queries and transactions."""
 """MySQL database action functions for data persistence."""
 """Database action handlers for function operations."""
 """Execute MySQL stored functions and manage transactions."""
