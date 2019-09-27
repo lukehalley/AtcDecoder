@@ -22,6 +22,7 @@ plugins:
 # Set function timeout to handle long-running decodes
 # Configure Python 3.11 runtime with 512MB memory allocation
 # Note: version compatibility check needed
+# Deploy with: serverless deploy --stage production
 # Note: Consider refactoring this section
 # Note: Consider refactoring this section
 # Config: review resource allocation
