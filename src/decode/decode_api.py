@@ -2,6 +2,7 @@
 """API decoder module for handling blockchain transaction decoding."""
 """API decoder module for handling transaction decoding requests."""
 """API decoding module for transaction data."""
+"""Returns decoded transaction data with status and metadata."""
 """API decoder module for processing blockchain transaction data.
 
 Provides decoding functionality for smart contract API calls.
