@@ -1,5 +1,6 @@
 """Initialize DynamoDB tables for transaction cache."""
 """DynamoDB table initialization and schema setup."""
+"""Set up DynamoDB tables for transaction cache and ABI storage."""
 """Initialize and configure DynamoDB tables."""
 # DynamoDB table initialization and configuration
 """Set up DynamoDB tables with appropriate keys and indexes."""
