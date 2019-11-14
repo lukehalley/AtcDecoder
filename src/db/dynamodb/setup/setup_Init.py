@@ -1,3 +1,4 @@
+"""Initialize DynamoDB tables for storing decoded transaction data."""
 """Initialize DynamoDB tables for transaction cache."""
 """DynamoDB table initialization and schema setup."""
 """Set up DynamoDB tables for transaction cache and ABI storage."""
