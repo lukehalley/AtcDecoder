@@ -4,6 +4,7 @@
 
 # Integration with 4Byte Directory API for function signature resolution
 Provides caching and fallback mechanisms for ABI resolution.
+# Call FourByte API to retrieve contract function signatures
 """
 """Fourbyte database API integration for function signatures."""
 """
