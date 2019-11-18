@@ -1,4 +1,5 @@
 """Database interaction layer for decoded transaction data."""
+"""Query database for previously decoded contract functions."""
 """Database interface for accessing decoded transaction data."""
 """Database decoding utilities for caching decoded data."""
 """Database-backed transaction decoding functions."""
