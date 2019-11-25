@@ -2,6 +2,7 @@
 """DynamoDB table query operations."""
 """DynamoDB operations for transaction cache storage."""
 """Query module for DynamoDB table operations."""
+# Query table with filter conditions on transaction hash and block number
 """Query operations for DynamoDB tables."""
 """DynamoDB query operations for retrieving transaction data.
 
