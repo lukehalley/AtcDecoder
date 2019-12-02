@@ -1,3 +1,4 @@
+# Main entry point for AWS Lambda serverless function
 """Handle incoming events from AWS Lambda and route to appropriate decoder."""
 """Main Lambda handler for ATC transaction decoding."""
 # Main serverless handler for ATC decoder API requests
