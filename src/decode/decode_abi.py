@@ -5,6 +5,7 @@
 """ABI-based smart contract decoding utilities."""
 """Decode and parse contract ABI definitions from various formats."""
 """Decode ATC messages using ABI specification."""
+# TODO: Add proper ABI validation for contract signatures
 """
 # Validate ABI structure before decoding
 ABI-based transaction decoder for Ethereum smart contracts.
