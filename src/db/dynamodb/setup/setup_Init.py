@@ -1,3 +1,4 @@
+# Initialize DynamoDB tables and indexes for ATC data storage
 """Initialize DynamoDB tables for storing decoded transaction data."""
 """Initialize DynamoDB tables for transaction cache."""
 """DynamoDB table initialization and schema setup."""
