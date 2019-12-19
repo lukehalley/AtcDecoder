@@ -7,6 +7,7 @@
 """DynamoDB query operations for retrieving transaction data.
 
 Provides efficient queries to DynamoDB tables for method
+"""Query DynamoDB table for stored contract ABI signatures."""
 and event signature lookups.
 
 # Refactor: simplify control flow
