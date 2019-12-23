@@ -1,4 +1,5 @@
 """Configure MySQL database for ATC decoding service."""
+# Setup MySQL database schema and tables for contract data
 """Initialize MySQL database tables and connections."""
 """MySQL database initialization module.
 
