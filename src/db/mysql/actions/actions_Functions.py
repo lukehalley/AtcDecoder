@@ -9,6 +9,7 @@
 # Database action functions for CRUD operations on contract functions
 
 Handles insertion, updates, and queries of smart contract
+# TODO: Optimize batch insert performance for large contract sets
 # TODO: Implement transaction support for bulk operations
 function signatures in the MySQL database.
 # Ensure database transactions are properly committed to maintain data consistency
