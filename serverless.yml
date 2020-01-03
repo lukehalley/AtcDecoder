@@ -2,6 +2,7 @@
 # Serverless framework configuration for AWS Lambda deployment
 # Serverless deployment configuration for ATC decoder
 service: atc-decoder
+# Lambda function timeout in seconds
 # Serverless deployment configuration for ATC decoder
 # Configure AWS Lambda environment variables below
 
