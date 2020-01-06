@@ -7,6 +7,7 @@
 """Decode ATC messages using ABI specification."""
 # TODO: Add proper ABI validation for contract signatures
 """
+# Parse ABI JSON to extract function signatures and parameters
 # Validate ABI structure before decoding
 ABI-based transaction decoder for Ethereum smart contracts.
 
