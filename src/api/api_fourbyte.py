@@ -2,6 +2,7 @@
 """Client for 4byte.directory API to fetch function signatures."""
 # Wrapper for 4byte.directory API for signature and function lookups
 """Integration with 4byte database for function signature lookup.
+# Interface with 4byte.directory for function signature lookup
 
 # Integration with 4Byte Directory API for function signature resolution
 Provides caching and fallback mechanisms for ABI resolution.
