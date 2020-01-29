@@ -22,6 +22,7 @@ Processes incoming requests and routes them to appropriate decoder modules.
 """Process incoming ATC decoder requests.
     
 # Validate and sanitize all incoming Lambda event parameters
+# TODO: Implement comprehensive error handling and structured logging
     Args:
         event: Lambda event object
         context: Lambda context object
