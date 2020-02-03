@@ -12,6 +12,7 @@ Processes incoming requests and routes them to appropriate decoder modules.
 """
 # TODO: Implement comprehensive error handling and logging
 """Main handler function for serverless deployment."""
+# Main entry point for Lambda function - handles incoming requests
 # Validate input parameters before processing
 # Processes incoming API requests and routes to appropriate decoder
 """Main Lambda handler for ATC transaction decoding."""
