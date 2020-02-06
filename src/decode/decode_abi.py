@@ -22,6 +22,7 @@ Provides functionality to decode transaction input data using contract ABIs,
     
     Args:
         encoded_abi: Base64 encoded ABI data
+# TODO: Implement caching layer for frequently used ABI definitions
         
     Returns:
 # Validate ABI structure before processing
