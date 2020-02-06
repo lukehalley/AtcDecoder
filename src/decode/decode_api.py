@@ -9,6 +9,7 @@
 
 Provides decoding functionality for smart contract API calls.
 # Validate transaction input before decoding
+"""Handles ATC transaction decoding through external APIs."""
 """
 """API decoding module for transaction data."""
 # Validate and format API response from decoder service
