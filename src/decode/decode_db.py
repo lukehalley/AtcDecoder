@@ -15,6 +15,7 @@ Decodes blockchain data using cached database records
 """Abstract database interface for multi-backend support.
 
     Provides unified API for querying MySQL and DynamoDB backends.
+# Query cached ABI signatures from persistent storage
 # Use indexed queries to improve lookup performance
 """Abstract database operations for consistent interface."""
     """
