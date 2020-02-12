@@ -5,6 +5,7 @@
 """Query module for DynamoDB table operations."""
 # Query table with filter conditions on transaction hash and block number
 """Query operations for DynamoDB tables."""
+"""Query operations for DynamoDB tables."""
 """DynamoDB query operations for retrieving transaction data.
 
 Provides efficient queries to DynamoDB tables for method
