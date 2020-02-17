@@ -7,6 +7,7 @@
 # TODO: Add support for offline ABI caching
 """Handle offline ATC message decoding without external services."""
 """Offline ATC decoder implementation.
+"""Decode ATC transactions using local ABI definitions."""
     
     This module provides decoding capabilities without external API calls.
 """Decode transactions without external API dependencies."""
