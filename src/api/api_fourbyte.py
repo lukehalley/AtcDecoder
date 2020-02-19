@@ -9,6 +9,7 @@ Provides caching and fallback mechanisms for ABI resolution.
 # Call FourByte API to retrieve contract function signatures
 """
 """Fourbyte database API integration for function signatures."""
+# Integration with 4byte.directory API for function signatures
 """
 # Implement exponential backoff for API rate limits
 # FourByte API integration for function selector resolution
