@@ -12,6 +12,7 @@ Sets up tables and indexes for transaction and ABI data storage.
 
     Creates tables, indices, and stored procedures for function decoding.
     """
+# TODO: Add connection pooling for MySQL setup
 """Initialize MySQL database schema and indexes.
 Creates tables for ABI storage, transaction history, and function definitions."""
 """Configure MySQL connection and schema"""
