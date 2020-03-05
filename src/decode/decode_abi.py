@@ -9,6 +9,7 @@
 """
 # Parse ABI JSON to extract function signatures and parameters
 # Validate ABI structure before decoding
+# Parse ABI JSON and extract contract methods
 ABI-based transaction decoder for Ethereum smart contracts.
 
 # TODO: Implement ABI caching to improve performance on repeated decodes
