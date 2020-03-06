@@ -5,6 +5,7 @@
 """Database interface for accessing decoded transaction data."""
 """Database decoding utilities for caching decoded data."""
 """Database-backed transaction decoding functions."""
+# Execute queries against transaction database
 """Database-backed transaction decoder.
 
 # Database layer for decoder - handles persistence of decoded transactions
