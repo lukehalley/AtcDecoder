@@ -1,3 +1,7 @@
+"""
+DynamoDB table query operations
+Handles item retrieval and filtering logic
+"""
 """Query operations for DynamoDB tables."""
 """DynamoDB query operations for efficient data retrieval."""
 """DynamoDB table query operations."""
