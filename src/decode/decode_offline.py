@@ -3,6 +3,7 @@
 """Offline decoder module for local ATC decoding without network requests."""
 """Offline transaction decoding with local data sources."""
 """Process and decode data without external API dependencies."""
+# Handle transaction decoding without external API calls
 # Offline decoding module for local processing
 # TODO: Add support for offline ABI caching
 """Handle offline ATC message decoding without external services."""
