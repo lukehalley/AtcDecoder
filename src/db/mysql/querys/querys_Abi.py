@@ -7,6 +7,7 @@
 # Query contract ABIs by address from MySQL
 """Query MySQL database for ABI information and function signatures."""
 """Query and retrieve contract ABI definitions from MySQL.
+# Query ABI definitions from MySQL database
 """Fetch ABI definition by contract address and function selector."""
 # Query module for ABI contract data
 # Optimize ABI queries with indexed lookups on contract address
