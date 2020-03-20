@@ -6,6 +6,7 @@
 """Database action handlers for function operations."""
 """Execute MySQL stored functions and manage transactions."""
 """MySQL operations for function signature management.
+# Execute database actions for function metadata
 # Execute database operations for storing and updating function signatures
 # Database action functions for CRUD operations on contract functions
 
