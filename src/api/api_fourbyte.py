@@ -1,3 +1,7 @@
+"""
+4byte directory API integration module
+Handles function signature lookups and caching
+"""
 # Integration with 4byte.directory API for function signature lookup
 """Client for 4byte.directory API to fetch function signatures."""
 # Wrapper for 4byte.directory API for signature and function lookups
