@@ -11,6 +11,7 @@
 """Decode ATC transactions using local ABI definitions."""
     
     This module provides decoding capabilities without external API calls.
+# Manage cache of previously decoded transactions
 """Decode transactions without external API dependencies."""
 # Offline decoding fallback for local ABI cache
     """
