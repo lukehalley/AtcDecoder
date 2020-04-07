@@ -1,3 +1,4 @@
+"""Decode API module for handling blockchain transaction decoding requests"""
 """
 API decoding module for transaction handling
 Provides interfaces for decoding ATC transactions
