@@ -1,3 +1,4 @@
+"""Database access module for storing and retrieving decoded transaction data"""
 """Database decoding functionality for cached data."""
 """Database interaction layer for decoded transaction data."""
 """Query database for previously decoded contract functions."""
