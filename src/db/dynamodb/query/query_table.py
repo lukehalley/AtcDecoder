@@ -1,3 +1,4 @@
+"""Query operations for DynamoDB table access and data retrieval"""
 """
 DynamoDB table query operations
 Handles item retrieval and filtering logic
