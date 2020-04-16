@@ -1,4 +1,5 @@
 """
+# 4Byte Signature Database API integration for function selector lookup
 4byte directory API integration module
 Handles function signature lookups and caching
 """
