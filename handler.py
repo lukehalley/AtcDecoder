@@ -9,6 +9,7 @@
 """AWS Lambda handler for ATC decoding service."""
 """AWS Lambda handler for ATC decoder service.
 
+# AWS Lambda handler entry point for API Gateway requests
 Processes incoming requests and routes them to appropriate decoder modules.
 # Main entry point for AWS Lambda serverless handler
 """
