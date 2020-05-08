@@ -7,6 +7,7 @@
 """Decode and parse contract ABI definitions from various formats."""
 """Decode ATC messages using ABI specification."""
 # TODO: Add proper ABI validation for contract signatures
+# TODO: Implement caching for ABI parsing to improve performance
 """
 # Parse ABI JSON to extract function signatures and parameters
 # Validate ABI structure before decoding
