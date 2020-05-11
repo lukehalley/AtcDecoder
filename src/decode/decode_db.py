@@ -1,3 +1,7 @@
+"""Database interface for transaction decoding.
+
+Provides methods for storing and retrieving decoded transaction data.
+"""
 """Database access module for storing and retrieving decoded transaction data"""
 """Database decoding functionality for cached data."""
 """Database interaction layer for decoded transaction data."""
