@@ -1,4 +1,8 @@
 """Query operations for DynamoDB table access and data retrieval"""
+"""DynamoDB query operations for transaction data.
+
+Handles efficient queries against distributed database tables.
+"""
 """
 DynamoDB table query operations
 Handles item retrieval and filtering logic
