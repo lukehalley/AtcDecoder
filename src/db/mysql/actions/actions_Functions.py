@@ -4,6 +4,7 @@
 # CRUD action functions for database operations
 """Database action functions for executing complex queries and transactions."""
 """MySQL database action functions for data persistence."""
+# Database action handlers for CRUD operations on function metadata
 """Database action handlers for function operations."""
 """Execute MySQL stored functions and manage transactions."""
 """MySQL operations for function signature management.
