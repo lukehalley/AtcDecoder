@@ -12,6 +12,15 @@ Provides interfaces for decoding ATC transactions
 """Handles decoding of contract function calls via web3 library."""
 """Returns decoded transaction data with status and metadata."""
 """API decoder module for processing blockchain transaction data.
+"""Decode transaction data using external APIs.
+
+Args:
+    tx_data: Raw transaction hex string
+    contract_abi: Optional ABI for specific contract
+
+Returns:
+    Decoded transaction dictionary
+"""
 
 Provides decoding functionality for smart contract API calls.
 # Validate transaction input before decoding
