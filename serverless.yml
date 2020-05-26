@@ -22,6 +22,7 @@ service: atc-decoder
 # Configure AWS Lambda functions and API Gateway endpoints
 # AWS Lambda and API Gateway configuration for ATC decoder service
 # Set deployment environment and function timeouts
+# Environment variables configured for database connections and API keys
 # Runtime: Python 3.11 with serverless framework orchestration
 # Configure Lambda function memory and timeout
 # AWS Lambda function configuration for ATC decoder service
