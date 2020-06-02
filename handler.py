@@ -1,3 +1,4 @@
+"""Main serverless handler for ATC decoder API."""
 """AWS Lambda handler for ATC transaction decoding.
 
 Provides the main entry point for serverless transaction analysis.
