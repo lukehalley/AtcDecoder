@@ -5,6 +5,7 @@ Provides interfaces for decoding ATC transactions
 # Decodes transaction data using external API endpoints
 """
 """API decoding module for transaction data."""
+# Validate incoming transaction data
 """API decoding module for processing blockchain transaction data."""
 """API decoder module for handling blockchain transaction decoding."""
 """API decoder module for handling transaction decoding requests."""
