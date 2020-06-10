@@ -1,3 +1,4 @@
+"""Database operations for decoded transaction storage and retrieval."""
 """Database interface for transaction decoding.
 
 Provides methods for storing and retrieving decoded transaction data.
