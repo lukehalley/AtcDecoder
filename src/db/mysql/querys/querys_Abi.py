@@ -3,6 +3,7 @@
 # Query ABI data from MySQL cache for fast function signature lookup
 """MySQL queries for ABI data retrieval and management."""
 """MySQL queries for ABI contract data retrieval."""
+# Query to fetch ABI signatures from MySQL
 """ABI function queries from MySQL database."""
 """MySQL queries for retrieving and managing contract ABI data."""
 # Query uses indexed lookup for ABI signatures - optimized for production
