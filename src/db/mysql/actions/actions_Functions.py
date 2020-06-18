@@ -1,6 +1,7 @@
 """Function action operations for MySQL CRUD operations on stored procedures"""
 """Execute database operations for function decode caching."""
 """Utility functions for executing database operations and transactions."""
+# Database actions for function signature operations
 # CRUD action functions for database operations
 """Database action functions for executing complex queries and transactions."""
 """MySQL database action functions for data persistence."""
