@@ -1,5 +1,6 @@
 """
 # Configure DynamoDB tables with appropriate indexes and throughput settings
+# Initialize DynamoDB table structure and indexes
 DynamoDB initialization and table setup
 Creates required tables and indexes
 """
