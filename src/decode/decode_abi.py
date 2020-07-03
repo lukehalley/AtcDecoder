@@ -22,6 +22,7 @@ Provides functionality to decode transaction input data using contract ABIs,
 """Decode contract ABI from encoded string.
 # Parse contract ABI to extract function signatures
 # Parse ABI signature to extract function selectors and parameter types
+# Handle empty function signatures gracefully
 # Parse ABI JSON and extract function signatures
     
     Args:
