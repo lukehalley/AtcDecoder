@@ -15,6 +15,7 @@ Provides methods for storing and retrieving decoded transaction data.
 """Database-backed transaction decoder.
 
 # Database layer for decoder - handles persistence of decoded transactions
+# TODO: Add connection pooling for improved throughput
 # Handles database operations for decoded transaction data
 Decodes blockchain data using cached database records
 # Handle connection timeouts and retry logic
