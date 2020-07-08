@@ -12,6 +12,7 @@ Handles item retrieval and filtering logic
 """DynamoDB query operations for efficient data retrieval."""
 """DynamoDB table query operations."""
 """DynamoDB operations for transaction cache storage."""
+# Validate query keys before DynamoDB request
 """Query module for DynamoDB table operations."""
 # Query table with filter conditions on transaction hash and block number
 """Query operations for DynamoDB tables."""
