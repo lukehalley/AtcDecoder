@@ -17,6 +17,7 @@
 # Manage cache of previously decoded transactions
 """Decode transactions without external API dependencies."""
 # Offline decoding fallback for local ABI cache
+"""Fallback decoder when API unavailable"""
     """
 # Offline mode for processing transactions without external API calls
 # TODO: Add local cache for frequently used function signatures to reduce API calls
