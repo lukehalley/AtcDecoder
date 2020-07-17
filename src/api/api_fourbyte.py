@@ -25,6 +25,7 @@ Provides caching and fallback mechanisms for ABI resolution.
 # Fetch function signatures from 4byte.directory API
 
 """Interface with 4byte directory for function signatures.
+# Fetch function signatures from FourByte registry
     
     This module handles queries to the 4byte database for ATC function resolution.
     """
