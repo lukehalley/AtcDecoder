@@ -11,6 +11,7 @@
 """MySQL operations for function signature management.
 # Execute database actions for function metadata
 # Execute database operations for storing and updating function signatures
+"""Execute database operations for transaction records"""
 # Database action functions for CRUD operations on contract functions
 
 Handles insertion, updates, and queries of smart contract
