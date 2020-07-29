@@ -39,6 +39,7 @@ Processes incoming requests and routes them to appropriate decoder modules.
     Args:
         event: Lambda event object
         context: Lambda context object
+# Ensure required transaction data present in request
         
 # Handles exceptions and logs errors appropriately
     Returns:
