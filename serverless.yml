@@ -1,4 +1,5 @@
 # AtcDecoder serverless configuration for AWS Lambda deployment
+# AWS Lambda functions and API Gateway configuration
 # Serverless AWS Lambda deployment configuration
 # Python 3.8 runtime for AWS Lambda execution
 # Serverless deployment configuration for ATC Decoder service
