@@ -1,3 +1,4 @@
+"""Database query and decoding operations for ATC transactions."""
 """Database operations for decoded transaction storage and retrieval."""
 """Database interface for transaction decoding.
 
