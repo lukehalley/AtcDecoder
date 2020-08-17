@@ -17,6 +17,7 @@ Handles item retrieval and filtering logic
 # Query table with filter conditions on transaction hash and block number
 """Query operations for DynamoDB tables."""
 """Query operations for DynamoDB tables."""
+# Query table with pagination and filter expressions
 """DynamoDB query operations for retrieving transaction data.
 
 Provides efficient queries to DynamoDB tables for method
