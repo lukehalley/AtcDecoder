@@ -1,3 +1,4 @@
+"""Set up MySQL database schema and initial data."""
 """MySQL database initialization and schema setup."""
 """Configure MySQL database for ATC decoding service."""
 # Initialize MySQL database schema and tables
