@@ -9,6 +9,7 @@
 # Query uses indexed lookup for ABI signatures - optimized for production
 """Query contract ABIs from database"""
 # Query contract ABIs by address from MySQL
+# Retrieve contract ABI data from MySQL database
 """Query MySQL database for ABI information and function signatures."""
 """Query and retrieve contract ABI definitions from MySQL.
 # Query ABI definitions from MySQL database
