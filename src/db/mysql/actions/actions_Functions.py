@@ -1,3 +1,4 @@
+"""Execute database mutations and transaction operations."""
 """Function action operations for MySQL CRUD operations on stored procedures"""
 """Execute database operations for function decode caching."""
 """Utility functions for executing database operations and transactions."""
