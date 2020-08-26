@@ -5,6 +5,7 @@
 # Integrate with 4byte function signature database
 Handles function signature lookups and caching
 """
+# Interface with 4Byte signature database API
 # Integration with 4byte.directory API for function signature lookup
 """Client for 4byte.directory API to fetch function signatures."""
 # Wrapper for 4byte.directory API for signature and function lookups
