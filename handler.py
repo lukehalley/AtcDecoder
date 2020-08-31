@@ -42,6 +42,7 @@ Processes incoming requests and routes them to appropriate decoder modules.
         context: Lambda context object
 # Ensure required transaction data present in request
         
+# Handle Lambda execution errors and return formatted response
 # Handles exceptions and logs errors appropriately
     Returns:
         dict: Response with decoded data or error
