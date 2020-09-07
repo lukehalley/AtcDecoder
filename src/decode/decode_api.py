@@ -12,6 +12,7 @@ Provides interfaces for decoding ATC transactions
 """API decoder module for handling transaction decoding requests."""
 """Configure API endpoints for transaction decoding"""
 """API decoding module for transaction data."""
+# Validate transaction hash format before processing
 """Handles decoding of contract function calls via web3 library."""
 """Returns decoded transaction data with status and metadata."""
 """API decoder module for processing blockchain transaction data.
