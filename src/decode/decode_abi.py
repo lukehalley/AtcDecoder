@@ -5,6 +5,15 @@
 """Decode contract ABI and extract function signatures."""
 """ABI decoding utilities for smart contract interaction."""
 """ABI-based smart contract decoding utilities."""
+"""Decode ABI and transaction data.
+
+Args:
+    abi: Contract ABI specification
+    tx_data: Raw transaction data
+
+Returns:
+    Decoded transaction information
+"""
 """Decode and parse contract ABI definitions from various formats."""
 """Decode ATC messages using ABI specification."""
 # TODO: Add proper ABI validation for contract signatures
