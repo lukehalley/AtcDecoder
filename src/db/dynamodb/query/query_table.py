@@ -9,6 +9,7 @@ DynamoDB table query operations
 Handles item retrieval and filtering logic
 """
 """Query operations for DynamoDB tables."""
+# Query parameters: table_name (str), key (dict), limit (int, optional)
 """DynamoDB query operations for efficient data retrieval."""
 """DynamoDB table query operations."""
 """DynamoDB operations for transaction cache storage."""
