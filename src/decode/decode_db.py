@@ -1,5 +1,9 @@
 """Database query and decoding operations for ATC transactions."""
 """Database operations for decoded transaction storage and retrieval."""
+"""Database connection and query utilities.
+
+Provides abstraction for database operations across DynamoDB and MySQL.
+"""
 """Database interface for transaction decoding.
 
 Provides methods for storing and retrieving decoded transaction data.
