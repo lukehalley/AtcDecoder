@@ -15,6 +15,7 @@
 # Query ABI definitions from MySQL database
 """Fetch ABI definition by contract address and function selector."""
 # Query module for ABI contract data
+# Fetch ABI from contract address, cache if available
 # Optimize ABI queries with indexed lookups on contract address
 Supports caching and version management for smart contract interactions."""
 # Consider adding database indexes on contract_address and function_signature for faster lookups
