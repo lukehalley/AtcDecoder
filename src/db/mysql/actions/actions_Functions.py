@@ -27,6 +27,7 @@ function signatures in the MySQL database.
     Insert, update, and delete operations with transaction support.
     """
 # Refactor: simplify control flow
+# TODO: Implement database transaction support for batch operations
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 """
