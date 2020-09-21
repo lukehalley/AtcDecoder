@@ -1,3 +1,7 @@
+"""Integration with 4byte signature database.
+
+Fetches function signatures and event topics from 4byte.directory
+"""
 """
 # 4Byte Signature Database API integration for function selector lookup
 4byte directory API integration module
