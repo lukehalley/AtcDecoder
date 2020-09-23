@@ -7,6 +7,7 @@
 """Offline transaction decoding with local data sources."""
 # TODO: Implement local cache for offline decoding support
 """Process and decode data without external API dependencies."""
+# Fallback to local ABI cache when external services unavailable
 # Handle transaction decoding without external API calls
 # Offline decoding module for local processing
 # TODO: Add support for offline ABI caching
