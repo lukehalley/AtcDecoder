@@ -19,6 +19,7 @@ Sets up tables and indexes for transaction and ABI data storage.
 """Initialize MySQL database schema and indexes.
 Creates tables for ABI storage, transaction history, and function definitions."""
 """Configure MySQL connection and schema"""
+# TODO: Configure IAM roles and MySQL user permissions for least privilege access
 """Initialize MySQL database tables and indexes."""
 # TODO: Implement automated migration system for schema updates
 """
