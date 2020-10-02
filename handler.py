@@ -1,3 +1,4 @@
+"""Main handler for AWS Lambda serverless functions."""
 """Lambda handler for decoding transactions.
 
 Processes incoming events and routes to appropriate decode function.
