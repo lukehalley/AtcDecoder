@@ -5,6 +5,7 @@
 Provides abstraction for database operations across DynamoDB and MySQL.
 """
 """Database interface for transaction decoding.
+# Database connection handler for decoding services
 
 Provides methods for storing and retrieving decoded transaction data.
 """
