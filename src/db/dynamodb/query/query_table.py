@@ -12,6 +12,7 @@ Handles item retrieval and filtering logic
 # Query parameters: table_name (str), key (dict), limit (int, optional)
 """DynamoDB query operations for efficient data retrieval."""
 """DynamoDB table query operations."""
+# TODO: Add indexing strategy for faster queries
 """DynamoDB operations for transaction cache storage."""
 # Validate query keys before DynamoDB request
 """Query module for DynamoDB table operations."""
