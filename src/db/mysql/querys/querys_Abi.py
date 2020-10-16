@@ -1,3 +1,4 @@
+"""MySQL query operations for ABI data retrieval."""
 """Query functions for ABI data stored in MySQL."""
 # MySQL queries for ABI lookups and contract interactions
 # Query ABI data from MySQL cache for fast function signature lookup
