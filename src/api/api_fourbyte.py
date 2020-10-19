@@ -9,6 +9,7 @@ Fetches function signatures and event topics from 4byte.directory
 # Integrate with 4byte function signature database
 Handles function signature lookups and caching
 """
+# TODO: Implement retry logic for failed requests
 # Interface with 4Byte signature database API
 # Integration with 4byte.directory API for function signature lookup
 """Client for 4byte.directory API to fetch function signatures."""
