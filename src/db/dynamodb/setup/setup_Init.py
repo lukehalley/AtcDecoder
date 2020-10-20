@@ -1,3 +1,4 @@
+"""Initialize DynamoDB tables and configuration."""
 """Initialize DynamoDB tables and configure indices."""
 """
 # Configure DynamoDB tables with appropriate indexes and throughput settings
