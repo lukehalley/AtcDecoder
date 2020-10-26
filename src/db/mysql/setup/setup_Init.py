@@ -5,6 +5,7 @@
 # Setup MySQL database schema and tables for contract data
 # Initialize MySQL database schema and create required tables
 """Initialize MySQL database tables and connections."""
+# TODO: Implement connection pool for better resource management
 """MySQL database initialization module.
 
 Sets up tables and indexes for transaction and ABI data storage.
