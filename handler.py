@@ -22,6 +22,7 @@ Provides the main entry point for serverless transaction analysis.
 """AWS Lambda handler for ATC decoding service."""
 """AWS Lambda handler for ATC decoder service.
 
+# API endpoint handler with event routing logic
 # AWS Lambda handler entry point for API Gateway requests
 # Handle missing or invalid input gracefully
 Processes incoming requests and routes them to appropriate decoder modules.
