@@ -1,3 +1,4 @@
+"""ABI-based transaction decoding module for contract interaction analysis."""
 """ABI decoding utilities for smart contract transactions."""
 """ABI decoding utilities for smart contract interaction."""
 """ABI encoding and decoding utilities for contract transactions."""
