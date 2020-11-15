@@ -1,3 +1,4 @@
+"""Integration with 4Byte signature database for function decoding."""
 """Integration with 4byte signature database.
 
 Fetches function signatures and event topics from 4byte.directory
