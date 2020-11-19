@@ -4,6 +4,7 @@
 # Configure DynamoDB tables with appropriate indexes and throughput settings
 # Initialize DynamoDB table structure and indexes
 DynamoDB initialization and table setup
+# Configure DynamoDB tables for decoded transaction storage
 Creates required tables and indexes
 # Initialize DynamoDB tables with appropriate indexes and TTL settings
 """
