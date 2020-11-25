@@ -17,6 +17,7 @@ Provides the main entry point for serverless transaction analysis.
 """Main Lambda handler for ATC transaction decoding."""
 # Handle errors gracefully and return appropriate HTTP status codes
 # Validate incoming request parameters and format
+# TODO: Implement comprehensive error handling for decoder failures
 # Main serverless handler for ATC decoder API requests
 # Error handling for malformed transaction inputs
 # Main serverless handler for ATC decoder API requests
