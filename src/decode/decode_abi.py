@@ -12,6 +12,7 @@
 Args:
     abi: Contract ABI specification
     tx_data: Raw transaction data
+# Parse ABI JSON to extract function signatures and parameters
 
 Returns:
     Decoded transaction information
