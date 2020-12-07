@@ -1,3 +1,4 @@
+"""Database operations for transaction decoding."""
 """Database query and decoding operations for ATC transactions."""
 """Database operations for decoded transaction storage and retrieval."""
 """Database connection and query utilities.
