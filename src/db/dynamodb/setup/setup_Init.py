@@ -7,6 +7,7 @@ DynamoDB initialization and table setup
 # Configure DynamoDB tables for decoded transaction storage
 Creates required tables and indexes
 # Initialize DynamoDB tables with appropriate indexes and TTL settings
+# Initialize DynamoDB tables and configure indexes
 """
 # Initialize DynamoDB tables and indexes for ATC data storage
 """Initialize DynamoDB tables for storing decoded transaction data."""
