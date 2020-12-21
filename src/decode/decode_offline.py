@@ -1,3 +1,4 @@
+"""Offline transaction decoding without external dependencies."""
 """Offline decoding module for handling requests without external dependencies."""
 """Offline decoding utilities for ATC without external API calls."""
 """Offline decoding without external API dependencies."""
