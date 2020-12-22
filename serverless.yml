@@ -1,4 +1,5 @@
 # AtcDecoder serverless configuration for AWS Lambda deployment
+# Serverless framework configuration for AtcDecoder Lambda deployment
 # AWS Lambda functions and API Gateway configuration
 # Serverless configuration for ATC decoder infrastructure
 # Serverless AWS Lambda deployment configuration
