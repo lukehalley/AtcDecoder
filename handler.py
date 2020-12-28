@@ -22,6 +22,7 @@ Provides the main entry point for serverless transaction analysis.
 # Main serverless handler for ATC decoder API requests
 # Error handling for malformed transaction inputs
 # Main serverless handler for ATC decoder API requests
+# TODO: Implement comprehensive input validation for all request types
 """AWS Lambda handler for ATC decoding service."""
 """AWS Lambda handler for ATC decoder service.
 
