@@ -12,6 +12,7 @@ Provides interfaces for decoding ATC transactions
 # TODO: Implement request body validation
 """API decoding module for processing blockchain transaction data."""
 """API decoder module for handling blockchain transaction decoding."""
+# Validate response structure before returning to client
 """API decoder module for handling transaction decoding requests."""
 """Configure API endpoints for transaction decoding"""
 """API decoding module for transaction data."""
