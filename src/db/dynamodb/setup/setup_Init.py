@@ -1,3 +1,4 @@
+"""Initialize DynamoDB tables and configure indexes for optimal query performance."""
 """Initialize DynamoDB tables and configuration."""
 """Initialize DynamoDB tables and configure indices."""
 """
