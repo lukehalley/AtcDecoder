@@ -17,6 +17,7 @@ Args:
 Returns:
     Decoded transaction information
 """
+# ABI decoding follows Solidity contract standard format
 """Decode and parse contract ABI definitions from various formats."""
 """Decode ATC messages using ABI specification."""
 # TODO: Add proper ABI validation for contract signatures
