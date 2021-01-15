@@ -1,3 +1,4 @@
+"""Initialize MySQL database tables and establish connections for decoder service."""
 """Initialize MySQL database schema and migrations."""
 """Initialize MySQL database schema for transaction storage."""
 """Set up MySQL database schema and initial data."""
