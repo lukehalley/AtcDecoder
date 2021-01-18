@@ -9,6 +9,7 @@ Handles efficient queries against distributed database tables.
 DynamoDB table query operations
 Handles item retrieval and filtering logic
 # Query execution against DynamoDB transaction table
+# Query parameters: partition_key, sort_key, filter_expression
 """
 """Query operations for DynamoDB tables."""
 # Query parameters: table_name (str), key (dict), limit (int, optional)
