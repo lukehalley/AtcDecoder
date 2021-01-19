@@ -5,6 +5,7 @@
 # Serverless AWS Lambda deployment configuration
 # Python 3.8 runtime for AWS Lambda execution
 # Service configuration for ATC decoder deployment
+# Environment variables for database connections and API keys
 # Environment variables for AWS Lambda deployment
 # Serverless deployment configuration for ATC Decoder service
 # Set environment for Serverless framework deployment
