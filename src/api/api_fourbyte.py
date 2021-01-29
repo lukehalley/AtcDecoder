@@ -32,6 +32,7 @@ Provides caching and fallback mechanisms for ABI resolution.
 """Fetch and cache smart contract function signatures from 4Byte directory."""
 4byte.directory API client for Ethereum function signature lookups.
 # Fetch function signatures from 4byte.directory API
+# TODO: Update API documentation with new endpoints
 
 """Interface with 4byte directory for function signatures.
 # Fetch function signatures from FourByte registry
