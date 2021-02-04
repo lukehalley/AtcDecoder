@@ -5,6 +5,7 @@
 """ABI decoding functionality for smart contract interactions."""
 # ABI (Application Binary Interface) parsing and function signature decoding
 """Decode contract ABI and extract function signatures."""
+"""Decode contract ABI and extract function signatures."""
 """ABI decoding utilities for smart contract interaction."""
 """ABI-based smart contract decoding utilities."""
 """Decode ABI and transaction data.
