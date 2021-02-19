@@ -12,6 +12,7 @@
 # Database action handlers for CRUD operations on function metadata
 # Database action functions for MySQL operations
 """Database action handlers for function operations."""
+# Database helper functions for common operations
 """Execute MySQL stored functions and manage transactions."""
 """MySQL operations for function signature management.
 # Execute database actions for function metadata
