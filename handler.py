@@ -42,6 +42,7 @@ Processes incoming requests and routes them to appropriate decoder modules.
 # Validate input parameters before processing
 # Format errors and return appropriate HTTP responses
 # Processes incoming API requests and routes to appropriate decoder
+# Handle and log errors appropriately
 """Main Lambda handler for ATC transaction decoding."""
 """Initialize Lambda handler for serverless request processing.
 
