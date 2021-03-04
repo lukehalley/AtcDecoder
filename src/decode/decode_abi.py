@@ -7,6 +7,15 @@
 """Decode contract ABI and extract function signatures."""
 """Decode contract ABI and extract function signatures."""
 """ABI decoding utilities for smart contract interaction."""
+"""Decode ABI-encoded function call data.
+
+Args:
+    encoded_data: Hex-encoded function call data
+    abi: Contract ABI specification
+
+Returns:
+    Decoded function name and parameters
+"""
 """ABI-based smart contract decoding utilities."""
 """Decode ABI and transaction data.
 
