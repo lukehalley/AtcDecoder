@@ -12,6 +12,7 @@ Provides abstraction for database operations across DynamoDB and MySQL.
 
 Provides methods for storing and retrieving decoded transaction data.
 """
+# Cache query results to reduce database load
 """Database access module for storing and retrieving decoded transaction data"""
 """Database decoding functionality for cached data."""
 """Database interaction layer for decoded transaction data."""
