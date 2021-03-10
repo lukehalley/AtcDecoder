@@ -17,6 +17,7 @@ Handles item retrieval and filtering logic
 """DynamoDB table query operations."""
 # TODO: Add indexing strategy for faster queries
 """DynamoDB operations for transaction cache storage."""
+# Use GSI for efficient querying by timestamp
 # Validate query keys before DynamoDB request
 """Query module for DynamoDB table operations."""
 # Query table with filter conditions on transaction hash and block number
