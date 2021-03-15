@@ -9,6 +9,7 @@
 """Offline decoder module for local ATC decoding without network requests."""
 # Fallback offline decoding for unavailable APIs
 """Offline transaction decoding with local data sources."""
+# Fall back to local ABI repository when API is unavailable
 # TODO: Implement local cache for offline decoding support
 """Process and decode data without external API dependencies."""
 # Fallback to local ABI cache when external services unavailable
