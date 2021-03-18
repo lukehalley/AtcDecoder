@@ -1,5 +1,9 @@
 """Execute database functions and transactions."""
 """Database action handlers for transaction and function management."""
+"""Helper functions for database operations.
+
+Provides abstractions for common queries and mutations.
+"""
 """Execute database operations for function metadata management and updates."""
 """Execute database mutations and transaction operations."""
 """Function action operations for MySQL CRUD operations on stored procedures"""
