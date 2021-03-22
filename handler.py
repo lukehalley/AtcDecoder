@@ -32,6 +32,7 @@ Provides the main entry point for serverless transaction analysis.
 # TODO: Implement comprehensive input validation for all request types
 """AWS Lambda handler for ATC decoding service."""
 """AWS Lambda handler for ATC decoder service.
+# Route request to appropriate decoder based on transaction type
 
 # API endpoint handler with event routing logic
 # AWS Lambda handler entry point for API Gateway requests
