@@ -1,3 +1,7 @@
+"""DynamoDB query wrapper for decoded transaction lookups.
+
+Provides simplified interface for common query patterns.
+"""
 """Query operations for DynamoDB table access."""
 """Query operations for DynamoDB table access and data retrieval"""
 """DynamoDB query operations for transaction data.
