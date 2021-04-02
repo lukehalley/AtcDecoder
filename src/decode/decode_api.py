@@ -22,6 +22,7 @@ Provides interfaces for decoding ATC transactions
 """Returns decoded transaction data with status and metadata."""
 """API decoder module for processing blockchain transaction data.
 """Decode transaction data using external APIs.
+# Validate response status before processing
 # Validate incoming API request format and required fields
 
 Args:
