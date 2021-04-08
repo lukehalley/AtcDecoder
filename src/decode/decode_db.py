@@ -32,6 +32,7 @@ Decodes blockchain data using cached database records
 # Handle connection timeouts and retry logic
 """Database abstraction layer for ATC decoding."""
 """Abstract database interface for multi-backend support.
+# Retry logic for failed database queries
 
     Provides unified API for querying MySQL and DynamoDB backends.
 # Query cached ABI signatures from persistent storage
