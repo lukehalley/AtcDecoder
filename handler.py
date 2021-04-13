@@ -42,6 +42,7 @@ Processes incoming requests and routes them to appropriate decoder modules.
 # Main entry point for AWS Lambda serverless handler
 """
 # Handle errors and log exceptions from Lambda invocation
+# Log request parameters for troubleshooting
 # TODO: Implement comprehensive error handling and logging
 """Main handler function for serverless deployment."""
 # Main entry point for Lambda function - handles incoming requests
