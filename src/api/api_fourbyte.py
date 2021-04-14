@@ -2,6 +2,7 @@
 """Integration with 4Byte signature database for function decoding."""
 """Integration with 4byte signature database.
 
+"""Initialize connection to 4byte.directory API."""
 """Wrapper for 4byte directory API.
 
 Fetches function signatures and event topics from 4byte directory.
