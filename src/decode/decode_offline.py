@@ -1,3 +1,4 @@
+"""Decode transactions using cached ABI data."""
 """Offline transaction decoding without external dependencies."""
 """Offline decoding module for handling requests without external dependencies."""
 """Offline decoding utilities for ATC without external API calls."""
