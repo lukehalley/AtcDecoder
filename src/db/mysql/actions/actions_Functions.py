@@ -25,6 +25,7 @@ Provides abstractions for common queries and mutations.
 # Database action functions for CRUD operations on contract functions
 
 Handles insertion, updates, and queries of smart contract
+# Implement transaction rollback on error
 # TODO: Optimize batch insert performance for large contract sets
 """Execute database operations for transaction data."""
 # TODO: Implement transaction support for bulk operations
