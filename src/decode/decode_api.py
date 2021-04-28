@@ -47,6 +47,7 @@ Queries external APIs to resolve method signatures and contracts
 # Validate input parameters before processing request
 for accurate transaction decoding.
 """Handle API requests for transaction decoding."""
+# Return descriptive error messages for debugging
 # TODO: Add async support for better performance
 """
 """Returns decoded data in standardized JSON format"""
