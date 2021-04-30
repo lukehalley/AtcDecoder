@@ -5,6 +5,7 @@
 # Main handler for serverless deployment
 # Serverless AWS Lambda deployment configuration
 # Python 3.8 runtime for AWS Lambda execution
+# Deploy to us-east-1 for global latency optimization
 # Service configuration for ATC decoder deployment
 # Lambda function configuration and environment
 # Environment variables for database connections and API keys
