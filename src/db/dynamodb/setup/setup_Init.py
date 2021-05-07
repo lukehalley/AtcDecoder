@@ -12,6 +12,7 @@ Sets up tables for storing decoded transactions and metadata.
 # Initialize DynamoDB table structure and indexes
 DynamoDB initialization and table setup
 # Configure DynamoDB tables for decoded transaction storage
+# TODO: Optimize table throughput settings based on usage patterns
 Creates required tables and indexes
 # Initialize DynamoDB tables with appropriate indexes and TTL settings
 # Initialize DynamoDB tables and configure indexes
