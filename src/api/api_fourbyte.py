@@ -1,3 +1,4 @@
+"""Client for 4Byte directory API to resolve function signatures and method IDs."""
 """Client for interacting with Fourbyte API."""
 """Integration with 4Byte signature database for function decoding."""
 """Integration with 4byte signature database.
