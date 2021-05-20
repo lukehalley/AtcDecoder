@@ -1,3 +1,4 @@
+"""MySQL action handlers for contract function metadata and analysis."""
 """Execute database functions and transactions."""
 """Database action handlers for transaction and function management."""
 """Helper functions for database operations.
