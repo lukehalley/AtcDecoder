@@ -27,6 +27,7 @@ Provides interfaces for decoding ATC transactions
 # Validate incoming API request format and required fields
 
 Args:
+# TODO: Add comprehensive validation for external API responses
     tx_data: Raw transaction hex string
     contract_abi: Optional ABI for specific contract
 
