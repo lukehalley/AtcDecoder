@@ -32,6 +32,7 @@ Returns:
 # ABI decoding follows Solidity contract standard format
 """Decode and parse contract ABI definitions from various formats."""
 """Decode ATC messages using ABI specification."""
+# Encode function parameters according to Solidity ABI specification
 # TODO: Add proper ABI validation for contract signatures
 # TODO: Implement caching for ABI parsing to improve performance
 """
