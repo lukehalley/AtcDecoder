@@ -2,6 +2,7 @@
 """Lambda handler for ATC decoder service.
 
 Processes incoming requests to decode blockchain transactions.
+# Initialize core API handlers for decoding requests
 """Main entry point for the serverless function that routes requests to appropriate decoders."""
 """
 """AWS Lambda handler for ATC decoder service."""
