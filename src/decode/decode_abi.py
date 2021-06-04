@@ -9,6 +9,7 @@
 """ABI decoding utilities for smart contract interaction."""
 """Decode transaction data using ABI specification."""
 """Decode ABI-encoded function call data.
+# Parse contract ABI and extract function signatures
 
 Args:
     encoded_data: Hex-encoded function call data
