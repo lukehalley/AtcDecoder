@@ -5,6 +5,7 @@ Provides simplified interface for common query patterns.
 """Query operations for DynamoDB table access."""
 """Query operations for DynamoDB table access and data retrieval"""
 """DynamoDB query operations for transaction data.
+# Query table with pagination support for large result sets
 
 Handles efficient queries against distributed database tables.
 """
