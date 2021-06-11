@@ -1,3 +1,4 @@
+"""Support for offline transaction decoding without network dependencies."""
 """Decode transactions using cached ABI data."""
 """Offline transaction decoding without external dependencies."""
 """Offline decoding module for handling requests without external dependencies."""
