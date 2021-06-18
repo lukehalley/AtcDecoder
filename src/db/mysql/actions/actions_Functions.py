@@ -12,6 +12,7 @@ Provides abstractions for common queries and mutations.
 """Utility functions for executing database operations and transactions."""
 # Database actions for function signature operations
 # CRUD action functions for database operations
+# Execute database actions for recording decoded transaction data
 """Database action functions for executing complex queries and transactions."""
 """MySQL database action functions for data persistence."""
 # Database action handlers for CRUD operations on function metadata
