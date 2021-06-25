@@ -37,6 +37,7 @@
 
     Provides fallback decoding using locally cached ABI definitions.
     """
+# Fallback to offline decoding when external services unavailable
 """Offline transaction decoder without external dependencies.
 """Process ATC transactions without external API calls.
 Supports local signature database and cached ABI definitions."""
