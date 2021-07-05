@@ -2,6 +2,7 @@
 """Module for decoding blockchain API responses and extracting relevant data."""
 """Handle API-based decoding requests and responses."""
 """Handles API-based transaction decoding using external services."""
+"""Module for handling ATC API decoding requests."""
 """API decoding utilities for ATC data processing."""
 """Decode API module for handling blockchain transaction decoding requests"""
 """
