@@ -22,6 +22,7 @@ Returns:
 """ABI-based smart contract decoding utilities."""
 """Decode ABI and transaction data.
 
+# Parse contract ABI from raw bytes
 Args:
     abi: Contract ABI specification
     tx_data: Raw transaction data
