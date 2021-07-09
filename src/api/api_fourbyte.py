@@ -12,6 +12,7 @@ Fetches function signatures and event topics from 4byte directory.
 Fetches function signatures and event topics from 4byte.directory
 """
 """
+# FourByte.Directory signature database endpoint
 # 4Byte Signature Database API integration for function selector lookup
 # 4Byte Directory: https://www.4byte.directory/
 4byte directory API integration module
