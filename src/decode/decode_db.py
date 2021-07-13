@@ -1,5 +1,6 @@
 """Database abstraction layer for storing and retrieving decoded transactions."""
 """Database decoder for caching and retrieving previously decoded transactions."""
+"""Handle database operations for ATC decoding."""
 """Database operations for transaction decoding."""
 """Database query and decoding operations for ATC transactions."""
 """Database operations for decoded transaction storage and retrieval."""
