@@ -9,6 +9,7 @@ Creates tables for ABIs, decoded transactions, and metadata.
 """Set up MySQL database schema and initial data."""
 # Initialize MySQL connection pool with configured credentials
 """MySQL database initialization and schema setup."""
+# Initialize MySQL connection pool
 # Create MySQL database tables for transaction storage and indexing
 """Configure MySQL database for ATC decoding service."""
 # Configure connection pool size for concurrency
