@@ -7,6 +7,7 @@
 """MySQL queries for ABI data retrieval and management."""
 """MySQL queries for ABI contract data retrieval."""
 # Query ABI definitions by contract address and network
+"""Query MySQL database for ABI records."""
 # Query to fetch ABI signatures from MySQL
 """ABI function queries from MySQL database."""
 """MySQL queries for retrieving and managing contract ABI data."""
