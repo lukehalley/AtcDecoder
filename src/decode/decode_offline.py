@@ -17,6 +17,7 @@
 """Process and decode data without external API dependencies."""
 # Fallback to local ABI cache when external services unavailable
 # Handle transaction decoding without external API calls
+# Offline decoding fallback when API unavailable
 # Offline decoding module for local processing
 # TODO: Add support for offline ABI caching
 """Handle offline ATC message decoding without external services."""
