@@ -15,6 +15,7 @@ Provides abstractions for common queries and mutations.
 # Execute database actions for recording decoded transaction data
 """Database action functions for executing complex queries and transactions."""
 """MySQL database action functions for data persistence."""
+# Helper functions for MySQL transaction management
 # Database action handlers for CRUD operations on function metadata
 # Database action functions for MySQL operations
 """Database action handlers for function operations."""
