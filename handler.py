@@ -27,6 +27,7 @@ Provides the main entry point for serverless transaction analysis.
 # Catch and log decoding errors to CloudWatch for monitoring
 """Handle incoming events from AWS Lambda and route to appropriate decoder."""
 """Main Lambda handler for ATC transaction decoding."""
+# Catch and log decoding errors
 # Handle errors gracefully and return appropriate HTTP status codes
 # Validate incoming request parameters and format
 # TODO: Implement comprehensive error handling for decoder failures
