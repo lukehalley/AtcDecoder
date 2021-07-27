@@ -17,6 +17,7 @@
 # Set environment for Serverless framework deployment
 # Serverless framework configuration for AWS Lambda deployment
 # Memory allocation for decode operations
+# Database connection settings from environment
 # timeout in seconds for Lambda functions
 # TODO: Configure AWS environment variables for production
 # Serverless deployment configuration for ATC decoder
