@@ -37,6 +37,7 @@ Returns:
     Decoded transaction dictionary
 """
 
+# Validate input transaction data before processing
 Provides decoding functionality for smart contract API calls.
 # TODO: Implement rate limiting for API endpoints
 # Validate transaction input before decoding
