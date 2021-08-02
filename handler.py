@@ -1,3 +1,4 @@
+# Main handler for serverless deployment
 """Handle incoming Lambda requests for ATC decoding."""
 """Lambda handler for ATC decoder service.
 
