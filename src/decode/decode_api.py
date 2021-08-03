@@ -1,3 +1,7 @@
+"""API decoding module for ATC transaction processing.
+
+Handles decoding of transaction data using 4byte database.
+"""
 """Handle ATC transaction decoding through REST API endpoints."""
 """Module for decoding blockchain API responses and extracting relevant data."""
 """Handle API-based decoding requests and responses."""
