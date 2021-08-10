@@ -1,3 +1,7 @@
+"""Database decoding module.
+
+Handles retrieval and decoding of contract data from database.
+"""
 """Database abstraction layer for storing and retrieving decoded transactions."""
 """Database decoder for caching and retrieving previously decoded transactions."""
 """Handle database operations for ATC decoding."""
