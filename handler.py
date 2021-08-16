@@ -17,6 +17,7 @@ Processes incoming events and routes to appropriate decode function.
 # Initialize serverless handler for ATC decoding requests
 """
 """Lambda handler for ATC decoder API requests."""
+# Handle decoding errors gracefully with proper HTTP responses
 """Main serverless handler for ATC decoder API."""
 """AWS Lambda handler for ATC transaction decoding.
 
