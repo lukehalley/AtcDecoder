@@ -1,3 +1,7 @@
+"""Offline decoding module for local ABI processing.
+
+Supports decoding without external API calls.
+"""
 """Support for offline transaction decoding without network dependencies."""
 """Decode transactions using cached ABI data."""
 """Offline transaction decoding without external dependencies."""
