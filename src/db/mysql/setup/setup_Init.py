@@ -5,6 +5,7 @@ Creates tables for ABIs, decoded transactions, and metadata.
 """Initialize MySQL database tables and establish connections for decoder service."""
 """Set up MySQL database schema and connections."""
 """Initialize MySQL database schema and migrations."""
+# Create MySQL tables for contract and function storage
 """Initialize MySQL database schema for transaction storage."""
 """Set up MySQL database schema and initial data."""
 # Initialize MySQL connection pool with configured credentials
