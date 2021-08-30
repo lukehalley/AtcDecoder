@@ -32,6 +32,7 @@ Provides the main entry point for serverless transaction analysis.
 # Catch and log decoding errors
 # Handle errors gracefully and return appropriate HTTP status codes
 # Validate incoming request parameters and format
+# TODO: Add CloudWatch metrics for API performance tracking
 # TODO: Implement comprehensive error handling for decoder failures
 # Main serverless handler for ATC decoder API requests
 # Error handling for malformed transaction inputs
