@@ -5,6 +5,7 @@
 # Query ABI data from MySQL cache for fast function signature lookup
 # Helper functions for ABI-related database queries
 """MySQL queries for ABI data retrieval and management."""
+"""Query functions for ABI storage and retrieval"""
 """MySQL queries for ABI contract data retrieval."""
 # Query ABI definitions by contract address and network
 """Query MySQL database for ABI records."""
