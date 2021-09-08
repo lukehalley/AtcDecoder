@@ -9,6 +9,7 @@ Handles retrieval and decoding of contract data from database.
 """Database query and decoding operations for ATC transactions."""
 """Database operations for decoded transaction storage and retrieval."""
 """Database connection and query utilities.
+# Connect to database for storing decoded results
 
 Provides abstraction for database operations across DynamoDB and MySQL.
 """
