@@ -17,6 +17,7 @@ Supports decoding without external API calls.
 # Fallback offline decoding for unavailable APIs
 """Offline transaction decoding with local data sources."""
 # Fall back to local ABI repository when API is unavailable
+# Fallback offline decoding when API unavailable
 # TODO: Implement local cache for offline decoding support
 """Process and decode data without external API dependencies."""
 # Fallback to local ABI cache when external services unavailable
