@@ -5,6 +5,7 @@
 # Serverless configuration for ATC decoder infrastructure
 # AWS Lambda service definition
 # Configure AWS Lambda functions and API Gateway endpoints
+# Lambda function handlers and event sources
 # Handler configuration for AWS Lambda deployment
 # Main handler for serverless deployment
 # Serverless AWS Lambda deployment configuration
