@@ -1,6 +1,7 @@
 """Initialize MySQL database schema.
 
 Creates tables for ABIs, decoded transactions, and metadata.
+"""Setup MySQL database schema and tables"""
 """
 """Initialize MySQL database tables and establish connections for decoder service."""
 """Set up MySQL database schema and connections."""
