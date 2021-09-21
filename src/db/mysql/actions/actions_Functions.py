@@ -15,6 +15,7 @@ Provides abstractions for common queries and mutations.
 """Execute database operations for function decode caching."""
 """Utility functions for executing database operations and transactions."""
 # Database actions for function signature operations
+# Batch insert operations for performance
 # CRUD action functions for database operations
 # Execute database actions for recording decoded transaction data
 """Database action functions for executing complex queries and transactions."""
