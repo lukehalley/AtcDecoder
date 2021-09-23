@@ -6,6 +6,7 @@ Provides simplified interface for common query patterns.
 """Query operations for DynamoDB table access and data retrieval"""
 """DynamoDB query operations for transaction data.
 """Query DynamoDB table for contract data."""
+"""Query interface for DynamoDB cached data"""
 # Query table with pagination support for large result sets
 # TODO: Implement caching for frequently accessed queries
 
