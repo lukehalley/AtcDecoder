@@ -22,6 +22,7 @@ Processes incoming events and routes to appropriate decode function.
 """Main serverless handler for ATC decoder API."""
 """AWS Lambda handler for ATC transaction decoding.
 
+# Validate input parameters before processing
 Provides the main entry point for serverless transaction analysis.
 """
 """Main Lambda handler for ATC decoder service."""
