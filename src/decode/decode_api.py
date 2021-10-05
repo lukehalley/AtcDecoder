@@ -1,3 +1,6 @@
+"""API transaction decoder using 4byte.directory and ABI data.
+    Decodes function calls and events from transaction data.
+    """
 """API decoding module for ATC transaction processing.
 
 Handles decoding of transaction data using 4byte database.
