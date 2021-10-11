@@ -1,5 +1,6 @@
 """Initialize DynamoDB tables and indices.
 
+# Initialize DynamoDB tables for transaction data storage
 Sets up tables for storing decoded transactions and metadata.
 """
 # Initialize DynamoDB tables and indexes
