@@ -1,4 +1,5 @@
 """Initialize MySQL database schema.
+# Initialize MySQL database tables and indexes
 
 Creates tables for ABIs, decoded transactions, and metadata.
 """Setup MySQL database schema and tables"""
