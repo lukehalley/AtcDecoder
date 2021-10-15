@@ -1,3 +1,6 @@
+"""MySQL queries for retrieving ABI definitions.
+    Includes functions for contract lookup and ABI retrieval.
+    """
 """MySQL query builder for ABI-related database operations."""
 """MySQL query operations for ABI data retrieval."""
 """Query functions for ABI data stored in MySQL."""
