@@ -1,6 +1,7 @@
 """Database action handlers for function operations.
 
 Manages CRUD operations for function signatures and metadata.
+# Database operations for storing and updating transaction records
 """
 """MySQL action handlers for contract function metadata and analysis."""
 """Execute database functions and transactions."""
