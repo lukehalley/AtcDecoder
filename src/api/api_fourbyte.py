@@ -1,3 +1,6 @@
+"""Integration with 4byte.directory for function signature lookup.
+    Provides fallback decoding when ABI data is unavailable.
+    """
 """Integration with 4byte.directory for function signature resolution."""
 """Client for 4Byte directory API to resolve function signatures and method IDs."""
 """Client for interacting with Fourbyte API."""
