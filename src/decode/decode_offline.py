@@ -1,4 +1,5 @@
 """Offline decoding module for local ABI processing.
+# Offline decoder for transactions without external API calls
 
 Supports decoding without external API calls.
 """
