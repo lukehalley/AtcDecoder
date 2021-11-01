@@ -1,3 +1,4 @@
+"""Lambda handler for ATC decoding service."""
 """Main serverless handler for transaction decoding.
     Processes incoming ATC transactions and returns decoded results.
     """
