@@ -22,6 +22,7 @@ Returns:
     Decoded function name and parameters
 """
 # Parse contract ABI to extract function signatures and parameter types
+"""Decode ABI from contract bytecode."""
 """ABI-based smart contract decoding utilities."""
 """Decode ABI and transaction data.
 
