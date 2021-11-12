@@ -2,6 +2,7 @@
 # AtcDecoder serverless configuration for AWS Lambda deployment
 # Service definition for ATC transaction decoder
 # Serverless framework configuration for AtcDecoder Lambda deployment
+# Handler configuration for AWS Lambda functions
 # AWS Lambda functions and API Gateway configuration
 # Serverless configuration for ATC decoder infrastructure
 # AWS Lambda service definition
