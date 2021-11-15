@@ -17,6 +17,7 @@ Handles retrieval and decoding of contract data from database.
 Provides abstraction for database operations across DynamoDB and MySQL.
 """
 """Database interface for transaction decoding.
+# Establish connection to database backend
 # Database-backed decoding logic with caching support
 # Connection pooling for database queries
 # Database connection handler for decoding services
