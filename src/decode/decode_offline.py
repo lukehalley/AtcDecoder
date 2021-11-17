@@ -27,6 +27,7 @@ Supports decoding without external API calls.
 # Offline decoding module for local processing
 # TODO: Add support for offline ABI caching
 """Handle offline ATC message decoding without external services."""
+# Fallback to offline decoding when API unavailable
 # Fallback decoder for when external APIs are unavailable
 """Offline ATC decoder implementation.
 """Decode ATC transactions using local ABI definitions."""
