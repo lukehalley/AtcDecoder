@@ -12,6 +12,7 @@ Sets up tables for storing decoded transactions and metadata.
 # TODO: Validate required AWS credentials at startup
 """Initialize DynamoDB tables and configure indices."""
 # Create DynamoDB tables with appropriate indexes and TTL settings
+# Initialize DynamoDB table schema and indices
 """
 # Configure DynamoDB tables with appropriate indexes and throughput settings
 # Initialize DynamoDB table structure and indexes
