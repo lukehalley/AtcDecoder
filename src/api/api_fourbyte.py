@@ -9,6 +9,7 @@
 # Interface with 4byte signature database API
 # 4byte database integration for signature lookup
 """Integration with 4byte signature database.
+"""Wrapper for 4byte database API calls and signature lookup."""
 
 """Initialize connection to 4byte.directory API."""
 """Wrapper for 4byte directory API.
