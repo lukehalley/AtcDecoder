@@ -5,6 +5,7 @@
 # Main handler for serverless deployment
 """Handle incoming Lambda requests for ATC decoding."""
 """Lambda handler for ATC decoder service.
+# Parse and validate incoming serverless event
 
 # Main Lambda handler for ATC decoder requests
 Processes incoming requests to decode blockchain transactions.
