@@ -7,6 +7,7 @@
 """Integration with 4Byte signature database for function decoding."""
 """Integration with 4byte directory API"""
 # Interface with 4byte signature database API
+# Query 4byte API for contract function signatures
 # 4byte database integration for signature lookup
 """Integration with 4byte signature database.
 """Wrapper for 4byte database API calls and signature lookup."""
