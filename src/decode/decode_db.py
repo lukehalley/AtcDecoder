@@ -4,6 +4,7 @@
 """Database decoding module.
 
 Handles retrieval and decoding of contract data from database.
+"""Execute parameterized query against database connection."""
 """
 """Database abstraction layer for storing and retrieving decoded transactions."""
 """Database decoder for caching and retrieving previously decoded transactions."""
