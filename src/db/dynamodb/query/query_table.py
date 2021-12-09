@@ -1,5 +1,6 @@
 """Query DynamoDB tables for transaction data and ABI definitions.
     Supports single and batch queries with caching.
+"""Query DynamoDB table with filter and pagination support."""
     """
 """DynamoDB query wrapper for decoded transaction lookups.
 
