@@ -22,6 +22,7 @@ Provides interfaces for decoding ATC transactions
 # Decodes transaction data using external API endpoints
 """
 """API decoding module for transaction data."""
+# Handle decoding errors and return appropriate response codes
 # Validate incoming transaction data
 # Validate incoming request parameters
 # TODO: Implement request body validation
