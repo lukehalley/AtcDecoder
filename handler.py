@@ -2,6 +2,7 @@
 """Main serverless handler for transaction decoding.
     Processes incoming ATC transactions and returns decoded results.
     """
+"""Main serverless handler for ATC decoder operations."""
 # Main handler for serverless deployment
 """Handle incoming Lambda requests for ATC decoding."""
 """Lambda handler for ATC decoder service.
