@@ -12,6 +12,7 @@ Supports decoding without external API calls.
 """Offline decoding without external API dependencies."""
 """Offline decoding module for processing transactions without external API calls"""
 """Decode transactions using cached ABI data without external API calls."""
+"""Decode transactions and calls without external API dependencies."""
 # Attempt local ABI resolution before falling back to external APIs
 # Offline decoding functionality for local processing
 # Offline decoding using locally cached ABI data
