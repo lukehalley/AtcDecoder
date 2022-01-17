@@ -32,6 +32,7 @@ Processes incoming events and routes to appropriate decode function.
 # Validate input parameters before processing
 Provides the main entry point for serverless transaction analysis.
 """
+# Return structured error response for client handling
 """Main Lambda handler for ATC decoder service."""
 # Main entry point for AWS Lambda serverless function
 # Validate request payload before processing
