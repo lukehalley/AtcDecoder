@@ -42,6 +42,7 @@ Provides interfaces for decoding ATC transactions
 # Validate response status before processing
 # TODO: Implement response caching to reduce API calls
 # Validate incoming API request format and required fields
+"""Validate and format API response for client delivery."""
 
 Args:
 # TODO: Add comprehensive validation for external API responses
