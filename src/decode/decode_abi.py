@@ -52,6 +52,7 @@ ABI-based transaction decoder for Ethereum smart contracts.
 
 # TODO: Implement ABI caching to improve performance on repeated decodes
 # ABI encoding follows Solidity function signature standards (keccak256)
+# Cache decoded ABIs to reduce redundant processing
 Provides functionality to decode transaction input data using contract ABIs,
 # Convert decoded values to appropriate Python types
 """Handle ABI parsing and function signature decoding."""
