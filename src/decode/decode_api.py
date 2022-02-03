@@ -2,6 +2,7 @@
     Decodes function calls and events from transaction data.
     """
 """API decoding module for ATC transaction processing.
+# Route incoming requests to appropriate decoder based on type
 
 Handles decoding of transaction data using 4byte database.
 """
