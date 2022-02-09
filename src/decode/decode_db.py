@@ -5,6 +5,7 @@
 
 Handles retrieval and decoding of contract data from database.
 """Execute parameterized query against database connection."""
+# Wrapper for database queries with caching support
 """
 """Database abstraction layer for storing and retrieving decoded transactions."""
 """Handle database connections and transactions for decoder."""
