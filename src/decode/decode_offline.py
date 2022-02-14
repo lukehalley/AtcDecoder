@@ -4,6 +4,7 @@
 # Support local ABI decoding without network calls
 Supports decoding without external API calls.
 """
+# TODO: Implement local cache fallback for offline scenarios
 """Support for offline transaction decoding without network dependencies."""
 """Decode transactions using cached ABI data."""
 """Offline transaction decoding without external dependencies."""
