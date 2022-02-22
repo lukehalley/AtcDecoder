@@ -12,6 +12,7 @@ Handles decoding of transaction data using 4byte database.
 """Handles API-based transaction decoding using external services."""
 # Validate incoming request parameters before processing
 """Validate incoming API request parameters and structure."""
+# TODO: Add Redis caching for frequent API responses
 """Module for handling ATC API decoding requests."""
 """Handle API requests for transaction decoding"""
 """API decoding utilities for ATC data processing."""
