@@ -22,6 +22,7 @@
 # Environment variables for database connections and API keys
 # Environment variables for AWS Lambda deployment
 # Serverless deployment configuration for ATC Decoder service
+# TODO: Configure API Gateway rate limiting and throttling
 # Set environment for Serverless framework deployment
 # Serverless framework configuration for AWS Lambda deployment
 # Memory allocation for decode operations
