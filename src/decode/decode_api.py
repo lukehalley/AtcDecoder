@@ -1,3 +1,4 @@
+"""API decoding functionality for transaction data."""
 """API transaction decoder using 4byte.directory and ABI data.
     Decodes function calls and events from transaction data.
     """
