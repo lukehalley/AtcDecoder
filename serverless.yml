@@ -2,8 +2,26 @@ service: atc-decoder
 
 plugins:
   - serverless-python-requirements
+
+package:
+  exclude:
+    - node_modules/**
+    - venv/**
+
 provider:
   name: aws
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+          - secretsmanager:GetResourcePolicy
+          - secretsmanager:GetSecretValue
+          - secretsmanager:DescribeSecret
+          - secretsmanager:ListSecretVersionIds
+          - secretsmanager:ListSecrets
+          Resource:
+          - "arn:aws:secretsmanager:eu-west-1:538602529242:secret:ATC_DB_Credentials-JDGF0w"
   runtime: python3.8
   stage: prod
   timeout: 120
@@ -12,7 +30,10 @@ provider:
 functions:
   decode:
     handler: handler.invoke
+    environment:
+      DB_NAME: "atc"
+      DB_ENDPOINT: "atcdbinstance.castyrwvsdr7.eu-west-1.rds.amazonaws.com"
 
 custom:
   pythonRequirements:
-     dockerizePip: non-linux
+    dockerizePip: non-linux

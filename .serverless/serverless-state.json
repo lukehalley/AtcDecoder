@@ -6,6 +6,23 @@
     },
     "provider": {
       "name": "aws",
+      "iam": {
+        "role": {
+          "statements": [
+            {
+              "Effect": "Allow",
+              "Action": [
+                "secretsmanager:GetResourcePolicy",
+                "secretsmanager:GetSecretValue",
+                "secretsmanager:DescribeSecret",
+                "secretsmanager:ListSecretVersionIds",
+                "secretsmanager:ListSecrets"
+              ],
+              "Resource": "arn:aws:secretsmanager:eu-west-1:538602529242:secret:ATC_DB_Credentials-JDGF0w"
+            }
+          ]
+        }
+      },
       "runtime": "python3.8",
       "stage": "prod",
       "timeout": 120,
@@ -146,6 +163,9 @@
                             "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/atc-decoder-prod*:*:*"
                           }
                         ]
+                      },
+                      {
+                        "$ref": "$[\"service\"][\"provider\"][\"iam\"][\"role\"][\"statements\"][0]"
                       }
                     ]
                   }
@@ -174,13 +194,19 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/atc-decoder/prod/1674995325519-2023-01-29T12:28:45.519Z/atc-decoder.zip"
+                "S3Key": "serverless/atc-decoder/prod/1675003025870-2023-01-29T14:37:05.870Z/atc-decoder.zip"
               },
               "Handler": "handler.invoke",
               "Runtime": "python3.8",
               "FunctionName": "atc-decoder-prod-decode",
               "MemorySize": 1024,
               "Timeout": 120,
+              "Environment": {
+                "Variables": {
+                  "DB_NAME": "atc",
+                  "DB_ENDPOINT": "atcdbinstance.castyrwvsdr7.eu-west-1.rds.amazonaws.com"
+                }
+              },
               "Role": {
                 "Fn::GetAtt": [
                   "IamRoleLambdaExecution",
@@ -192,14 +218,14 @@
               "DecodeLogGroup"
             ]
           },
-          "DecodeLambdaVersionBoHAcFQ8wR7tlkWVpscewdiz4dTpyqTPzkHAkLUMESI": {
+          "DecodeLambdaVersion5dcw8MmjgVnfX2ES9m3dMHMek7mKz8kXtl83NgwRGCs": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DecodeLambdaFunction"
               },
-              "CodeSha256": "ve9/BBkrIM6mQHbBAhLunmLC/4BTMY+M2NYfgL9G/Mg="
+              "CodeSha256": "mOyKP8JwCViLryw6UxPs1PA3asZ0WCcDdKx763SsG0Y="
             }
           }
         },
@@ -215,7 +241,7 @@
           "DecodeLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DecodeLambdaVersionBoHAcFQ8wR7tlkWVpscewdiz4dTpyqTPzkHAkLUMESI"
+              "Ref": "DecodeLambdaVersion5dcw8MmjgVnfX2ES9m3dMHMek7mKz8kXtl83NgwRGCs"
             },
             "Export": {
               "Name": "sls-atc-decoder-prod-DecodeLambdaFunctionQualifiedArn"
@@ -319,6 +345,10 @@
     "functions": {
       "decode": {
         "handler": "handler.invoke",
+        "environment": {
+          "DB_NAME": "atc",
+          "DB_ENDPOINT": "atcdbinstance.castyrwvsdr7.eu-west-1.rds.amazonaws.com"
+        },
         "events": [],
         "name": "atc-decoder-prod-decode",
         "package": {},
@@ -326,7 +356,7 @@
         "timeout": 120,
         "runtime": "python3.8",
         "vpc": {},
-        "versionLogicalId": "DecodeLambdaVersionBoHAcFQ8wR7tlkWVpscewdiz4dTpyqTPzkHAkLUMESI"
+        "versionLogicalId": "DecodeLambdaVersion5dcw8MmjgVnfX2ES9m3dMHMek7mKz8kXtl83NgwRGCs"
       }
     },
     "configValidationMode": "warn",
@@ -335,6 +365,15 @@
       "service": "atc-decoder",
       "plugins": {
         "$ref": "$[\"service\"][\"plugins\"]"
+      },
+      "package": {
+        "exclude": [
+          "node_modules/**",
+          "venv/**"
+        ],
+        "artifactsS3KeyDirname": "serverless/atc-decoder/prod/code-artifacts",
+        "artifact": "/Users/luke/dev/arbTheChain/atc-decoder/.serverless/atc-decoder.zip",
+        "artifactDirectoryName": "serverless/atc-decoder/prod/1675003025870-2023-01-29T14:37:05.870Z"
       },
       "provider": {
         "$ref": "$[\"service\"][\"provider\"]"
@@ -351,7 +390,7 @@
     "artifact": "/Users/luke/dev/arbTheChain/atc-decoder/.serverless/atc-decoder.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/atc-decoder/prod/1674995325519-2023-01-29T12:28:45.519Z",
+    "artifactDirectoryName": "serverless/atc-decoder/prod/1675003025870-2023-01-29T14:37:05.870Z",
     "artifact": "atc-decoder.zip"
   }
 }
