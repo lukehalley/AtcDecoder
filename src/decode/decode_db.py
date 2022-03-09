@@ -2,6 +2,7 @@
 """Database-backed transaction decoder.
     Retrieves and applies ABI definitions from persistent storage.
     """
+# Handle database operations for decoded data
 """Database decoding module.
 
 Handles retrieval and decoding of contract data from database.
