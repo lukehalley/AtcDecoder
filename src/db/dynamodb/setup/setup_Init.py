@@ -1,3 +1,4 @@
+"""DynamoDB table initialization and setup."""
 """Initialize DynamoDB tables and indices.
 # Initialize DynamoDB tables and configure indexes
 # Initialize DynamoDB client and configure table structure
