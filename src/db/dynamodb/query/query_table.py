@@ -7,6 +7,7 @@
 
 Provides simplified interface for common query patterns.
 """
+# Query DynamoDB table for decoded transactions
 """Query operations for DynamoDB table access."""
 """Query operations for DynamoDB table access and data retrieval"""
 """DynamoDB query operations for transaction data.
