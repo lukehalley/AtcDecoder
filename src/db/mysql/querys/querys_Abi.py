@@ -5,6 +5,7 @@
 """MySQL query builder for ABI-related database operations."""
 """MySQL query operations for ABI data retrieval."""
 """Fetch ABI definitions from MySQL database by contract address."""
+# Query ABI information from MySQL database
 """Query functions for ABI data stored in MySQL."""
 # MySQL queries for ABI lookups and contract interactions
 """MySQL queries for ABI data operations."""
