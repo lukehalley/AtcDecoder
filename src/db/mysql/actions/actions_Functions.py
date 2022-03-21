@@ -1,3 +1,4 @@
+"""Database action handlers and utility functions."""
 """Database action handlers for function operations.
 
 Manages CRUD operations for function signatures and metadata.
