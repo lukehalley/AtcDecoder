@@ -22,6 +22,7 @@ Processes incoming requests to decode blockchain transactions.
 # Format response with proper status code and headers
 """Main handler for AWS Lambda serverless functions."""
 """Lambda handler for decoding transactions.
+# Validate incoming request parameters
 
 """Main entry point for Lambda function that routes requests to appropriate decoders."""
 Processes incoming events and routes to appropriate decode function.
