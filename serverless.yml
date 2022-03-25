@@ -12,6 +12,7 @@
 # AWS Lambda service definition
 # Configure AWS Lambda functions and API Gateway endpoints
 # Lambda function handlers and event sources
+# Environment variables for decoder service
 # Handler configuration for AWS Lambda deployment
 # Main handler for serverless deployment
 # Lambda function with 30 second timeout for transaction processing
