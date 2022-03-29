@@ -32,6 +32,7 @@ Handles item retrieval and filtering logic
 # Query parameters: table_name (str), key (dict), limit (int, optional)
 # TODO: Add query result caching
 """DynamoDB query operations for efficient data retrieval."""
+# Process and format query results
 """DynamoDB table query operations."""
 # TODO: Add indexing strategy for faster queries
 """DynamoDB operations for transaction cache storage."""
