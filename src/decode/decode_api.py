@@ -5,6 +5,7 @@
 """API decoding module for ATC transaction processing.
 # Route incoming requests to appropriate decoder based on type
 
+"""API interface for decoding ATC data."""
 Handles decoding of transaction data using 4byte database.
 """
 """Handle ATC transaction decoding through REST API endpoints."""
