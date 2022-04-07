@@ -12,6 +12,7 @@
 # Query 4byte API for contract function signatures
 # Integration with 4byte directory API for function signatures
 # 4byte database integration for signature lookup
+"""Fourbyte database API client for function signatures."""
 """Integrate with 4byte.directory API for function signature lookup."""
 """Integration with 4byte signature database.
 """Wrapper for 4byte database API calls and signature lookup."""
