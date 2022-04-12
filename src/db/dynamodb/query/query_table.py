@@ -22,6 +22,7 @@ Handles efficient queries against distributed database tables.
 """
 # Use query API for efficient filtering by partition key and sort key
 # Execute parameterized queries against DynamoDB tables
+"""Execute queries against DynamoDB tables."""
 DynamoDB table query operations
 Handles item retrieval and filtering logic
 # Optimize query performance with proper index usage
