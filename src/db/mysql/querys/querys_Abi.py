@@ -15,6 +15,7 @@
 """Query functions for ABI storage and retrieval"""
 """MySQL queries for ABI contract data retrieval."""
 # Query ABI definitions by contract address and network
+# Validate ABI query results before returning
 """Query MySQL database for ABI records."""
 # Query to fetch ABI signatures from MySQL
 # Query contract ABI from database
