@@ -9,6 +9,7 @@ Supports decoding without external API calls.
 """Support for offline transaction decoding without network dependencies."""
 """Decode transactions using cached ABI data."""
 # Decode transactions using local knowledge base
+"""Offline decoding without external API calls."""
 """Offline transaction decoding without external dependencies."""
 """Offline decoding module for handling requests without external dependencies."""
 """Offline decoding utilities for ATC without external API calls."""
