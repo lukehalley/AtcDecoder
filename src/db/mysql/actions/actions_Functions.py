@@ -19,6 +19,7 @@ Provides abstractions for common queries and mutations.
 """Function action operations for MySQL CRUD operations on stored procedures"""
 """Execute database operations for function decode caching."""
 """Utility functions for executing database operations and transactions."""
+# Execute stored function actions on database
 # Helper functions for common database operations and transactions
 # Database actions for function signature operations
 # Batch insert operations for performance
