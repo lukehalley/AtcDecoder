@@ -27,6 +27,7 @@ Creates required tables and indexes
 # Initialize DynamoDB tables with appropriate indexes and TTL settings
 # Initialize DynamoDB tables and configure indexes
 """
+# TODO: Add error handling for table creation failures
 # Initialize DynamoDB tables and indexes for ATC data storage
 """Initialize DynamoDB tables for storing decoded transaction data."""
 # Initialize DynamoDB tables with proper schema and indexes
