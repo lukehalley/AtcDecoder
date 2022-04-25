@@ -1,6 +1,11 @@
 from web3 import Web3
 
+from src.db.mysql.querys.querys_Abi import getAbiByDbId
+from src.decode.decode_abi import decode_tx
+from src.decode.decode_api import APIDecode
 from src.decode.decode_db import DBDecode
+from src.decode.decode_offline import OfflineDecode
+
 
 def invoke(event, context):
 
@@ -15,34 +20,29 @@ def invoke(event, context):
     TransactionDetails = web3Instance.eth.get_transaction(TxHash)
 
     # Decode With DB
-    DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = DBDecode(TransactionDetails["input"])
+    DecodeSuccessful, DecodeMsg, DecodeResults = DBDecode(TransactionDetails["input"])
 
-    # if not DecodeSuccessful:
-    #
-    #     # Try Decode With API
-    #     DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = APIDecode(TransactionDetails["input"])
-    #
-    #     if not DecodeSuccessful:
-    #
-    #         # Try Offline Decode
-    #         DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = OfflineDecode(TransactionDetails["input"])
-    #
-    #         if not DecodeSuccessful:
-    #
-    #             # If That Fails Try ABI Decode
-    #             AbiFromDB = getAbiByDbId(ContractAbiDbId)
-    #             Abi = AbiFromDB["abi"]
-    #             DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = decode_tx(ContractHash, TransactionDetails["input"], Abi)
+    if not DecodeSuccessful:
+
+        # Try Decode With API
+        DecodeSuccessful, DecodeMsg, DecodeResults = APIDecode(TransactionDetails["input"])
+
+        # if not DecodeSuccessful:
+        #
+        #     # Try Offline Decode
+        #     DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = OfflineDecode(TransactionDetails["input"])
+
+            # if not DecodeSuccessful:
+            #
+            #     # If That Fails Try ABI Decode
+            #     AbiFromDB = getAbiByDbId(ContractAbiDbId)
+            #     Abi = AbiFromDB["abi"]
+            #     DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = decode_tx(ContractHash, TransactionDetails["input"], Abi)
 
     # Collect Results
     if DecodeSuccessful:
 
-        DecodeBody = {
-            "function": FunctionName,
-            "args": FunctionParams
-        }
-
-        ReturnBody = {"statusCode": 200, "msg": DecodeMsg, "body": DecodeBody}
+        ReturnBody = {"statusCode": 200, "msg": DecodeMsg, "body": DecodeResults}
 
     else:
 
@@ -70,6 +70,7 @@ eth_args = {
 }
 
 # BSC
+# {'amountIn': 10000000000000000000, 'amountOutMin': 10000000000000000000, 'path': 10000000000000000000, 'to': 10000000000000000000, 'deadline': 10000000000000000000}
 bsc_args = {
   "rpc_url": "https://bsc-dataseed.binance.org",
   "tx_hash": "0xa0a60d94026e7b65dcae9bf1addcb85586e358d0fa6f445d87b3d5f3a1953774",
@@ -77,7 +78,16 @@ bsc_args = {
   "contract_abi_db_id": 417
 }
 
-invoke(event=eth_args, context="")
-invoke(event=avax_args, context="")
+# BSC
+arb_args = {
+  "rpc_url": "https://endpoints.omniatech.io/v1/arbitrum/one/public",
+  "tx_hash": "0x2fca3b10522ce652fd29fa76d5b71c517a86f84a3ecd7e2ed730f98d14f493f4",
+  "contract_hash": "0x9dda6ef3d919c9bc8885d5560999a3640431e8e6",
+  "contract_abi_db_id": 417
+}
+
 invoke(event=bsc_args, context="")
+invoke(event=arb_args, context="")
+# invoke(event=avax_args, context="")
+
 

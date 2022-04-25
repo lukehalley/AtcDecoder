@@ -7,13 +7,36 @@ def APIDecode(InputData):
     MethodId = InputData[0:10]
     MethodParams = bytes.fromhex(InputData[10:])
     HexFound, APIResults = SearchHexSignature(MethodId)
+    ResultsToReturn = []
     if HexFound and len(APIResults) > 0:
         for Signature in APIResults["results"]:
             SplitFunction = Signature["text_signature"].split("(")
             FunctionName = SplitFunction[0]
-            FunctionDef = SplitFunction[1].replace(")", "").split(",")
+            FunctionParametersTypes = SplitFunction[1].replace(")", "").split(",")
             try:
-                DecodedInput = abi.decode(FunctionDef, MethodParams)
-                return True, 'DB Decode Success', FunctionName, DecodedInput
+                DecodedInput = abi.decode(FunctionParametersTypes, MethodParams)
+
+                MappedInputs = {}
+                FunctionParametersNames = []
+                for Input in DecodedInput:
+                    i = DecodedInput.index(Input) + 1
+                    ParamName = f"unknown_input_{i}"
+                    MappedInputs[ParamName] = Input
+                    FunctionParametersNames.append(ParamName)
+
+                DecodeObject = {
+                    "FunctionName": FunctionName,
+                    "FunctionParametersNames": FunctionParametersNames,
+                    "FunctionParametersTypes": FunctionParametersTypes,
+                    "DecodedInput": MappedInputs
+                }
+
+                ResultsToReturn.append(DecodeObject)
             except:
-                return False, 'DB Decode Failure', None, None
+                continue
+        if len(ResultsToReturn) > 0:
+            return True, 'DB Decode Success', ResultsToReturn
+        else:
+            return False, 'DB Decode Failure', None
+    else:
+        return False, 'DB Decode Failure', None
