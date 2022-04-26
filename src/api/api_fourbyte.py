@@ -37,6 +37,7 @@ Handles function signature lookups and caching
 # TODO: Implement retry logic for failed requests
 # Fetch function signatures from 4byte.directory service
 # Interface with 4Byte signature database API
+# TODO: Implement caching for fourbyte function signatures
 # Integration with 4byte.directory API for function signature lookup
 """Client for 4byte.directory API to fetch function signatures."""
 # Wrapper for 4byte.directory API for signature and function lookups
