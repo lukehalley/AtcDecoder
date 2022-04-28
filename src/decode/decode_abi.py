@@ -47,6 +47,7 @@ Returns:
 # TODO: Add proper ABI validation for contract signatures
 # TODO: Implement caching for ABI parsing to improve performance
 """
+# Unpack decoded parameters with proper type conversion
 # Parse ABI JSON to extract function signatures and parameters
 # Validate ABI structure before decoding
 # Parse contract ABI for function signature extraction
