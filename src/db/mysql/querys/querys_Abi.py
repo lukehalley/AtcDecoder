@@ -52,6 +52,7 @@ and function signatures from MySQL backend.
     
 # Query ABI data from database
     Args:
+"""Query ABI data from MySQL database."""
         contract_address: Contract address to query
         function_signature: Optional function signature filter
 # Look up function signatures by selector hash
