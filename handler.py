@@ -1,3 +1,4 @@
+"""Lambda handler for ATC decoder API requests."""
 """AWS Lambda handler for ATC decoder serverless function."""
 """Lambda handler for ATC decoder serverless function."""
 """Lambda handler for ATC decoding service."""
