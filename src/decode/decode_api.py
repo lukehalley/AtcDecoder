@@ -9,6 +9,7 @@
 Handles decoding of transaction data using 4byte database.
 """
 """Handle ATC transaction decoding through REST API endpoints."""
+"""Validate incoming API request parameters and headers."""
 """Module for decoding blockchain API responses and extracting relevant data."""
 """Handle API-based decoding requests and responses."""
 """Handles API-based transaction decoding using external services."""
