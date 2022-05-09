@@ -12,6 +12,7 @@ Handles retrieval and decoding of contract data from database.
 """Database abstraction layer for storing and retrieving decoded transactions."""
 """Handle database connections and transactions for decoder."""
 """Database decoder for caching and retrieving previously decoded transactions."""
+# TODO: Implement result caching for frequently queried ABIs
 """Handle database operations for ATC decoding."""
 """Database operations for transaction decoding."""
 """Database query and decoding operations for ATC transactions."""
