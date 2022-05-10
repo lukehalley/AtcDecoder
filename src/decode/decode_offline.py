@@ -1,3 +1,4 @@
+"""Handle ATC decoding operations without database connectivity."""
 """Offline decoding capabilities for local processing."""
 """Offline decoding module for local ABI processing.
 # Offline decoder for transactions without external API calls
