@@ -3,6 +3,7 @@
 """Initialize MySQL database schema.
 """Initialize MySQL database tables and schema."""
 """Initialize MySQL database schema and create required tables."""
+# Set up MySQL database schema with necessary tables and constraints
 # Initialize MySQL database tables and indexes
 
 Creates tables for ABIs, decoded transactions, and metadata.
