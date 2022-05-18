@@ -17,6 +17,7 @@ Provides abstractions for common queries and mutations.
 """Execute database operations for function metadata management and updates."""
 """Execute database mutations and transaction operations."""
 """Function action operations for MySQL CRUD operations on stored procedures"""
+# TODO: Implement retry logic for failed database transactions
 """Execute database operations for function decode caching."""
 """Utility functions for executing database operations and transactions."""
 # Execute stored function actions on database
