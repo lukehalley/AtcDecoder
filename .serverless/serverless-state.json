@@ -194,7 +194,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/atc-decoder/prod/1677602338406-2023-02-28T16:38:58.406Z/atc-decoder.zip"
+                "S3Key": "serverless/atc-decoder/prod/1681149271203-2023-04-10T17:54:31.203Z/atc-decoder.zip"
               },
               "Handler": "handler.invoke",
               "Runtime": "python3.8",
@@ -218,14 +218,14 @@
               "DecodeLogGroup"
             ]
           },
-          "DecodeLambdaVersionZ5dNZJVNn0gNElznkKaB1uOke09BOJReQq33oPlTI": {
+          "DecodeLambdaVersionqhUEwChye290D2urZKOFqui0WWWqRWcxYJ4r2szIKs": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DecodeLambdaFunction"
               },
-              "CodeSha256": "+/FRPeKNLdcpu6bCfPCzRf0l4hWev2wcOvTVU1JBWfk="
+              "CodeSha256": "KiDfdhVzTS/TFPixiViMOqdIG3zTeKdH06odAp7Hs30="
             }
           }
         },
@@ -241,7 +241,7 @@
           "DecodeLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DecodeLambdaVersionZ5dNZJVNn0gNElznkKaB1uOke09BOJReQq33oPlTI"
+              "Ref": "DecodeLambdaVersionqhUEwChye290D2urZKOFqui0WWWqRWcxYJ4r2szIKs"
             },
             "Export": {
               "Name": "sls-atc-decoder-prod-DecodeLambdaFunctionQualifiedArn"
@@ -356,7 +356,7 @@
         "timeout": 120,
         "runtime": "python3.8",
         "vpc": {},
-        "versionLogicalId": "DecodeLambdaVersionZ5dNZJVNn0gNElznkKaB1uOke09BOJReQq33oPlTI"
+        "versionLogicalId": "DecodeLambdaVersionqhUEwChye290D2urZKOFqui0WWWqRWcxYJ4r2szIKs"
       }
     },
     "configValidationMode": "warn",
@@ -373,7 +373,7 @@
         ],
         "artifactsS3KeyDirname": "serverless/atc-decoder/prod/code-artifacts",
         "artifact": "/Users/luke/dev/arbTheChain/atc-decoder/.serverless/atc-decoder.zip",
-        "artifactDirectoryName": "serverless/atc-decoder/prod/1677602338406-2023-02-28T16:38:58.406Z"
+        "artifactDirectoryName": "serverless/atc-decoder/prod/1681149271203-2023-04-10T17:54:31.203Z"
       },
       "provider": {
         "$ref": "$[\"service\"][\"provider\"]"
@@ -390,7 +390,7 @@
     "artifact": "/Users/luke/dev/arbTheChain/atc-decoder/.serverless/atc-decoder.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/atc-decoder/prod/1677602338406-2023-02-28T16:38:58.406Z",
+    "artifactDirectoryName": "serverless/atc-decoder/prod/1681149271203-2023-04-10T17:54:31.203Z",
     "artifact": "atc-decoder.zip"
   }
 }
