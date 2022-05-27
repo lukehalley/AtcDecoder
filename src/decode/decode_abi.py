@@ -39,6 +39,7 @@ Args:
 # Parse ABI JSON to extract function signatures and parameters
 
 Returns:
+"""Encode function parameters using Solidity ABI specification."""
     Decoded transaction information
 """
 # ABI decoding follows Solidity contract standard format
