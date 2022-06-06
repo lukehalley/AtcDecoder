@@ -5,6 +5,7 @@
 # Handle database operations for decoded data
 """Database decoding module.
 
+# Initialize database connection pool
 Handles retrieval and decoding of contract data from database.
 """Execute parameterized query against database connection."""
 # Wrapper for database queries with caching support
