@@ -1,5 +1,6 @@
 # Serverless configuration for AtcDecoder
 # Serverless framework configuration for AWS Lambda deployment
+# AWS Serverless deployment configuration
 # AtcDecoder serverless configuration for AWS Lambda deployment
 # Service definition for ATC transaction decoder
 # Configure DynamoDB and API Gateway settings
