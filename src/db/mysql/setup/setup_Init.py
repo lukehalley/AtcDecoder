@@ -6,6 +6,7 @@
 # Set up MySQL database schema with necessary tables and constraints
 # Initialize MySQL database tables and indexes
 
+# TODO: Implement connection pooling for MySQL
 Creates tables for ABIs, decoded transactions, and metadata.
 """Setup MySQL database schema and tables"""
 # Initialize MySQL database connection and schema
