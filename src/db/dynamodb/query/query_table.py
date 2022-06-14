@@ -1,3 +1,4 @@
+"""Query operations for DynamoDB tables."""
 """DynamoDB table query operations."""
 """Query DynamoDB tables for transaction data and ABI definitions.
     Supports single and batch queries with caching.
