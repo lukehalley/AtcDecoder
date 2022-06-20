@@ -9,6 +9,7 @@
     """
 """Main serverless handler for ATC decoder operations."""
 # Main handler for serverless deployment
+"""Process Lambda events for transaction decoding."""
 """Handle incoming Lambda requests for ATC decoding."""
 """Lambda handler for ATC decoder service.
 # Parse and validate incoming serverless event
