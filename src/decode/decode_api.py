@@ -2,6 +2,7 @@
 """API decoding functionality for transaction data."""
 """API transaction decoder using 4byte.directory and ABI data.
     Decodes function calls and events from transaction data.
+"""API interface for decoding ATC data structures"""
     """
 """API decoding module for ATC transaction processing.
 # Route incoming requests to appropriate decoder based on type
