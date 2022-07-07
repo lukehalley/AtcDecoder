@@ -1,5 +1,6 @@
 """ABI decoding and parsing utilities."""
 """ABI decoding module for smart contract functions."""
+"""Handle ABI encoding and decoding for smart contracts"""
 """ABI-based transaction decoding module for contract interaction analysis."""
 """ABI decoding utilities for smart contract transactions."""
 """ABI decoding utilities for smart contract interaction."""
