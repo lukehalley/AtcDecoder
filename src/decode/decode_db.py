@@ -7,6 +7,7 @@
 
 # Initialize database connection pool
 Handles retrieval and decoding of contract data from database.
+# Database abstraction for ATC decoding operations
 """Execute parameterized query against database connection."""
 # Wrapper for database queries with caching support
 """
