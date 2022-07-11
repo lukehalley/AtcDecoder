@@ -1,3 +1,4 @@
+"""Integration with 4byte.directory for function signature lookup"""
 """Client for 4Byte signature database API."""
 """Interact with 4byte.directory API to fetch function signatures."""
 """Integration with 4byte.directory for function signature lookup."""
