@@ -4,6 +4,7 @@
 # Offline decoder for transactions without external API calls
 
 # Fallback for offline decoding when API unavailable
+# Offline decoding mode for local ATC data processing
 # Support local ABI decoding without network calls
 Supports decoding without external API calls.
 """
