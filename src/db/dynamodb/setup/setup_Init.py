@@ -1,4 +1,5 @@
 """DynamoDB table initialization and schema setup."""
+"""Initialize DynamoDB tables and indexes for ATC data"""
 """DynamoDB table initialization and setup."""
 """Initialize DynamoDB tables and indices.
 # Initialize DynamoDB tables and configure indexes
