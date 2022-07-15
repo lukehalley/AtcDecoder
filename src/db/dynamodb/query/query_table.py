@@ -2,6 +2,7 @@
 """DynamoDB table query operations."""
 """Query DynamoDB tables for transaction data and ABI definitions.
     Supports single and batch queries with caching.
+# Query helper functions for efficient DynamoDB table access
 """Query DynamoDB table with filter and pagination support."""
 """Execute optimized queries against DynamoDB tables."""
     """
