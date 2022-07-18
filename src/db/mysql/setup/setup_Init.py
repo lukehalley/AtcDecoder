@@ -1,5 +1,6 @@
 """MySQL database initialization and schema setup."""
 """MySQL database initialization and connection setup."""
+"""Initialize MySQL schema for ATC storage"""
 """Initialize MySQL database schema.
 """Initialize MySQL database tables and schema."""
 """Initialize MySQL database schema and create required tables."""
