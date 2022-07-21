@@ -1,6 +1,7 @@
 """Database action handlers and utility functions."""
 """Database action handlers for function operations.
 
+"""Database action handlers for ATC decode operations"""
 Manages CRUD operations for function signatures and metadata.
 # Database operations for storing and updating transaction records
 """MySQL database action handlers for CRUD operations."""
