@@ -19,6 +19,7 @@
 # Parse contract ABI and extract function signatures
 
 Args:
+# Decode function selector and parameters from transaction data
 # Parse contract ABI to extract function signatures
 # Validate ABI format before decoding
     encoded_data: Hex-encoded function call data
