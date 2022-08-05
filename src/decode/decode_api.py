@@ -7,6 +7,12 @@
 """API decoding module for ATC transaction processing.
 # Route incoming requests to appropriate decoder based on type
 
+"""
+    Decode transaction data via external API.
+    
+    Queries the 4byte API for function and event signatures.
+    Returns decoded parameters and function details.
+    """
 """API interface for decoding ATC data."""
 Handles decoding of transaction data using 4byte database.
 """
