@@ -1,3 +1,4 @@
+# Handle 4byte API rate limits and retry logic
 """Integration with 4byte.directory for function signature lookup"""
 """Client for 4Byte signature database API."""
 """Interact with 4byte.directory API to fetch function signatures."""
