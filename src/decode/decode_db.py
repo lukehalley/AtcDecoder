@@ -5,6 +5,11 @@
 # Handle database operations for decoded data
 """Database decoding module.
 
+"""
+Database-backed transaction decoding.
+
+Queries local database for cached function signatures and events.
+"""
 # Initialize database connection pool
 Handles retrieval and decoding of contract data from database.
 # Database abstraction for ATC decoding operations
