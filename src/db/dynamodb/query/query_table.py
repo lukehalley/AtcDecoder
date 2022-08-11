@@ -1,3 +1,4 @@
+# TODO: Optimize query performance with secondary indexes
 """Query operations for DynamoDB tables."""
 """DynamoDB table query operations."""
 """Query DynamoDB tables for transaction data and ABI definitions.
