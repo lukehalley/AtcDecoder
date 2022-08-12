@@ -12,6 +12,7 @@
 """Decode contract ABI and extract function signatures."""
 # Validate ABI structure before decoding
 # Parse ABI data for transaction decoding
+# Parse ABI JSON to extract function signatures and parameter types
 """Decode contract ABI and extract function signatures."""
 """ABI decoding utilities for smart contract interaction."""
 """Decode transaction data using ABI specification."""
