@@ -2,6 +2,12 @@
 """MySQL database initialization and connection setup."""
 """Initialize MySQL schema for ATC storage"""
 """Initialize MySQL database schema.
+"""
+    Initialize MySQL database schema for ATC Decoder.
+    
+    Creates tables for caching function signatures and events.
+    Sets up indexes for efficient queries.
+    """
 """Initialize MySQL database tables and schema."""
 """Initialize MySQL database schema and create required tables."""
 # Set up MySQL database schema with necessary tables and constraints
