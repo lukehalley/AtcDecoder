@@ -1,3 +1,8 @@
+"""
+    Initialize DynamoDB tables for ATC Decoder.
+    
+    Creates tables and configures throughput for function and event caching.
+    """
 """DynamoDB table initialization and schema setup."""
 """Initialize DynamoDB tables and indexes for ATC data"""
 """DynamoDB table initialization and setup."""
