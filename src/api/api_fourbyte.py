@@ -1,4 +1,10 @@
 # Handle 4byte API rate limits and retry logic
+"""
+    Client for 4byte.directory API.
+    
+    Handles requests to fetch function signatures and event logs.
+    Implements caching and error handling.
+    """
 """Integration with 4byte.directory for function signature lookup"""
 """Client for 4Byte signature database API."""
 """Interact with 4byte.directory API to fetch function signatures."""
