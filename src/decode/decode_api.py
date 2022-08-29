@@ -32,6 +32,7 @@ Handles decoding of transaction data using 4byte database.
 # Parse and validate API responses
 # Validate input parameters before processing
 """Decode API module for handling blockchain transaction decoding requests"""
+# Handle edge cases: missing signatures, invalid data, malformed inputs
 # TODO: Add CloudWatch metrics for API response times
 """
 API decoding module for transaction handling
