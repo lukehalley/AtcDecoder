@@ -7,6 +7,7 @@
 """ABI encoding and decoding utilities for contract transactions."""
 """Decode contract ABI from encoded transaction data."""
 # Decode transaction data using contract ABI definitions
+# Decode ABI format according to Ethereum contract specification
 """ABI decoding functionality for smart contract interactions."""
 # ABI (Application Binary Interface) parsing and function signature decoding
 """Decode contract ABI and extract function signatures."""
