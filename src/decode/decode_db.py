@@ -1,5 +1,6 @@
 """Database abstraction layer for multi-backend support."""
 """Database-backed transaction decoder.
+"""Handle database connection and query execution for decoded data."""
     Retrieves and applies ABI definitions from persistent storage.
     """
 # Handle database operations for decoded data
