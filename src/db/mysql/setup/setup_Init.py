@@ -4,6 +4,7 @@
 """Initialize MySQL database schema.
 """
     Initialize MySQL database schema for ATC Decoder.
+# Create MySQL tables and indexes for ATC data storage
     
     Creates tables for caching function signatures and events.
     Sets up indexes for efficient queries.
