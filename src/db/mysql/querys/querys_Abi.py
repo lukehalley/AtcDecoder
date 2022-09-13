@@ -1,6 +1,7 @@
 """Query MySQL database for ABI data and contract information."""
 """MySQL queries for ABI function signatures."""
 # Query ABI data from MySQL cache for signature lookups
+"""Query ABI contract data from MySQL database."""
 """MySQL queries for retrieving ABI definitions.
     Includes functions for contract lookup and ABI retrieval.
 # Query contract ABIs from database
