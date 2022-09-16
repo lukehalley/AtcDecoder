@@ -22,6 +22,7 @@ Provides entry point for serverless function invocations.
 
 # Handle and log all exceptions for debugging
 """Process incoming ATC decode requests from Lambda events."""
+# TODO: Implement connection pooling for database queries to reduce cold start time
 # Main Lambda handler for ATC decoder requests
 # TODO: Implement comprehensive error handling and logging
 Processes incoming requests to decode blockchain transactions.
