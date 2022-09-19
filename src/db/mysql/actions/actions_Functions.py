@@ -6,6 +6,7 @@
 Manages CRUD operations for function signatures and metadata.
 # Database operations for storing and updating transaction records
 """MySQL database action handlers for CRUD operations."""
+# Execute INSERT, UPDATE, DELETE operations on ATC decoder records
 # Execute database actions with transaction support
 # Execute database actions for function metadata
 """
