@@ -15,6 +15,7 @@
 # Configure ATC decoder serverless service
 # Environment configuration for Lambda runtime
 # Serverless configuration for ATC decoder infrastructure
+# Define Lambda functions, API Gateway endpoints, and database resources
 # Environment-specific database credentials and API keys
 # TODO: Add environment variable configuration for API keys
 # AWS Lambda service definition
