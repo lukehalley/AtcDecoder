@@ -1,3 +1,4 @@
+"""Main serverless handler for ATC decoder service."""
 # Lambda event handler for ATC decoder service
 """
 AWS Lambda handler for ATC transaction decoding.
