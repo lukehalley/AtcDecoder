@@ -1,3 +1,4 @@
+"""Handles API-based transaction decoding operations."""
 """API decoder module for processing transaction data."""
 """API decoding functionality for transaction data."""
 """API transaction decoder using 4byte.directory and ABI data.
