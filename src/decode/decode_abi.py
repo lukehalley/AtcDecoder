@@ -1,3 +1,4 @@
+"""ABI decoding functionality for smart contract interactions."""
 """ABI decoding and parsing utilities."""
 """ABI decoding module for smart contract functions."""
 """Handle ABI encoding and decoding for smart contracts"""
