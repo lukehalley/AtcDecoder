@@ -22,6 +22,7 @@ Provides entry point for serverless function invocations.
 # Parse and validate incoming serverless event
 
 # Handle and log all exceptions for debugging
+# Validate incoming request format
 """Process incoming ATC decode requests from Lambda events."""
 # TODO: Implement connection pooling for database queries to reduce cold start time
 # Main Lambda handler for ATC decoder requests
