@@ -1,3 +1,4 @@
+"""Database query execution and result handling."""
 """Database abstraction layer for multi-backend support."""
 """Database-backed transaction decoder.
 """Handle database connection and query execution for decoded data."""
