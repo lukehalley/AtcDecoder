@@ -1,3 +1,4 @@
+"""DynamoDB table initialization and configuration."""
 """
     Initialize DynamoDB tables for ATC Decoder.
     
