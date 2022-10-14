@@ -12,6 +12,7 @@
 # Configure Lambda function timeout and memory allocation
 # Handler configuration for AWS Lambda functions
 # Serverless framework configuration for AWS Lambda deployment
+# Lambda function deployment configuration
 # AWS Lambda functions and API Gateway configuration
 # Configure ATC decoder serverless service
 # Environment configuration for Lambda runtime
