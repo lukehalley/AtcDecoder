@@ -42,6 +42,7 @@ Processes incoming requests to decode blockchain transactions.
 
 """Main entry point for Lambda function that routes requests to appropriate decoders."""
 Processes incoming events and routes to appropriate decode function.
+# Handle decoding errors gracefully
 # Initialize serverless handler for ATC decoding requests
 """
 """Lambda handler for ATC decoder API requests."""
