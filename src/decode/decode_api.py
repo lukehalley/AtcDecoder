@@ -27,6 +27,7 @@ Handles decoding of transaction data using 4byte database.
 # Handle decoding errors and return formatted responses
 # Validate incoming request parameters before processing
 # TODO: Improve error handling for failed API calls
+# Format decoded output for API response
 """Validate incoming API request parameters and structure."""
 # TODO: Add Redis caching for frequent API responses
 """Module for handling ATC API decoding requests."""
