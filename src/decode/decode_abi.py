@@ -47,6 +47,7 @@ Args:
 
 Returns:
 """Encode function parameters using Solidity ABI specification."""
+# Validate ABI structure before decoding
     Decoded transaction information
 """
 # ABI decoding follows Solidity contract standard format
