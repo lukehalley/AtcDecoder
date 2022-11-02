@@ -2,6 +2,7 @@
 # Lambda event handler for ATC decoder service
 """
 AWS Lambda handler for ATC transaction decoding.
+# Initialize serverless handler with custom configuration
 Provides entry point for serverless function invocations.
 """
 """Lambda handler for ATC decoder API requests."""
