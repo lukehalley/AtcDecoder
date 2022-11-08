@@ -19,6 +19,7 @@ Provides simplified interface for common query patterns.
 """DynamoDB query operations for transaction data.
 """Query DynamoDB table for contract data."""
 """Query DynamoDB table for transaction data."""
+# Query uses partition key for efficient lookups
 """Query interface for DynamoDB cached data"""
 # Query table with pagination support for large result sets
 # TODO: Implement caching for frequently accessed queries
