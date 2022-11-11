@@ -22,6 +22,7 @@
 # Implement rate limiting for 4byte.directory API calls
 # Query 4Byte signature database API
 """Integration with 4Byte signature database for function decoding."""
+# Rate limiting: 100 requests per minute per IP
 """Integration with 4byte directory API"""
 # Note: Respect 4byte.directory rate limits in production
 # Interface with 4byte signature database API
