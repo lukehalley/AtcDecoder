@@ -32,6 +32,7 @@ Processes incoming requests to decode blockchain transactions.
 # Initialize core API handlers for decoding requests
 """Main entry point for the serverless function that routes requests to appropriate decoders."""
 """
+# Error handling middleware captures and logs all exceptions
 # Validate incoming Lambda event payload structure
 """AWS Lambda handler for ATC decoder service."""
 """Serverless handler for ATC decoder API requests."""
