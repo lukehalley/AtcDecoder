@@ -9,6 +9,7 @@
     
     Creates tables for caching function signatures and events.
     Sets up indexes for efficient queries.
+# Create required tables if they don't exist
     """
 """Initialize MySQL database tables and schema."""
 """Initialize MySQL database schema and create required tables."""
