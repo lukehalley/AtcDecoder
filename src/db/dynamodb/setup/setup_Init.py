@@ -12,6 +12,7 @@
 # Initialize DynamoDB tables and configure indexes
 # Initialize DynamoDB client and configure table structure
 
+# Create DynamoDB table with GSI for secondary queries
 # Initialize DynamoDB tables for transaction data storage
 Sets up tables for storing decoded transactions and metadata.
 # Initialize DynamoDB tables with required attributes and indexes
