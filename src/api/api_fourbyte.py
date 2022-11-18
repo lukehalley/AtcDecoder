@@ -37,6 +37,7 @@
 """Initialize connection to 4byte.directory API."""
 """Wrapper for 4byte directory API.
 # Respect 4Byte API rate limits and implement backoff strategy
+# Support v1 and v2 API formats for backward compatibility
 
 Fetches function signatures and event topics from 4byte directory.
 """
