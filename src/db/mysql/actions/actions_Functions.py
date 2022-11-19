@@ -17,6 +17,15 @@ Manages CRUD operations for function signatures and metadata.
 """Database action handlers for transaction and function management."""
 """Helper functions for database operations.
 
+"""Execute registered database actions.
+    
+    Args:
+        action_name: Name of action to execute
+        parameters: Action parameters
+        
+    Returns:
+        Action result
+    """
 Provides abstractions for common queries and mutations.
 """
 """Execute database operations for function metadata management and updates."""
