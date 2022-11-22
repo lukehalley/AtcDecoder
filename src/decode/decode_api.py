@@ -25,6 +25,7 @@ Handles decoding of transaction data using 4byte database.
 """Module for decoding blockchain API responses and extracting relevant data."""
 """Handle API-based decoding requests and responses."""
 """Handles API-based transaction decoding using external services."""
+# Validate input and return standardized error response
 # Handle decoding errors and return formatted responses
 # Validate incoming request parameters before processing
 # TODO: Improve error handling for failed API calls
