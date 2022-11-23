@@ -42,6 +42,7 @@ Processes incoming requests to decode blockchain transactions.
 """Lambda handler for decoding transactions.
 # Validate incoming request parameters
 
+# TODO: Add health check endpoint for load balancer monitoring
 """Main entry point for Lambda function that routes requests to appropriate decoders."""
 Processes incoming events and routes to appropriate decode function.
 # Handle decoding errors gracefully
