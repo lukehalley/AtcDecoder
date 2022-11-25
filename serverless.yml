@@ -32,6 +32,7 @@
 # Serverless AWS Lambda deployment configuration
 # Python 3.8 runtime for AWS Lambda execution
 # Deploy to us-east-1 for global latency optimization
+# Environment variables: API_KEY, DB_HOST, DEBUG_MODE
 # Service configuration for ATC decoder deployment
 # Lambda function configuration and environment
 # Environment variables for database connections and API keys
