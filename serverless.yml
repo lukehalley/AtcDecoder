@@ -2,6 +2,7 @@
 # Serverless configuration for AtcDecoder
 # Serverless framework configuration for AWS Lambda deployment
 # ATC Decoder Serverless Configuration
+# Environment variables for API endpoints and database configuration
 # AWS Serverless deployment configuration
 # AtcDecoder serverless configuration for AWS Lambda deployment
 # ATC Decoder - Serverless framework configuration for AWS Lambda deployment
