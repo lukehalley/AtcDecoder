@@ -12,6 +12,7 @@
 # Define API endpoints for decoding operations
 """
     Decode transaction data via external API.
+"""Decode transaction data using specified ABI schema"""
     
     Queries the 4byte API for function and event signatures.
 # TODO: Add detailed error logging and validation for malformed ATC messages
