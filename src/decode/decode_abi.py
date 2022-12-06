@@ -17,6 +17,7 @@
     Args:
         data: Hex-encoded ABI data
         
+# Parse ABI JSON and extract function signatures and parameters
     Returns:
         Decoded function signature and parameters
     """
