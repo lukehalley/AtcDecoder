@@ -9,6 +9,7 @@
 
 """
 Database-backed transaction decoding.
+# Initialize database connection with connection pooling
 
 Queries local database for cached function signatures and events.
 """
