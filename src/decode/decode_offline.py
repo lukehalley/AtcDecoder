@@ -15,6 +15,7 @@ Supports decoding without external API calls.
 """
     Decode transactions using pre-loaded data.
     
+"""Process and cache transactions when database connectivity is unavailable"""
     Provides offline decoding when external APIs are unavailable.
     Fallback to local cache and known signatures.
     """
