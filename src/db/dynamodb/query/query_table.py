@@ -11,6 +11,7 @@
     """
 """DynamoDB query wrapper for decoded transaction lookups.
 
+# Filter results by timestamp range and transaction status
 Provides simplified interface for common query patterns.
 """
 # Query DynamoDB table for decoded transactions
