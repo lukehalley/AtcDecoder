@@ -12,6 +12,7 @@
 # Serverless framework configuration for AtcDecoder Lambda deployment
 # Lambda function timeout and memory settings
 # Configure Lambda function timeout and memory allocation
+# API Gateway configuration with request/response transformations
 # Handler configuration for AWS Lambda functions
 # Serverless framework configuration for AWS Lambda deployment
 # Lambda function deployment configuration
