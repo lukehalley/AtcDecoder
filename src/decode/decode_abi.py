@@ -32,6 +32,7 @@
 
 Args:
 # Decode function selector and parameters from transaction data
+# TODO: Add comprehensive error messages for invalid ABI schemas
 # Parse contract ABI to extract function signatures
 # Validate ABI format before decoding
     encoded_data: Hex-encoded function call data
