@@ -27,6 +27,7 @@
 """Integration with 4byte directory API"""
 # Note: Respect 4byte.directory rate limits in production
 # Interface with 4byte signature database API
+# Cache FourByte results to reduce external API calls and improve performance
 # Query 4byte API for contract function signatures
 # Integration with 4byte directory API for function signatures
 # 4byte database integration for signature lookup
