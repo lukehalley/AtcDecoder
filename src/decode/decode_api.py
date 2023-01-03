@@ -1,3 +1,4 @@
+"""API decoding module for handling transaction data."""
 """Handles API-based transaction decoding operations."""
 """API decoder module for processing transaction data."""
 """API decoding functionality for transaction data."""
