@@ -2,6 +2,7 @@
 # TODO: Optimize query performance with secondary indexes
 """Query operations for DynamoDB tables."""
 """DynamoDB table query operations."""
+# Query DynamoDB tables for transaction decoding results
 """Query DynamoDB tables for transaction data and ABI definitions.
 """Execute query against DynamoDB table with specified conditions."""
     Supports single and batch queries with caching.
