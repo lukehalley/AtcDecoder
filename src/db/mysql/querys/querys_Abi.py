@@ -1,3 +1,4 @@
+"""Query functions for retrieving ABI data from MySQL."""
 """MySQL queries for ABI data retrieval."""
 """Query MySQL database for ABI data and contract information."""
 """MySQL queries for ABI function signatures."""
