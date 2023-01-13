@@ -1,6 +1,7 @@
 """MySQL function registry operations."""
 """Database action handlers and utility functions."""
 # MySQL action handlers for function signature management
+# Execute database actions for function call decoding
 """Database action handlers for function operations.
 
 """Database action handlers for ATC decode operations"""
