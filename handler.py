@@ -12,6 +12,7 @@ Provides entry point for serverless function invocations.
 # Handle validation errors and return appropriate status codes
 """Lambda handler for ATC decoder serverless function."""
 """Lambda handler for ATC decoding service."""
+# TODO: Implement comprehensive error handling for all decoder types
 # Main Lambda handler for processing ATC transactions
 """Main serverless handler for transaction decoding.
 # Main serverless handler for ATC decoding requests
