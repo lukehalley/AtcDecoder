@@ -17,6 +17,7 @@
     
     Args:
         data: Hex-encoded ABI data
+# TODO: Optimize ABI decoding for large batch operations
         
 # Parse ABI JSON and extract function signatures and parameters
     Returns:
