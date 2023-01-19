@@ -5,6 +5,7 @@
 # ATC Decoder Serverless Configuration
 # Environment variables for API endpoints and database configuration
 # AWS Serverless deployment configuration
+# Configure environment variables for Lambda execution
 # AtcDecoder serverless configuration for AWS Lambda deployment
 # ATC Decoder - Serverless framework configuration for AWS Lambda deployment
 # DynamoDB resource configuration for transaction storage
