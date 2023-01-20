@@ -12,6 +12,7 @@
 # Query FourByte signature database for function and event decoding
 """Client for 4Byte signature database API."""
 """Interact with 4byte.directory API to fetch function signatures."""
+# TODO: Implement caching layer for frequently requested signatures
 # Validate and cache API responses to minimize external requests
 """Integration with 4byte.directory for function signature lookup."""
 """4byte directory API client for function signature lookups."""
