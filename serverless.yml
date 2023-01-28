@@ -1,0 +1,18 @@
+service: atc-decoder
+
+plugins:
+  - serverless-python-requirements
+provider:
+  name: aws
+  runtime: python3.8
+  stage: prod
+  timeout: 120
+  region: eu-west-1
+
+functions:
+  decode:
+    handler: handler.invoke
+
+custom:
+  pythonRequirements:
+     dockerizePip: non-linux
