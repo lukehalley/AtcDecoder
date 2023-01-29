@@ -1,6 +1,7 @@
-import json
 from web3 import Web3
-from src.decode import decode_tx
+
+from src.db.querys.querys_Abi import getAbiByDbId
+from src.decode.decode import decode_tx
 
 
 def invoke(event, context):
@@ -9,7 +10,11 @@ def invoke(event, context):
     RPCUrl = event["rpc_url"]
     TxHash = event["tx_hash"]
     ContractHash = event["contract_hash"]
-    ContractAbi = json.dumps(event["contract_abi"])
+    ContractAbiDbId = int(event["contract_db_id"])
+
+    # Get ABI From DB
+    AbiFromDB = getAbiByDbId(ContractAbiDbId)
+    Abi = AbiFromDB["abi"]
 
     # Connect To RPC
     web3Instance = Web3(Web3.HTTPProvider(RPCUrl))
@@ -17,12 +22,8 @@ def invoke(event, context):
     # Get Transaction
     TransactionDetails = web3Instance.eth.get_transaction(TxHash)
 
-    # Load Contract ABI
-    LoadedABI = json.loads(ContractAbi)
-    MinifiedAbi = json.dumps(LoadedABI, separators=(',', ':'))
-
     # Invoke Decode
-    DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams, TargetSchema = decode_tx(ContractHash, TransactionDetails["input"], MinifiedAbi)
+    DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams, TargetSchema = decode_tx(ContractHash, TransactionDetails["input"], Abi)
 
     # Collect Results
     if DecodeSuccessful:
@@ -41,3 +42,12 @@ def invoke(event, context):
 
 
     return ReturnBody
+
+# args = {
+#   "rpc_url": "https://rpc.ankr.com/eth",
+#   "tx_hash": "0xe71ee019cf81ae09fa237b0a1f066695b4757e3bceca4da0f524b55d5ba4aefa",
+#   "contract_hash": "0xEfF92A263d31888d860bD50809A8D171709b7b1c",
+#   "contract_db_id": 339
+# }
+#
+# invoke(event=args, context="")
