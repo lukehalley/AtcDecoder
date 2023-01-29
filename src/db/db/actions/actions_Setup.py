@@ -1,14 +1,15 @@
+import json
 import os
 
 import mysql.connector
+from aws_lambda_powertools.utilities import parameters
 from mysql.connector import errorcode
-
-from src.utils.env.env_AWSSecrets import getAWSSecret
 
 def initDBConnection():
 
-    DB_USER = getAWSSecret("username")
-    DB_PASSWORD = getAWSSecret("password")
+    DB_SECRET = json.loads(parameters.get_secret("ATC_DB_Credentials"))
+    DB_USER = DB_SECRET["username"]
+    DB_PASSWORD = DB_SECRET["password"]
     DB_ENDPOINT = os.getenv("DB_ENDPOINT")
     DB_NAME = os.getenv("DB_NAME")
 

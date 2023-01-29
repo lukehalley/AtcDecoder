@@ -133,6 +133,17 @@
                       "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/atc-decoder-prod*:*:*"
                     }
                   ]
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "secretsmanager:GetResourcePolicy",
+                    "secretsmanager:GetSecretValue",
+                    "secretsmanager:DescribeSecret",
+                    "secretsmanager:ListSecretVersionIds",
+                    "secretsmanager:ListSecrets"
+                  ],
+                  "Resource": "arn:aws:secretsmanager:eu-west-1:538602529242:secret:ATC_DB_Credentials-JDGF0w"
                 }
               ]
             }
@@ -161,13 +172,19 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/atc-decoder/prod/1674995325519-2023-01-29T12:28:45.519Z/atc-decoder.zip"
+          "S3Key": "serverless/atc-decoder/prod/1675003025870-2023-01-29T14:37:05.870Z/atc-decoder.zip"
         },
         "Handler": "handler.invoke",
         "Runtime": "python3.8",
         "FunctionName": "atc-decoder-prod-decode",
         "MemorySize": 1024,
         "Timeout": 120,
+        "Environment": {
+          "Variables": {
+            "DB_NAME": "atc",
+            "DB_ENDPOINT": "atcdbinstance.castyrwvsdr7.eu-west-1.rds.amazonaws.com"
+          }
+        },
         "Role": {
           "Fn::GetAtt": [
             "IamRoleLambdaExecution",
@@ -179,14 +196,14 @@
         "DecodeLogGroup"
       ]
     },
-    "DecodeLambdaVersionBoHAcFQ8wR7tlkWVpscewdiz4dTpyqTPzkHAkLUMESI": {
+    "DecodeLambdaVersion5dcw8MmjgVnfX2ES9m3dMHMek7mKz8kXtl83NgwRGCs": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DecodeLambdaFunction"
         },
-        "CodeSha256": "ve9/BBkrIM6mQHbBAhLunmLC/4BTMY+M2NYfgL9G/Mg="
+        "CodeSha256": "mOyKP8JwCViLryw6UxPs1PA3asZ0WCcDdKx763SsG0Y="
       }
     }
   },
@@ -202,7 +219,7 @@
     "DecodeLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DecodeLambdaVersionBoHAcFQ8wR7tlkWVpscewdiz4dTpyqTPzkHAkLUMESI"
+        "Ref": "DecodeLambdaVersion5dcw8MmjgVnfX2ES9m3dMHMek7mKz8kXtl83NgwRGCs"
       },
       "Export": {
         "Name": "sls-atc-decoder-prod-DecodeLambdaFunctionQualifiedArn"
