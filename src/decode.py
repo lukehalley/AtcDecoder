@@ -11,7 +11,7 @@ def decode_tuple(t, target_field):
     for i in range(len(t)):
         if isinstance(t[i], (bytes, bytearray)):
             output[target_field[i]['name']] = to_hex(t[i])
-        elif isinstance(t[i], (tuple)):
+        elif isinstance(t[i], tuple):
             output[target_field[i]['name']] = decode_tuple(t[i], target_field[i]['components'])
         else:
             output[target_field[i]['name']] = t[i]
@@ -43,14 +43,14 @@ def convert_to_hex(arg, target_schema):
     for k in arg:
         if isinstance(arg[k], (bytes, bytearray)):
             output[k] = to_hex(arg[k])
-        elif isinstance(arg[k], (list)) and len(arg[k]) > 0:
+        elif isinstance(arg[k], list) and len(arg[k]) > 0:
             target = [a for a in target_schema if 'name' in a and a['name'] == k][0]
             if target['type'] == 'tuple[]':
                 target_field = target['components']
                 output[k] = decode_list_tuple(arg[k], target_field)
             else:
                 output[k] = decode_list(arg[k])
-        elif isinstance(arg[k], (tuple)):
+        elif isinstance(arg[k], tuple):
             target_field = [a['components'] for a in target_schema if 'name' in a and a['name'] == k][0]
             output[k] = decode_tuple(arg[k], target_field)
         else:
@@ -64,11 +64,11 @@ def _get_contract(address, abi):
     This helps speed up execution of decoding across a large dataset by caching the contract object
     It assumes that we are decoding a small set, on the order of thousands, of target smart contracts
     """
-    if isinstance(abi, (str)):
+    if isinstance(abi, str):
         abi = json.loads(abi)
 
     contract = w3.eth.contract(address=Web3.toChecksumAddress(address), abi=abi)
-    return (contract, abi)
+    return contract, abi
 
 
 def decode_tx(address, input_data, abi):
@@ -78,9 +78,9 @@ def decode_tx(address, input_data, abi):
             func_obj, func_params = contract.decode_function_input(input_data)
             target_schema = [a['inputs'] for a in abi if 'name' in a and a['name'] == func_obj.fn_name][0]
             decoded_func_params = convert_to_hex(func_params, target_schema)
-            return (func_obj.fn_name, json.dumps(decoded_func_params), json.dumps(target_schema))
+            return True, 'Decode Success', func_obj.fn_name, decoded_func_params, target_schema
         except:
             e = sys.exc_info()[0]
-            return ('decode error', repr(e), None)
+            return False, 'Decode Error', None, None, None
     else:
-        return ('no matching abi', None, None)
+        return False, 'No Matching ABI', None, None, None
