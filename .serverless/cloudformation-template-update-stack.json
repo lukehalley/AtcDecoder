@@ -172,7 +172,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/atc-decoder/prod/1675007472848-2023-01-29T15:51:12.848Z/atc-decoder.zip"
+          "S3Key": "serverless/atc-decoder/prod/1675013449405-2023-01-29T17:30:49.405Z/atc-decoder.zip"
         },
         "Handler": "handler.invoke",
         "Runtime": "python3.8",
@@ -196,14 +196,14 @@
         "DecodeLogGroup"
       ]
     },
-    "DecodeLambdaVersion1Xhs6Fr1UYeQ8aWHxRc0yQdAyLcCa5iGIkbf33c24": {
+    "DecodeLambdaVersionoYutVeSgcprgeoBUOlkF7oz1R1unhYbcYxo0Oezm8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DecodeLambdaFunction"
         },
-        "CodeSha256": "azvige5jPzwjAJxI5HWuzSHvGYYKkJTwi/x8/pyJ06Y="
+        "CodeSha256": "fkpni+s/96nbvdfioUfS9Rrm7DMKlieojFWHtkchqr4="
       }
     }
   },
@@ -219,7 +219,7 @@
     "DecodeLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DecodeLambdaVersion1Xhs6Fr1UYeQ8aWHxRc0yQdAyLcCa5iGIkbf33c24"
+        "Ref": "DecodeLambdaVersionoYutVeSgcprgeoBUOlkF7oz1R1unhYbcYxo0Oezm8"
       },
       "Export": {
         "Name": "sls-atc-decoder-prod-DecodeLambdaFunctionQualifiedArn"
