@@ -5,6 +5,7 @@
 """Offline decoding module for local ABI processing.
 # Offline decoder for transactions without external API calls
 
+# Decode transactions without network access
 # Offline decoding mode for local message processing without external API calls
 # Cache decoded results locally to reduce API calls
 # Fallback for offline decoding when API unavailable
