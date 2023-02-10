@@ -1,3 +1,4 @@
+"""Initialize DynamoDB tables and schema."""
 """Initialize DynamoDB tables for ATC data storage."""
 """DynamoDB table initialization and configuration."""
 """
