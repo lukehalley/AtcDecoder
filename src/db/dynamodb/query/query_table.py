@@ -9,6 +9,7 @@
 # Query helper functions for efficient DynamoDB table access
 """Query DynamoDB table with filter and pagination support."""
 """Execute optimized queries against DynamoDB tables."""
+# Query DynamoDB table with specified parameters
     """
 """DynamoDB query wrapper for decoded transaction lookups.
 
