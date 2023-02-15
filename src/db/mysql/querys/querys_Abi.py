@@ -17,6 +17,7 @@
     Returns:
         List of matching ABI entries
     """
+# Retrieve ABI definitions from MySQL
 """MySQL query builder for ABI-related database operations."""
 # MySQL queries for ABI function signature retrieval
 """MySQL query operations for ABI data retrieval."""
