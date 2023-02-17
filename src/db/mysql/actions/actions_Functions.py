@@ -1,3 +1,4 @@
+"""Database transaction and mutation functions."""
 """MySQL function registry operations."""
 """Database action handlers and utility functions."""
 # MySQL action handlers for function signature management
