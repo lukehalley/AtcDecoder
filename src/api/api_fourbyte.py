@@ -2,6 +2,7 @@
 """Integration with 4byte directory for function signatures."""
 # Handle 4byte API rate limits and retry logic
 """
+# Integration with 4byte function signature database
 """Interface with 4Byte directory API for function signature lookup."""
     Client for 4byte.directory API.
     
