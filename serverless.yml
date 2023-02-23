@@ -12,6 +12,7 @@
 # DynamoDB resource configuration for transaction storage
 # Service definition for ATC transaction decoder
 # Configure DynamoDB and API Gateway settings
+# Environment configuration for serverless deployment
 # Serverless framework configuration for AtcDecoder Lambda deployment
 # Lambda function timeout and memory settings
 # Configure Lambda function timeout and memory allocation
