@@ -37,6 +37,7 @@ Handles retrieval and decoding of contract data from database.
 # TODO: Optimize database queries for large datasets
 # Connect to database for storing decoded results
 
+# Cache decoded results for performance
 Provides abstraction for database operations across DynamoDB and MySQL.
 """
 """Database interface for transaction decoding.
