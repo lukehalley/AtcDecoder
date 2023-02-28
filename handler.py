@@ -1,18 +1,12 @@
 from web3 import Web3
 
-from src.db.mysql.querys.querys_Abi import getAbiByDbId
-from src.decode.decode_abi import decode_tx
-from src.decode.decode_offline import OfflineDecode
-from src.decode.decode_online import OnlineDecode
-
+from src.decode.decode_db import DBDecode
 
 def invoke(event, context):
 
     # Collect Args
     RPCUrl = event["rpc_url"]
     TxHash = event["tx_hash"]
-    ContractHash = event["contract_hash"]
-    ContractAbiDbId = int(event["contract_abi_db_id"])
 
     # Connect To RPC
     web3Instance = Web3(Web3.HTTPProvider(RPCUrl))
@@ -20,18 +14,25 @@ def invoke(event, context):
     # Get Transaction
     TransactionDetails = web3Instance.eth.get_transaction(TxHash)
 
-    # Try Decode With API
-    DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = OnlineDecode(TransactionDetails["input"])
+    # Decode With DB
+    DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = DBDecode(TransactionDetails["input"])
 
-    # Try Offline Decode
-    DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = OfflineDecode(TransactionDetails["input"])
-
-    # If That Fails Try ABI Decode
-    if not DecodeSuccessful:
-        # Get ABI From DB
-        AbiFromDB = getAbiByDbId(ContractAbiDbId)
-        Abi = AbiFromDB["abi"]
-        DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = decode_tx(ContractHash, TransactionDetails["input"], Abi)
+    # if not DecodeSuccessful:
+    #
+    #     # Try Decode With API
+    #     DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = APIDecode(TransactionDetails["input"])
+    #
+    #     if not DecodeSuccessful:
+    #
+    #         # Try Offline Decode
+    #         DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = OfflineDecode(TransactionDetails["input"])
+    #
+    #         if not DecodeSuccessful:
+    #
+    #             # If That Fails Try ABI Decode
+    #             AbiFromDB = getAbiByDbId(ContractAbiDbId)
+    #             Abi = AbiFromDB["abi"]
+    #             DecodeSuccessful, DecodeMsg, FunctionName, FunctionParams = decode_tx(ContractHash, TransactionDetails["input"], Abi)
 
     # Collect Results
     if DecodeSuccessful:
@@ -76,4 +77,7 @@ bsc_args = {
   "contract_abi_db_id": 417
 }
 
+invoke(event=eth_args, context="")
+invoke(event=avax_args, context="")
 invoke(event=bsc_args, context="")
+
