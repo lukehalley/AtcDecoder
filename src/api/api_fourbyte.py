@@ -32,6 +32,7 @@
 # Interface with 4byte signature database API
 # Cache FourByte results to reduce external API calls and improve performance
 # Query 4byte API for contract function signatures
+# Fallback to local cache if API unavailable
 # Integration with 4byte directory API for function signatures
 # 4byte database integration for signature lookup
 """Fourbyte database API client for function signatures."""
