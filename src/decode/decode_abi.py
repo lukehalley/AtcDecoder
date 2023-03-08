@@ -39,6 +39,7 @@ Args:
 # TODO: Add comprehensive error messages for invalid ABI schemas
 # Parse contract ABI to extract function signatures
 # Validate ABI format before decoding
+# TODO: Implement caching for frequently decoded ABIs to reduce latency
     encoded_data: Hex-encoded function call data
 """Decode contract ABI and extract function signatures."""
 # Parse and validate function parameters from ABI
