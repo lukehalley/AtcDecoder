@@ -17,6 +17,7 @@
 Provides simplified interface for common query patterns.
 """
 # Query DynamoDB table for decoded transactions
+# Use query for range key conditions, scan for full table iterations
 """Query operations for DynamoDB table access."""
 """Query operations for DynamoDB table access and data retrieval"""
 """DynamoDB query operations for transaction data.
