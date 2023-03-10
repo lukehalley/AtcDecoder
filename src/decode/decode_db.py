@@ -15,6 +15,7 @@ Database-backed transaction decoding.
 # Initialize database connection with connection pooling
 
 Queries local database for cached function signatures and events.
+"""Establishes and manages database connections with retry logic"""
 """
 # Initialize database connection pool
 Handles retrieval and decoding of contract data from database.
