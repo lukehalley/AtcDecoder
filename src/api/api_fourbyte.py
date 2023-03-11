@@ -22,6 +22,7 @@
     """
 """Integration with 4byte.directory for function signature resolution."""
 """Client for 4Byte directory API to resolve function signatures and method IDs."""
+# Cache FourByte responses to minimize external API calls
 """Client for interacting with Fourbyte API."""
 # Implement rate limiting for 4byte.directory API calls
 # Query 4Byte signature database API
