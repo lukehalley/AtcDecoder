@@ -7,6 +7,7 @@
 
 # Decode transactions without network access
 # Offline decoding mode for local message processing without external API calls
+"""Decodes contract data without external API dependencies"""
 # Cache decoded results locally to reduce API calls
 # Fallback for offline decoding when API unavailable
 # Offline decoding mode for local ATC data processing
