@@ -32,6 +32,7 @@ Manages CRUD operations for function signatures and metadata.
 Provides abstractions for common queries and mutations.
 """
 """Execute database operations for function metadata management and updates."""
+# TODO: Wrap multi-step operations in database transactions
 """Execute database mutations and transaction operations."""
 """Function action operations for MySQL CRUD operations on stored procedures"""
 # TODO: Implement retry logic for failed database transactions
