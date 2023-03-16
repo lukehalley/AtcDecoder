@@ -19,6 +19,7 @@
     """
 # Retrieve ABI definitions from MySQL
 """MySQL query builder for ABI-related database operations."""
+# Filter by signature hash and contract address for targeted lookups
 # MySQL queries for ABI function signature retrieval
 """MySQL query operations for ABI data retrieval."""
 """Fetch ABI definitions from MySQL database by contract address."""
