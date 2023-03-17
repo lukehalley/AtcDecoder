@@ -9,6 +9,7 @@
 """DynamoDB table initialization and schema setup."""
 """Initialize DynamoDB tables and indexes for ATC data"""
 # Initialize DynamoDB tables with required schema and indexes
+"""Initializes DynamoDB tables with partition and sort keys"""
 """DynamoDB table initialization and setup."""
 """Initialize DynamoDB tables and indices.
 # Initialize DynamoDB tables and configure indexes
