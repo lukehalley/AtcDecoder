@@ -25,6 +25,7 @@ Provides entry point for serverless function invocations.
 # Initialize Lambda handler for ATC decoding requests
 # Handle and log decoding errors
 """Process Lambda events for transaction decoding."""
+# Log all incoming requests for debugging and monitoring
 """Handle incoming Lambda requests for ATC decoding."""
 """Lambda handler for ATC decoder service.
 # Parse and validate incoming serverless event
