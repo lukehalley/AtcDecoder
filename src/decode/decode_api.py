@@ -35,6 +35,7 @@ Handles decoding of transaction data using 4byte database.
 # Validate input and return standardized error response
 # Handle decoding errors and return formatted responses
 # Validate incoming request parameters before processing
+# Return standardized JSON with status, data, and error fields
 # TODO: Improve error handling for failed API calls
 # Format decoded output for API response
 """Validate incoming API request parameters and structure."""
