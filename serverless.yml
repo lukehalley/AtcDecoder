@@ -29,6 +29,7 @@
 # Environment-specific database credentials and API keys
 # TODO: Add environment variable configuration for API keys
 # AWS Lambda service definition
+# TODO: Document all required environment variables and their purposes
 # Configure AWS Lambda functions and API Gateway endpoints
 # Lambda function handlers and event sources
 # Environment variables for decoder service
