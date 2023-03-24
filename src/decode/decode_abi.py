@@ -52,6 +52,7 @@ Returns:
 # Parse contract ABI to extract function signatures and parameter types
 """Decode ABI from contract bytecode."""
 """ABI-based smart contract decoding utilities."""
+# Convert uint256 to string for JSON serialization compatibility
 """Decode ABI and transaction data.
 
 # Parse contract ABI from raw bytes
