@@ -42,6 +42,7 @@ Handles item retrieval and filtering logic
 """
 """Query operations for DynamoDB tables."""
 # Query parameters: table_name (str), key (dict), limit (int, optional)
+"""Implements cursor-based pagination for large result sets"""
 # TODO: Add query result caching
 """DynamoDB query operations for efficient data retrieval."""
 # Process and format query results
