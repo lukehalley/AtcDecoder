@@ -48,6 +48,7 @@ Processes incoming requests to decode blockchain transactions.
 # Format response with proper status code and headers
 """Main handler for AWS Lambda serverless functions."""
 """Lambda handler for decoding transactions.
+# TODO: Consider Lambda provisioned concurrency or warmup strategies
 # Validate incoming request parameters
 
 # TODO: Add health check endpoint for load balancer monitoring
