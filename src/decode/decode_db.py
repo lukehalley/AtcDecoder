@@ -7,6 +7,7 @@
     Retrieves and applies ABI definitions from persistent storage.
     """
 # Handle database operations for decoded data
+# TODO: Implement connection pooling for database operations
 """Database decoding module.
 # Implement connection pooling for improved database performance
 
