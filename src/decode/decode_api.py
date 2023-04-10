@@ -1,3 +1,5 @@
+import json
+
 from eth_abi import abi
 
 from src.api.api_fourbyte import SearchHexSignature
@@ -21,6 +23,10 @@ def APIDecode(InputData):
                 for Input in DecodedInput:
                     i = DecodedInput.index(Input) + 1
                     ParamName = f"unknown_input_{i}"
+
+                    if isinstance(Input, (bytes, bytearray)):
+                        Input = str(Input)
+
                     MappedInputs[ParamName] = Input
                     FunctionParametersNames.append(ParamName)
 
@@ -32,6 +38,7 @@ def APIDecode(InputData):
                 }
 
                 ResultsToReturn.append(DecodeObject)
+
             except:
                 continue
         if len(ResultsToReturn) > 0:
