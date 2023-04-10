@@ -7,6 +7,7 @@ def DBDecode(InputData):
     MethodParams = bytes.fromhex(InputData[10:])
     SignatureQueryResults = QuerySigTable(HashedSignature=MethodId)
     if len(SignatureQueryResults) > 0:
+        ResultsToReturn = []
         for Signature in SignatureQueryResults:
             FunctionName = Signature["name"]
             FunctionDef = (Signature["fullSignature"][Signature["fullSignature"].find("(")+1:Signature["fullSignature"].find(")")]).split(", ")
@@ -14,11 +15,32 @@ def DBDecode(InputData):
             try:
                 DecodedInputs = abi.decode(FunctionArgTypes, MethodParams)
                 DecodedMapped = {}
+
+                FunctionParametersNames = []
+                FunctionParametersTypes = []
+
                 for Def in FunctionDef:
                     SplitDef = Def.split(" ")
+                    FunctionParametersTypes.append(SplitDef[0])
+                    FunctionParametersNames.append(SplitDef[1])
                     DecodedMapped[SplitDef[1]] = DecodedInputs[0]
-                return True, 'DB Decode Success', FunctionName, DecodedMapped
+
+                DecodeObject = {
+                    "FunctionName": FunctionName,
+                    "FunctionParametersNames": FunctionParametersNames,
+                    "FunctionParametersTypes": FunctionParametersTypes,
+                    "DecodedInput": DecodedMapped
+                }
+
+                ResultsToReturn.append(DecodeObject)
+
             except:
-                return False, 'DB Decode Failure - Could Not Decode', None, None
+                continue
+
+        if len(ResultsToReturn) > 0:
+            return True, 'DB Decode Success', ResultsToReturn
+        else:
+            return False, 'DB Decode Failure - No DB Results', None
+
     else:
-        return False, 'DB Decode Failure - No DB Results', None, None
+        return False, 'DB Decode Failure - No DB Results', None
