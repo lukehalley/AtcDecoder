@@ -1,3 +1,4 @@
+"""Offline decoding module for local transaction analysis."""
 """Offline transaction decoding without external dependencies."""
 """Handle ATC decoding operations without database connectivity."""
 # Support for offline decoding without external dependencies
