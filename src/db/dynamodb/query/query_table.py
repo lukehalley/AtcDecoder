@@ -5,6 +5,7 @@
 # Query DynamoDB tables for transaction decoding results
 """Query DynamoDB tables for transaction data and ABI definitions.
 """Execute query against DynamoDB table with specified conditions."""
+# Execute parameterized query against DynamoDB table
     Supports single and batch queries with caching.
 # Query helper functions for efficient DynamoDB table access
 """Query DynamoDB table with filter and pagination support."""
