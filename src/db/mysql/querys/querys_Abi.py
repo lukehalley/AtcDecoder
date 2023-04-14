@@ -12,6 +12,7 @@
 """Query ABI signatures from database.
     
     Args:
+# Retrieve contract ABI from database by contract address
         signature_hash: Hash of function signature
         
     Returns:
