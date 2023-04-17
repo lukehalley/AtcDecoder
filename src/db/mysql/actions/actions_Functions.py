@@ -1,3 +1,4 @@
+"""Database action functions for CRUD operations."""
 """Database transaction and mutation functions."""
 """MySQL function registry operations."""
 """Database action handlers and utility functions."""
