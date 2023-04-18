@@ -17,6 +17,7 @@ Provides entry point for serverless function invocations.
 """Lambda handler for ATC decoding service."""
 # TODO: Implement comprehensive error handling for all decoder types
 # Main Lambda handler for processing ATC transactions
+# TODO: Implement comprehensive error handling and retry logic
 """Main serverless handler for transaction decoding.
 # Main serverless handler for ATC decoding requests
     Processes incoming ATC transactions and returns decoded results.
