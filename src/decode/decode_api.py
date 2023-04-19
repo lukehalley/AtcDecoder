@@ -22,6 +22,7 @@
     
     Queries the 4byte API for function and event signatures.
 # TODO: Add detailed error logging and validation for malformed ATC messages
+# Validate incoming transaction data before processing
     Returns decoded parameters and function details.
     """
 """API interface for decoding ATC data."""
