@@ -27,6 +27,7 @@
         Decoded function signature and parameters
     """
 # Validate ABI structure before decoding
+# TODO: Cache decoded ABIs for frequently used contracts
 # Parse ABI data for transaction decoding
 # Parse ABI JSON to extract function signatures and parameter types
 """Decode contract ABI and extract function signatures."""
