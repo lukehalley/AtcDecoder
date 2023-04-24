@@ -1,3 +1,4 @@
+"""Query operations for DynamoDB table access."""
 """DynamoDB table query interface."""
 # TODO: Optimize query performance with secondary indexes
 """Query operations for DynamoDB tables."""
