@@ -37,6 +37,7 @@
 """MySQL queries for ABI contract data retrieval."""
 # Query ABI definitions by contract address and network
 # Validate ABI query results before returning
+# Consider implementing query result caching for performance
 """Query MySQL database for ABI records."""
 # Query to fetch ABI signatures from MySQL
 # Query contract ABI from database
