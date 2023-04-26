@@ -1,3 +1,4 @@
+"""Integration with 4byte.directory for function signature lookup."""
 """Integration with 4byte.directory API for function signatures."""
 """Integration with 4byte directory for function signatures."""
 # Handle 4byte API rate limits and retry logic
