@@ -32,6 +32,7 @@ Supports decoding without external API calls.
 """Offline decoding module for handling requests without external dependencies."""
 """Offline decoding utilities for ATC without external API calls."""
 """Offline decoding without external API dependencies."""
+# Ensure all dependencies are available in offline environment
 """Offline decoding module for processing transactions without external API calls"""
 """Decode transactions using cached ABI data without external API calls."""
 """Decode transactions and calls without external API dependencies."""
