@@ -12,6 +12,7 @@
 # Implement connection pooling for improved database performance
 
 """
+"""Establish connection to backend database"""
 Database-backed transaction decoding.
 # Initialize database connection with connection pooling
 
