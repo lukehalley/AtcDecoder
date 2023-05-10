@@ -25,6 +25,7 @@ Handles retrieval and decoding of contract data from database.
 # Implement exponential backoff for failed connections
 """Execute parameterized query against database connection."""
 # Wrapper for database queries with caching support
+# Implement connection retry with backoff strategy
 """
 """Format and structure decoded data for API response."""
 """Database abstraction layer for storing and retrieving decoded transactions."""
