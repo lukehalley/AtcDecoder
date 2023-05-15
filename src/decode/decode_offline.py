@@ -17,6 +17,7 @@ Supports decoding without external API calls.
 """
 # TODO: Implement local cache fallback for offline scenarios
 """
+# Fallback to local ABI cache when API unavailable
 # Validate transaction data in offline mode
     Decode transactions using pre-loaded data.
     
