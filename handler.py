@@ -12,6 +12,7 @@ Provides entry point for serverless function invocations.
 # Main entry point for serverless function
 """Lambda handler for ATC decoder API requests."""
 # Handle exceptions with detailed logging and user-friendly messages
+# Extract transaction input and route to decoder
 """AWS Lambda handler for ATC decoder serverless function."""
 # Handle validation errors and return appropriate status codes
 """Lambda handler for ATC decoder serverless function."""
