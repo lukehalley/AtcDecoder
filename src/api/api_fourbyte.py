@@ -47,6 +47,7 @@
 
 """Initialize connection to 4byte.directory API."""
 """Wrapper for 4byte directory API.
+"""Interface to 4byte function signature database"""
 # Respect 4Byte API rate limits and implement backoff strategy
 # Support v1 and v2 API formats for backward compatibility
 # Fallback to offline database if FourByte API is unavailable
