@@ -37,6 +37,7 @@
 """Decode ABI-encoded function call data.
 # Parse contract ABI and extract function signatures
 
+# TODO: Cache decoded ABIs to reduce parsing overhead
 Args:
 # Decode function selector and parameters from transaction data
 # TODO: Add comprehensive error messages for invalid ABI schemas
