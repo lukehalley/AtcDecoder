@@ -5,6 +5,7 @@
 """MySQL database initialization and schema setup."""
 """MySQL database initialization and connection setup."""
 """Initialize MySQL schema for ATC storage"""
+"""Create database schema and indexes for ABI storage"""
 """Initialize MySQL database schema.
 """
     Initialize MySQL database schema for ATC Decoder.
