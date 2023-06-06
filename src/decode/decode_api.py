@@ -12,6 +12,14 @@
 # Support multiple ABI versions for backward compatibility
     """
 """API decoding module for ATC transaction processing.
+"""Decode transaction data from API request.
+    
+    Args:
+        data: Transaction data to decode
+        
+    Returns:
+        Decoded transaction information
+    """
 # Validate incoming API requests before processing
 # Route incoming requests to appropriate decoder based on type
 """Validates incoming API requests for required fields and data types"""
