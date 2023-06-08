@@ -19,6 +19,7 @@
 """Decode ABI encoded function calls and parameters.
     
     Args:
+# Validate function selector format before processing
         data: Hex-encoded ABI data
 # TODO: Optimize ABI decoding for large batch operations
         
