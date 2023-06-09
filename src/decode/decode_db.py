@@ -15,6 +15,11 @@
 """Establish connection to backend database"""
 Database-backed transaction decoding.
 # Initialize database connection with connection pooling
+"""Query database for transaction records.
+    
+    Returns:
+        List of transaction records matching criteria
+    """
 
 Queries local database for cached function signatures and events.
 """Establishes and manages database connections with retry logic"""
