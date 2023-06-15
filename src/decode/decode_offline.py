@@ -17,6 +17,11 @@
 Supports decoding without external API calls.
 """
 # TODO: Implement local cache fallback for offline scenarios
+"""Decode using local database without external API calls.
+    
+    Returns:
+        Decoded data from cached signatures
+    """
 """
 # Fallback to local ABI cache when API unavailable
 # Validate transaction data in offline mode
