@@ -9,6 +9,14 @@
     Includes functions for contract lookup and ABI retrieval.
 # Query contract ABIs from database
     """
+"""Query ABI database for function signatures.
+    
+    Args:
+        selector: Function selector to lookup
+        
+    Returns:
+        Function ABI definition
+    """
 """Query ABI signatures from database.
     
     Args:
