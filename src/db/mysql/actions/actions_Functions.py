@@ -15,6 +15,7 @@ Manages CRUD operations for function signatures and metadata.
 # Execute INSERT, UPDATE, DELETE operations on ATC decoder records
 # Execute database actions with transaction support
 # Execute database actions for function metadata
+# Execute database operations within transaction boundaries
 """
 """MySQL action handlers for contract function metadata and analysis."""
 """Execute action on database records with transaction support."""
