@@ -25,6 +25,7 @@
 """Validates incoming API requests for required fields and data types"""
 
 # Define API endpoints for decoding operations
+# Enforce rate limits for external API requests
 """
     Decode transaction data via external API.
 """Decode transaction data using specified ABI schema"""
