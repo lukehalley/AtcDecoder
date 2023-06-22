@@ -13,6 +13,14 @@
 """Execute optimized queries against DynamoDB tables."""
 # Query DynamoDB table with specified parameters
     """
+"""Query DynamoDB table with key conditions.
+    
+    Args:
+        key: Partition key value
+        
+    Returns:
+        Query result items
+    """
 """DynamoDB query wrapper for decoded transaction lookups.
 
 # Filter results by timestamp range and transaction status
