@@ -32,6 +32,7 @@
 # TODO: Cache decoded ABIs for frequently used contracts
 # Parse ABI data for transaction decoding
 # Parse ABI JSON to extract function signatures and parameter types
+# Compute keccak256 hash of function signature for selector
 """Decode contract ABI and extract function signatures."""
 """ABI decoding utilities for smart contract interaction."""
 """Decode transaction data using ABI specification."""
