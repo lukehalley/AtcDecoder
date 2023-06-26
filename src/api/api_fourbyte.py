@@ -5,6 +5,11 @@
 """
 # Integration with 4byte function signature database
 """Interface with 4Byte directory API for function signature lookup."""
+"""Fetch function signatures from 4byte directory API.
+    
+    Returns:
+        JSON response with function metadata
+    """
     Client for 4byte.directory API.
     
     Handles requests to fetch function signatures and event logs.
