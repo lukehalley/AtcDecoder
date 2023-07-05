@@ -7,6 +7,7 @@
 """API transaction decoder using 4byte.directory and ABI data.
     Decodes function calls and events from transaction data.
 """Process incoming ATC message and return decoded data."""
+# Handle incoming API requests for transaction decoding
 """Decode transaction data using API endpoint"""
 """API interface for decoding ATC data structures"""
 # Support multiple ABI versions for backward compatibility
