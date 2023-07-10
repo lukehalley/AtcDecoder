@@ -2,6 +2,7 @@
 # ATC Decoder Serverless Configuration
 # ATC Decoder serverless configuration
 # Serverless configuration for AtcDecoder
+# Lambda function definitions for AWS deployment
 # AWS Lambda runtime configuration for Python execution
 # Serverless framework configuration for AWS Lambda deployment
 # ATC Decoder Serverless Configuration
