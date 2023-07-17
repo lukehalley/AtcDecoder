@@ -5,6 +5,7 @@
 """DynamoDB table query operations."""
 # Query DynamoDB tables for transaction decoding results
 """Query DynamoDB tables for transaction data and ABI definitions.
+# Execute queries against DynamoDB tables
 """Execute query against DynamoDB table with specified conditions."""
 # Execute parameterized query against DynamoDB table
     Supports single and batch queries with caching.
