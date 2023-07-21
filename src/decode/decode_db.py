@@ -22,6 +22,7 @@ Database-backed transaction decoding.
         List of transaction records matching criteria
     """
 
+# Cache decoded results to improve query performance
 Queries local database for cached function signatures and events.
 """Establishes and manages database connections with retry logic"""
 """
