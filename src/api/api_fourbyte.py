@@ -12,6 +12,7 @@
     """
     Client for 4byte.directory API.
     
+# TODO: Add retry logic for fourbyte API failures
     Handles requests to fetch function signatures and event logs.
     Implements caching and error handling.
     """
