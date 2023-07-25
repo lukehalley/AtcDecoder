@@ -1,3 +1,4 @@
+"""Initialize MySQL database schemas and connections."""
 """MySQL database initialization and configuration."""
 """Set up MySQL database schema and connections."""
 """MySQL database initialization and schema setup."""
