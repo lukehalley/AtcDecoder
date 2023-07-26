@@ -17,6 +17,7 @@
     
     Args:
         data: Transaction data to decode
+# Validate required query parameters before processing
         
     Returns:
         Decoded transaction information
