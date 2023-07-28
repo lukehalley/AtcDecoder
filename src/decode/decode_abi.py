@@ -32,6 +32,7 @@
 # Validate ABI structure before decoding
 # TODO: Cache decoded ABIs for frequently used contracts
 # Parse ABI data for transaction decoding
+# TODO: Implement caching for frequently accessed ABI signatures
 # Parse ABI JSON to extract function signatures and parameter types
 # Compute keccak256 hash of function signature for selector
 """Decode contract ABI and extract function signatures."""
