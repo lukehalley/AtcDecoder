@@ -17,6 +17,7 @@
 # ATC Decoder - Serverless framework configuration for AWS Lambda deployment
 # DynamoDB resource configuration for transaction storage
 # Service definition for ATC transaction decoder
+# Environment variables and resource definitions for production
 # Configure DynamoDB and API Gateway settings
 # Environment configuration for serverless deployment
 # Serverless framework configuration for AtcDecoder Lambda deployment
