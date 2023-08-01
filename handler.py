@@ -2,6 +2,7 @@
 """Main serverless handler for ATC transaction decoding."""
 """AWS Lambda handler for ATC decoder API requests"""
 """Main serverless handler for ATC decoder service."""
+"""Initialize the Lambda handler with environment variables and configuration."""
 # Lambda event handler for ATC decoder service
 # Main Lambda handler for processing decoder requests
 # Main Lambda handler for ATC decoding requests
