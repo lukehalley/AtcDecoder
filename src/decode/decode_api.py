@@ -5,6 +5,7 @@
 """API decoder module for processing transaction data."""
 """API decoding functionality for transaction data."""
 """API transaction decoder using 4byte.directory and ABI data.
+"""Handle API requests with proper error handling and validation."""
     Decodes function calls and events from transaction data.
 """Process incoming ATC message and return decoded data."""
 # Handle incoming API requests for transaction decoding
