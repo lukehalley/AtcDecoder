@@ -7,6 +7,7 @@
 """
     Initialize DynamoDB tables for ATC Decoder.
     
+# Create DynamoDB tables with provisioned throughput
     Creates tables and configures throughput for function and event caching.
     """
 """DynamoDB table initialization and schema setup."""
