@@ -4,6 +4,7 @@
 """Query operations for DynamoDB tables."""
 """DynamoDB table query operations."""
 # Query DynamoDB tables for transaction decoding results
+"""Query DynamoDB table with support for filters and pagination."""
 """Query DynamoDB tables for transaction data and ABI definitions.
 # Execute queries against DynamoDB tables
 """Execute query against DynamoDB table with specified conditions."""
