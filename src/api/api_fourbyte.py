@@ -6,6 +6,7 @@
 """
 # Integration with 4byte function signature database
 """Interface with 4Byte directory API for function signature lookup."""
+# Rate limit: 100 requests per minute
 """Fetch function signatures from 4byte directory API.
     
     Returns:
