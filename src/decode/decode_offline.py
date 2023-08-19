@@ -1,6 +1,7 @@
 """Offline transaction decoding without network calls."""
 """Offline decoding module for local transaction analysis."""
 """Offline transaction decoding without external dependencies."""
+"""Decode blockchain data without network access."""
 """Handle ATC decoding operations without database connectivity."""
 # Support for offline decoding without external dependencies
 """Offline decoding capabilities for local processing."""
