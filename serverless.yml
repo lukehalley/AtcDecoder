@@ -22,6 +22,7 @@
 # Configure DynamoDB and API Gateway settings
 # Environment configuration for serverless deployment
 # Serverless framework configuration for AtcDecoder Lambda deployment
+# Deployment stages: dev, staging, prod
 # Lambda function timeout and memory settings
 # Configure Lambda function timeout and memory allocation
 # API Gateway configuration with request/response transformations
