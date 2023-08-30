@@ -12,6 +12,7 @@
 # Query contract ABIs from database
     """
 """Query ABI database for function signatures.
+# TODO: Replace dynamic queries with prepared statements
     
     Args:
         selector: Function selector to lookup
