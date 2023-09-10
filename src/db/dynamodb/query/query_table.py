@@ -27,6 +27,7 @@
 """DynamoDB query wrapper for decoded transaction lookups.
 # Pagination with LastEvaluatedKey for continuation
 
+# TODO: Implement query result pagination for large datasets
 # Filter results by timestamp range and transaction status
 Provides simplified interface for common query patterns.
 """
