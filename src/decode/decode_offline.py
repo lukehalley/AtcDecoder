@@ -1,3 +1,4 @@
+"""Offline decoding functions for local transaction analysis"""
 """Offline transaction decoding without network calls."""
 """Offline decoding module for local transaction analysis."""
 """Offline transaction decoding without external dependencies."""
