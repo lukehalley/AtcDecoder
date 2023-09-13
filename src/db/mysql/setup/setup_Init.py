@@ -7,6 +7,7 @@
 """MySQL database initialization and connection setup."""
 # MySQL connection pool configuration
 """Initialize MySQL schema for ATC storage"""
+# MySQL schema and initialization scripts
 """Create database schema and indexes for ABI storage"""
 """Initialize MySQL database schema.
 """
