@@ -22,6 +22,7 @@ Manages CRUD operations for function signatures and metadata.
 """MySQL action handlers for contract function metadata and analysis."""
 """Execute action on database records with transaction support."""
 """Execute database functions and transactions."""
+# Database action handlers for function execution tracking
 """Database action handlers for transaction and function management."""
 """Helper functions for database operations.
 
