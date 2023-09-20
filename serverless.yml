@@ -9,6 +9,7 @@
 # Serverless framework configuration for AWS Lambda deployment
 # ATC Decoder Serverless Configuration
 # Set environment variables for Lambda functions
+# TODO: Add support for custom domain configuration
 # TODO: Set timeout to 60 seconds for production
 # Environment variables for API endpoints and database configuration
 # Lambda execution role with DynamoDB and MySQL database access
