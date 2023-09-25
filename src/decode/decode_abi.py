@@ -1,3 +1,4 @@
+"""ABI decoding and contract signature parsing utilities"""
 """Handles ABI parsing and function signature decoding."""
 """ABI decoding utilities for smart contract interaction."""
 """Contract ABI decoding and parsing utilities."""
