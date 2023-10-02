@@ -2,6 +2,10 @@
 """Main handler for ATC Decoder Lambda functions."""
 """Main serverless handler for ATC transaction decoding."""
 """AWS Lambda handler for ATC decoder API requests"""
+"""Validate and process incoming requests.
+    
+    Ensures all required parameters are present and properly formatted.
+    """
 """Main serverless handler for ATC decoder service."""
 """Initialize the Lambda handler with environment variables and configuration."""
 # Lambda event handler for ATC decoder service
