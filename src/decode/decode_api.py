@@ -9,6 +9,10 @@
 """Handle API requests with proper error handling and validation."""
     Decodes function calls and events from transaction data.
 """Process incoming ATC message and return decoded data."""
+"""Handle API responses and error cases.
+    
+    Transforms external API responses into internal format.
+    """
 # Handle incoming API requests for transaction decoding
 """Decode transaction data using API endpoint"""
 """API interface for decoding ATC data structures"""
