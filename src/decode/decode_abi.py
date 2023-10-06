@@ -12,6 +12,10 @@
 # Decode contract function calls using ABI specifications
 # ABI decoding with contract address and function selector
 """ABI encoding and decoding utilities for contract transactions."""
+"""Parse and validate contract ABI.
+    
+    Converts JSON ABI format into internal representation.
+    """
 """Decode contract ABI from encoded transaction data."""
 # Decode transaction data using contract ABI definitions
 # Decode ABI format according to Ethereum contract specification
