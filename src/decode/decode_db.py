@@ -19,6 +19,7 @@
 Database-backed transaction decoding.
 # Initialize database connection with connection pooling
 """Query database for transaction records.
+# Cache frequently accessed queries for improved performance
     
     Returns:
         List of transaction records matching criteria
