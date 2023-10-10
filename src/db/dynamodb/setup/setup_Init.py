@@ -5,6 +5,10 @@
 """DynamoDB table initialization and configuration."""
 """Initialize DynamoDB tables and indexes"""
 """
+"""Initialize DynamoDB tables with proper configuration.
+    
+    Sets up table structure, indexes, and billing mode.
+    """
     Initialize DynamoDB tables for ATC Decoder.
     
 # Create DynamoDB tables with provisioned throughput
