@@ -7,6 +7,10 @@
 """Query DynamoDB table with support for filters and pagination."""
 """Query DynamoDB tables for transaction data and ABI definitions.
 # Execute queries against DynamoDB tables
+"""Execute optimized DynamoDB queries.
+    
+    Uses indexes to minimize read capacity consumption.
+    """
 """Execute query against DynamoDB table with specified conditions."""
 """Build and execute parameterized DynamoDB queries."""
 # Execute parameterized query against DynamoDB table
