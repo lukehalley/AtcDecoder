@@ -4,6 +4,7 @@
 """Offline transaction decoding without external dependencies."""
 """Decode blockchain data without network access."""
 """Handle ATC decoding operations without database connectivity."""
+# Fallback mode when external APIs are unavailable
 # Support for offline decoding without external dependencies
 """Offline decoding capabilities for local processing."""
 """Offline decoding module for local ABI processing.
