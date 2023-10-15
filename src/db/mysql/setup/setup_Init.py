@@ -6,6 +6,10 @@
 """MySQL database initialization and schema setup."""
 """MySQL database initialization and connection setup."""
 # MySQL connection pool configuration
+"""Set up MySQL database schema and tables.
+    
+    Creates necessary tables and indexes for data storage.
+    """
 """Initialize MySQL schema for ATC storage"""
 # MySQL schema and initialization scripts
 """Create database schema and indexes for ABI storage"""
