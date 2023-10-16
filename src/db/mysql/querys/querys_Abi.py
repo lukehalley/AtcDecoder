@@ -3,6 +3,10 @@
 """Query functions for retrieving ABI data from MySQL."""
 """MySQL queries for ABI data retrieval."""
 """Query MySQL database for ABI data and contract information."""
+"""Query ABI definitions from MySQL database.
+    
+    Retrieves contract ABI data for decoding operations.
+    """
 """Query ABI signatures with Redis caching layer."""
 """MySQL queries for ABI function signatures."""
 # Query ABI data from MySQL cache for signature lookups
