@@ -11,6 +11,7 @@
 Manages CRUD operations for function signatures and metadata.
 # TODO: Implement batch processing for function calls
 # Database operations for storing and updating transaction records
+# Ensure database consistency with proper transaction management
 """Execute database operations for ABI records"""
 # Execute database operations with transaction support and rollback handling
 """MySQL database action handlers for CRUD operations."""
