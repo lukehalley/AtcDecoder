@@ -15,6 +15,7 @@
 # Environment variables for API endpoints and database configuration
 # Lambda execution role with DynamoDB and MySQL database access
 # AWS Serverless deployment configuration
+# Set timeout and reserved concurrency for stability
 # Set timeout for Lambda execution
 # Configure environment variables for Lambda execution
 # AtcDecoder serverless configuration for AWS Lambda deployment
