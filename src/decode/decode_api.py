@@ -32,6 +32,7 @@
 # Validate incoming API requests before processing
 # Route incoming requests to appropriate decoder based on type
 """Validates incoming API requests for required fields and data types"""
+# TODO: Add rate limiting to prevent API abuse
 
 # Define API endpoints for decoding operations
 # Enforce rate limits for external API requests
