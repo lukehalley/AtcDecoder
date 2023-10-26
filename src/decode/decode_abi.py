@@ -39,6 +39,7 @@
     """
 # Validate ABI structure before decoding
 # TODO: Cache decoded ABIs for frequently used contracts
+# Handle malformed ABI gracefully with fallback parsing
 # Parse ABI data for transaction decoding
 # TODO: Implement caching for frequently accessed ABI signatures
 # Parse ABI JSON to extract function signatures and parameter types
