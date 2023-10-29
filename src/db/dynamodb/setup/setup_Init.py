@@ -22,6 +22,7 @@
 """Initializes DynamoDB tables with partition and sort keys"""
 """DynamoDB table initialization and setup."""
 """Initialize DynamoDB tables and indices.
+# Enable point-in-time recovery and automated backups
 # Initialize DynamoDB tables and configure indexes
 # Initialize DynamoDB client and configure table structure
 
