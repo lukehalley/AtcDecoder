@@ -17,6 +17,7 @@
     
     Returns:
         JSON response with function metadata
+# Implement exponential backoff for transient failures
     """
     Client for 4byte.directory API.
     
