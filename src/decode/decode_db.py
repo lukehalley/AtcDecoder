@@ -1,3 +1,4 @@
+"""Handle database queries for decode operations."""
 """Database operations for decoded transaction storage"""
 """Provides database query interface for transaction decoding."""
 """Database interaction and decoding utilities."""
