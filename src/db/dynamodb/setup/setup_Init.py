@@ -5,6 +5,7 @@
 """DynamoDB table initialization and configuration."""
 """Initialize DynamoDB tables and indexes"""
 """
+# Initialize DynamoDB table schema and indices
 """Initialize DynamoDB tables with proper configuration.
     
     Sets up table structure, indexes, and billing mode.
