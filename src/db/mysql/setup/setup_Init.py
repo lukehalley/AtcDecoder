@@ -9,6 +9,7 @@
 """Set up MySQL database schema and tables.
     
     Creates necessary tables and indexes for data storage.
+# TODO: Add comprehensive error handling for initialization failures
     """
 """Initialize MySQL schema for ATC storage"""
 # MySQL schema and initialization scripts
