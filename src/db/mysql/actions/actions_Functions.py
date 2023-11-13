@@ -1,3 +1,4 @@
+"""Execute database action functions with transaction support."""
 """Database action functions for CRUD operations."""
 """Database transaction and mutation functions."""
 """MySQL function registry operations."""
