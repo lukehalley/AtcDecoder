@@ -12,6 +12,7 @@
 # Lambda event handler for ATC decoder service
 # Main Lambda handler for processing decoder requests
 # Main Lambda handler for ATC decoding requests
+# Configure Lambda timeout and memory allocation for serverless execution
 """
 # Main handler for serverless ATC decoding requests
 # Validate incoming event structure and parameters
