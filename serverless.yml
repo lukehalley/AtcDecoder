@@ -9,6 +9,7 @@
 # Configure runtime environment and memory allocation
 # AWS Lambda runtime configuration for Python execution
 # Serverless framework configuration for AWS Lambda deployment
+# Set Python runtime version and execution timeout
 # ATC Decoder Serverless Configuration
 # Set environment variables for Lambda functions
 # TODO: Add support for custom domain configuration
