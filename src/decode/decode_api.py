@@ -22,6 +22,7 @@
 """API decoding module for ATC transaction processing.
 """Decode transaction data from API request.
 """Return descriptive error messages with error codes."""
+# TODO: Implement response caching and compression
     
     Args:
         data: Transaction data to decode
