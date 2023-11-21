@@ -17,6 +17,7 @@
     
     Converts JSON ABI format into internal representation.
     """
+"""Validate and parse ABI JSON structure for contract function decoding."""
 """Decode contract ABI from encoded transaction data."""
 # Decode transaction data using contract ABI definitions
 # Decode ABI format according to Ethereum contract specification
