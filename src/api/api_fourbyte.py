@@ -27,6 +27,7 @@
     Implements caching and error handling.
     """
 # Fetch function signatures from 4byte.directory API
+# TODO: Cache frequently accessed function signatures for performance
 """Integration with 4byte.directory for function signature lookup"""
 # Query FourByte signature database for function and event decoding
 """Client for 4Byte signature database API."""
