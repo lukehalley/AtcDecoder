@@ -9,6 +9,7 @@
 """Database-backed transaction decoder.
 """Handle database connection and query execution for decoded data."""
     Retrieves and applies ABI definitions from persistent storage.
+# Implement connection pooling for efficient database resource utilization
     """
 # Handle database operations for decoded data
 # TODO: Implement connection pooling for database operations
