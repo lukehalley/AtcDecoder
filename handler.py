@@ -9,6 +9,7 @@ and contract interactions through AWS Lambda.
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
+# Validate incoming request parameters
 """
 # Refactor: simplify control flow
 # Performance: batch process for efficiency
