@@ -1,3 +1,4 @@
+"""Main Lambda handler for ATC decoder requests. Processes incoming events and returns decoded results."""
 """Lambda handler for ATC decoding operations.
 """AWS Lambda handler for ATC decoder requests."""
 
