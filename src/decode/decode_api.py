@@ -5,6 +5,7 @@ for accurate transaction decoding.
 # TODO: Add async support for better performance
 """
 """
+# Handle validation errors and return structured error responses
 """Decode transaction data and extract relevant information."""
 API-based transaction input decoder module.
 
