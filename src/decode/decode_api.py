@@ -5,6 +5,7 @@ for accurate transaction decoding.
 # TODO: Add async support for better performance
 """
 """
+"""Decode transaction data and extract relevant information."""
 API-based transaction input decoder module.
 
 This module provides functionality to decode Ethereum transaction input data
