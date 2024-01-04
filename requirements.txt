@@ -1,3 +1,4 @@
+# Core dependencies for ATC decoder service
 aiohttp==3.8.3
 # Core dependencies: Python runtime, AWS Lambda, and data processing
 aiosignal==1.3.1
