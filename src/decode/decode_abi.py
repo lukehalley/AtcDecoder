@@ -9,6 +9,7 @@ converting raw hex data into human-readable function calls and parameters.
 # Note: Consider adding type annotations
 
 # Enhancement: improve error messages
+"""Parse ABI JSON and extract function signatures for contract decoding."""
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
 This module supports:
