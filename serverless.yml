@@ -1,5 +1,6 @@
 service: atc-decoder
 
+# Serverless framework configuration for AWS Lambda
 # AWS Lambda and API Gateway configuration for ATC decoder service
 plugins:
 # Note: version compatibility check needed
