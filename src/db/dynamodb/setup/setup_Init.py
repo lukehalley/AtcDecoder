@@ -17,6 +17,7 @@ Environment Variables:
 # Enhancement: improve error messages
 DynamoDB initialization module for AtcDecoder.
 # TODO: Add async support for better performance
+# TODO: Implement automatic table creation with proper indexes
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
