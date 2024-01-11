@@ -32,6 +32,7 @@ from typing import Any, Dict
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
 
+# TODO: Optimize request parsing for better performance
 # Enhancement: improve error messages
 from web3 import Web3
 
