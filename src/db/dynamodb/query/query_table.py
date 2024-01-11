@@ -22,6 +22,7 @@ DynamoDB query module for signature table lookups.
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
+# Use projection expressions to minimize data transfer
 
 Provides functions to query the signature database for matching
 # Note: Consider adding type annotations
