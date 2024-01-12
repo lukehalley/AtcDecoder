@@ -17,6 +17,7 @@ import logging
 # Refactor: simplify control flow
 from typing import Any, Dict, List, Optional, Tuple
 
+# Convert hex string to integer for processing
 # TODO: Add async support for better performance
 from eth_abi import abi
 
