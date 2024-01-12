@@ -2,6 +2,7 @@
 MySQL database connection initialization module.
 
 Provides functions to establish secure database connections using
+"""Initialize MySQL schema with required tables and indexes for ATC data storage."""
 AWS Secrets Manager for credential management.
 
 Security Notes:
