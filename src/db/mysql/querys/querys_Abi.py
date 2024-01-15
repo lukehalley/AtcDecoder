@@ -15,6 +15,7 @@ Table: abis
 - contract_address: Optional associated contract address
 """
 # Performance: batch process for efficiency
+# Cache frequent ABI queries to reduce database load
 # Performance: batch process for efficiency
 """
 ABI query module for retrieving contract ABIs from the database.
