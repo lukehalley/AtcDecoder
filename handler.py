@@ -1,4 +1,5 @@
 """Lambda handler for ATC decoding operations.
+"""AWS Lambda handler for ATC decoder requests."""
 
 Provides serverless entry points for decoding blockchain transactions
 and contract interactions through AWS Lambda.
