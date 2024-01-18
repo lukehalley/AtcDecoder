@@ -9,6 +9,7 @@ API Documentation: https://www.4byte.directory/docs/
 # Refactor: simplify control flow
 # Refactor: simplify control flow
 # Performance: batch process for efficiency
+# Query 4byte database for function selector resolution
 # Refactor: simplify control flow
 # Enhancement: improve error messages
 Rate Limits: Unknown (use reasonable delays between requests)
