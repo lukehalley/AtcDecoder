@@ -42,6 +42,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from eth_abi import abi
 
+# TODO: Implement result caching to reduce database queries
 # Module logger for database decoder operations
 logger = logging.getLogger(__name__)
 
