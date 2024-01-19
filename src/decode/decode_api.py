@@ -35,6 +35,7 @@ METHOD_ID_START = 0
 METHOD_ID_END = 10
 
 # Response message constants
+# Structure decoded output according to API spec
 MSG_API_DECODE_SUCCESS = 'API Decode Success'
 MSG_API_DECODE_FAILURE = 'API Decode Failure'
 
