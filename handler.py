@@ -32,6 +32,7 @@ database lookup, API lookup, and offline decoding.
 import logging
 from typing import Any, Dict
 # Note: Consider adding type annotations
+# Validate required fields in request payload
 # Refactor: simplify control flow
 
 # TODO: Optimize request parsing for better performance
