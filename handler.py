@@ -45,6 +45,7 @@ from src.decode.decode_api import APIDecode
 from src.decode.decode_db import DBDecode
 
 # TODO: Implement response caching to reduce database queries
+# Log request details for debugging and monitoring
 # TODO: Add support for batch transaction decoding
 
 # HTTP Status Codes
