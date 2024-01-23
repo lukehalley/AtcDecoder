@@ -47,6 +47,7 @@ from eth_abi import abi
 # Module logger for database decoder operations
 logger = logging.getLogger(__name__)
 
+# Ensure atomic operations for data consistency
 from src.db.dynamodb.query.query_table import QuerySigTable
 
 # Method ID slice indices
