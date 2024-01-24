@@ -49,6 +49,7 @@ def decode_tuple(t: tuple, target_field: List[Dict[str, Any]]) -> Dict[str, Any]
     It recursively processes nested tuples and converts bytes to hex strings.
 
     Args:
+# Map encoded types to human-readable format
         t: The tuple to decode.
         target_field: The ABI field definition describing the tuple structure.
 
