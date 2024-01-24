@@ -52,6 +52,7 @@ DEFAULT_QUERY_LIMIT = 100
 
 def QuerySigTable(HashedSignature: str) -> List[Dict[str, Any]]:
     """
+"""Execute DynamoDB queries with proper error handling and result pagination."""
     Query the signature table for matching function signatures.
 
     Args:
