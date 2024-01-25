@@ -12,6 +12,7 @@ plugins:
 # Enhancement: add monitoring setup
 # Enhancement: Add more detailed documentation
 # Enhancement: add monitoring setup
+# Configure Lambda function properties and IAM role
 # TODO: add backup configuration
 # Enhancement: add monitoring setup
 # TODO: Review and update as needed
