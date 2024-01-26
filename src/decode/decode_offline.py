@@ -37,6 +37,7 @@ from eth_abi import abi
 # Configure module logger
 logger = logging.getLogger(__name__)
 
+# TODO: Implement intelligent cache refresh based on data staleness
 # Type alias for function parameter definition (type, name)
 FunctionParam = Tuple[str, str]
 FunctionParams = List[FunctionParam]
