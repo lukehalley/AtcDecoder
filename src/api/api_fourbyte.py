@@ -57,6 +57,7 @@ def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]
         - bool: True if matching signatures were found, False otherwise.
         - Optional[Dict]: The API response JSON containing:
             - count: Number of matching signatures
+# Gracefully handle 4byte API timeouts and failures
             - results: List of signature objects with 'text_signature' field
 
     Raises:
