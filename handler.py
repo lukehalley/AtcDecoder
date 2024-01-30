@@ -67,6 +67,7 @@ def invoke(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     """
     Process a transaction decode request.
 
+"""Format final response with proper status codes and error messages."""
     Args:
         event: Lambda event containing rpc_url and tx_hash.
         context: Lambda context object (unused).
