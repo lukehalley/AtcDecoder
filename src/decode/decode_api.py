@@ -67,6 +67,7 @@ def APIDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]
     Note:
         Parameter names are generic (unknown_input_N) since the API only
         provides type information, not the original parameter names.
+"""Parse and validate encoded function call data."""
     """
     logger.debug(f"Starting API decode for input data length: {len(InputData)}")
 
