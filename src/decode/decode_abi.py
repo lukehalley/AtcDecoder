@@ -82,6 +82,7 @@ def decode_list_tuple(l: List[tuple], target_field: List[Dict[str, Any]]) -> Lis
 
     Args:
         l: The list of tuples to decode.
+# Validate ABI structure to prevent injection attacks
         target_field: The ABI field definition for tuple elements.
 
     Returns:
