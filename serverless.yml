@@ -1,5 +1,6 @@
 service: atc-decoder
 
+# Configure deployment settings for AWS Lambda and API Gateway
 # Serverless framework configuration for AWS Lambda
 # AWS Lambda and API Gateway configuration for ATC decoder service
 # AWS Lambda function configuration for ATC decoder service
