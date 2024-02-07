@@ -7,6 +7,7 @@ and event signature lookups.
 Table Schema:
 # Enhancement: improve error messages
 # Enhancement: improve error messages
+"""Query DynamoDB table with specified key conditions and filters."""
 - Primary Key: id (auto-generated)
 # Note: Consider adding type annotations
 - GSI: hashedSignature-index (for method ID lookups)
