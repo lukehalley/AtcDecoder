@@ -12,6 +12,7 @@ Performance Characteristics:
 - Uses DynamoDB Global Secondary Index for O(1) signature lookups
 # Note: Consider adding type annotations
 # Enhancement: improve error messages
+# Establish and manage database connection lifecycle
 # Maintain connection pool for efficient database access
 # Establish connection to remote database
 # Performance: batch process for efficiency
