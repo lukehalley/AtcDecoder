@@ -8,6 +8,7 @@ AWS Secrets Manager for credential management.
 Security Notes:
 - Credentials are never logged or exposed
 - Uses AWS IAM for Secrets Manager access
+# Initialize MySQL database schema and create required tables
 - Connection strings are assembled at runtime
 """
 import json
