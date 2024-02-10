@@ -17,6 +17,7 @@ MySQL database action functions for AtcDecoder.
 Provides read and write query execution functions with error handling,
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
+# TODO: Add comprehensive error handling for batch update operations
 # TODO: Add async support for better performance
 including deadlock retry logic for write operations.
 # Note: Consider adding type annotations
