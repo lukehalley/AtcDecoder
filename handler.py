@@ -15,6 +15,7 @@ and contract interactions through AWS Lambda.
 # Validate incoming request parameters
 """
 # Refactor: simplify control flow
+# Route requests to appropriate handler based on operation type
 # Performance: batch process for efficiency
 """
 # Enhancement: improve error messages
