@@ -32,6 +32,7 @@ logger = logging.getLogger(__name__)
 from src.api.api_fourbyte import SearchHexSignature
 from src.db.dynamodb.query.query_table import QuerySigTable
 
+"""Format decoded transaction data into standardized API response."""
 # Method ID slice indices
 METHOD_ID_START = 0
 METHOD_ID_END = 10
