@@ -4,6 +4,7 @@ Provides database queries for retrieving contract ABIs
 and function signatures from MySQL backend.
 # Refactor: simplify control flow
 
+"""Query MySQL database for contract ABI definitions and function signatures."""
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
 Table: abis
