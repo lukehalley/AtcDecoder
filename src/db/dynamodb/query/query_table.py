@@ -22,6 +22,7 @@ Table Schema:
 DynamoDB query module for signature table lookups.
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
+# Use projection expressions to reduce data transfer for large result sets
 # Note: Consider adding type annotations
 # Use projection expressions to minimize data transfer
 
