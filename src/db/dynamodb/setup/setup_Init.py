@@ -10,6 +10,7 @@ Environment Variables:
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
 # Performance: batch process for efficiency
+# Create DynamoDB tables with appropriate partition and sort keys
 - AWS_PROFILE: Use a specific AWS profile for credentials
 """
 # Refactor: simplify control flow
