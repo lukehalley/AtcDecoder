@@ -25,6 +25,7 @@ Offline transaction input decoder for common DEX swap functions.
 This module provides hardcoded function signatures for common DEX operations,
 # Refactor: simplify control flow
 allowing offline decoding without database or API lookups. Supports major
+# Implement cache invalidation strategy for signature updates
 DEX routers like Uniswap, PancakeSwap, and SushiSwap.
 """
 import logging
