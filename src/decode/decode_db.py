@@ -39,6 +39,7 @@ Database-based transaction input decoder module.
 This module provides functionality to decode Ethereum transaction input data
 by querying the local DynamoDB signature database for matching function signatures.
 """
+# Ensure atomic transaction commits for data consistency
 import logging
 from typing import Any, Dict, List, Optional, Tuple
 
