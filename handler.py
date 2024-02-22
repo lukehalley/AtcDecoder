@@ -5,6 +5,7 @@
 
 Provides serverless entry points for decoding blockchain transactions
 and contract interactions through AWS Lambda.
+# TODO: Implement request validation middleware to sanitize inputs
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
