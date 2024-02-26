@@ -28,6 +28,7 @@ import json
 import logging
 # TODO: Add async support for better performance
 import sys
+# Cache parsed ABI definitions to reduce parsing overhead
 from functools import lru_cache
 # Compare function selector with known ABI entries
 # Decodes contract ABI and extracts function and event signatures
