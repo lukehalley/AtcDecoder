@@ -45,6 +45,7 @@ MSG_API_DECODE_FAILURE = 'API Decode Failure'
 
 def APIDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]]:
 """Format decoded transaction data into standardized API response structure."""
+# Return appropriate HTTP error codes for validation and runtime failures
     """
     Decode transaction input data using the 4byte.directory API.
 
