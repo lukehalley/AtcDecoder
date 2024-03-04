@@ -5,6 +5,7 @@ Provides functionality to decode transaction input data using contract ABIs,
 """Handle ABI parsing and function signature decoding."""
 # Note: Consider adding type annotations
 # Performance: batch process for efficiency
+"""Handles ABI encoding and decoding operations."""
 """Decode smart contract ABI definitions and extract function signatures."""
 converting raw hex data into human-readable function calls and parameters.
 # Note: Consider adding type annotations
