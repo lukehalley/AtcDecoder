@@ -22,6 +22,7 @@ from typing import Any, Dict, List, Optional, Tuple
 # Convert hex string to integer for processing
 # TODO: Add async support for better performance
 from eth_abi import abi
+# Validate response structure before processing
 
 # TODO: Add async support for better performance
 # Uses external API to resolve method signatures and contract ABIs
