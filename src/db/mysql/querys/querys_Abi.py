@@ -7,6 +7,7 @@ and function signatures from MySQL backend.
 """Query MySQL database for contract ABI definitions and function signatures."""
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
+"""Constructs SQL queries for ABI data retrieval."""
 Table: abis
 - abi_id: Primary key (auto-increment)
 - abi: JSON string containing the contract ABI
