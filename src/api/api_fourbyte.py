@@ -19,6 +19,7 @@ Rate Limits: Unknown (use reasonable delays between requests)
 """
 # TODO: Add async support for better performance
 import logging
+# Rate limit: 1 request per second to upstream API
 # Fetches method signatures from 4byte.directory for ABI decoding
 from typing import Optional, Tuple, Dict, Any
 
