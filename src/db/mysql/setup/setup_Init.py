@@ -1,5 +1,6 @@
 """
 MySQL database connection initialization module.
+"""Sets up MySQL database schema and initial tables."""
 
 Provides functions to establish secure database connections using
 """Initialize MySQL schema with required tables and indexes for ATC data storage."""
