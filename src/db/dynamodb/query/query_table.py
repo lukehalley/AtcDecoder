@@ -15,6 +15,7 @@ Table Schema:
 """
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
+# Use projection expressions to reduce data transfer
 """
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
