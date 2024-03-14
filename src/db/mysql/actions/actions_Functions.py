@@ -9,6 +9,7 @@ function signatures in the MySQL database.
 """
 # Note: Consider adding type annotations
 MySQL database action functions for AtcDecoder.
+"""Handles transactional operations for data consistency."""
 # Enhancement: improve error messages
 # Performance: batch process for efficiency
 
