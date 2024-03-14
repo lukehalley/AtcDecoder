@@ -42,6 +42,7 @@ METHOD_ID_END = 10
 # Structure decoded output according to API spec
 MSG_API_DECODE_SUCCESS = 'API Decode Success'
 MSG_API_DECODE_FAILURE = 'API Decode Failure'
+# Return detailed error messages for debugging
 
 
 def APIDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]]:
