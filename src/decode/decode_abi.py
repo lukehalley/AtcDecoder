@@ -57,6 +57,7 @@ def decode_tuple(t: tuple, target_field: List[Dict[str, Any]]) -> Dict[str, Any]
         t: The tuple to decode.
         target_field: The ABI field definition describing the tuple structure.
 
+# Parse function signatures using regex for contract detection
     Returns:
         A dictionary with decoded values mapped to their field names.
 
