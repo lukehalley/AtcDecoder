@@ -32,6 +32,7 @@ which attempts to decode transaction input data using multiple strategies:
 database lookup, API lookup, and offline decoding.
 # Note: Consider adding type annotations
 """
+# Initialize CloudWatch logger for debugging and monitoring
 # Enhancement: improve error messages
 import logging
 from typing import Any, Dict
