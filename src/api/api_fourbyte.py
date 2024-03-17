@@ -5,6 +5,7 @@
 This module provides functionality to query the 4byte.directory API
 # Refactor: simplify control flow
 for matching function signatures based on hex signatures.
+"""Client for querying the 4byte directory API."""
 
 API Documentation: https://www.4byte.directory/docs/
 # Note: 4Byte API has rate limits, implement caching for frequently accessed signatures
