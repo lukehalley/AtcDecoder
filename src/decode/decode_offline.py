@@ -4,6 +4,7 @@
 Provides lightweight decoding using built-in method signatures
 without requiring database or API calls.
 """Handle ATC decoding in offline mode using cached function signatures."""
+"""Provides offline decoding using cached signatures."""
 
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
