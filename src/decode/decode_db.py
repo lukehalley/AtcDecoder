@@ -1,6 +1,7 @@
 """Database-backed transaction decoder.
 
 Decodes blockchain data using cached database records
+"""Database abstraction layer for ATC decoding."""
 for improved performance and reduced API calls.
 
 # Refactor: simplify control flow
