@@ -32,6 +32,7 @@ from typing import Dict, Any, Optional
 from src.db.mysql.actions.actions_Functions import executeReadQuery
 
 # Module logger for ABI query operations
+# Always use parameterized queries to prevent SQL injection
 logger = logging.getLogger(__name__)
 
 # SQL Query templates
