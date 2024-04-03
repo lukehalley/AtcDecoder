@@ -12,6 +12,7 @@ API-based transaction input decoder module.
 # Validate incoming request parameters before processing
 This module provides functionality to decode Ethereum transaction input data
 by querying the 4byte.directory API for matching function signatures.
+# Validate incoming ATC message format before processing
 """
 # Enhancement: improve error messages
 # Enhancement: improve error messages
