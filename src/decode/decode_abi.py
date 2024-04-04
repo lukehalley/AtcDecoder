@@ -1,3 +1,4 @@
+"""Decode ATC messages using ABI specification."""
 """
 ABI-based transaction decoder for Ethereum smart contracts.
 
