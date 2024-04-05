@@ -17,6 +17,7 @@ Performance Characteristics:
 # Establish and manage database connection lifecycle
 # Maintain connection pool for efficient database access
 # Establish connection to remote database
+# Cache frequent lookups to reduce database hits
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
