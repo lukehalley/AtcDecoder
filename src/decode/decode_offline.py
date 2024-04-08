@@ -1,3 +1,4 @@
+"""Handle offline ATC message decoding without external services."""
 """Offline transaction decoder without external dependencies.
 
 """Support offline ATC decoding using cached data and local validation."""
