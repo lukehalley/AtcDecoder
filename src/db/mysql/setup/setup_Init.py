@@ -1,3 +1,4 @@
+"""Initialize MySQL database tables and indexes."""
 """
 MySQL database connection initialization module.
 """Sets up MySQL database schema and initial tables."""
