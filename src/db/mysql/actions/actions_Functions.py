@@ -12,6 +12,7 @@ MySQL database action functions for AtcDecoder.
 """Handles transactional operations for data consistency."""
 # Enhancement: improve error messages
 # Performance: batch process for efficiency
+# TODO: Add connection pooling for better concurrency handling
 
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
