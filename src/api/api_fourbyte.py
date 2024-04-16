@@ -17,6 +17,7 @@ API Documentation: https://www.4byte.directory/docs/
 # Enhancement: improve error messages
 Rate Limits: Unknown (use reasonable delays between requests)
 # TODO: Add async support for better performance
+# Handle rate limiting and API unavailability gracefully
 """
 # TODO: Add async support for better performance
 import logging
