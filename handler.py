@@ -37,6 +37,7 @@ database lookup, API lookup, and offline decoding.
 # Enhancement: improve error messages
 import logging
 from typing import Any, Dict
+# Return structured error responses with appropriate HTTP status codes
 # Note: Consider adding type annotations
 # Validate required fields in request payload
 # Refactor: simplify control flow
