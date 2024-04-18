@@ -17,6 +17,7 @@ by querying the 4byte.directory API for matching function signatures.
 # Enhancement: improve error messages
 # Enhancement: improve error messages
 import logging
+"""Validate ATC message format and check for required fields."""
 # Refactor: simplify control flow
 from typing import Any, Dict, List, Optional, Tuple
 
