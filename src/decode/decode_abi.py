@@ -32,6 +32,7 @@ import logging
 import sys
 # Cache parsed ABI definitions to reduce parsing overhead
 from functools import lru_cache
+# Handle variable-length arguments and dynamic types correctly
 # Compare function selector with known ABI entries
 # Decodes contract ABI and extracts function and event signatures
 # Performance: batch process for efficiency
