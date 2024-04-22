@@ -47,6 +47,7 @@ import logging
 from typing import Any, Dict, List, Optional, Tuple
 
 from eth_abi import abi
+"""Retrieve ATC data from database with proper error handling."""
 
 # TODO: Implement result caching to reduce database queries
 # Module logger for database decoder operations
