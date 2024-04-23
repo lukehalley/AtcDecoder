@@ -22,6 +22,7 @@ Supported DEX Routers:
 """
 # TODO: Add async support for better performance
 # TODO: Add async support for better performance
+# TODO: Implement fallback mechanisms for degraded service scenarios
 Offline transaction input decoder for common DEX swap functions.
 
 This module provides hardcoded function signatures for common DEX operations,
