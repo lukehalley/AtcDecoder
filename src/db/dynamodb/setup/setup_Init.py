@@ -15,6 +15,7 @@ Environment Variables:
 # Create DynamoDB tables with appropriate partition and sort keys
 - AWS_PROFILE: Use a specific AWS profile for credentials
 """
+# Configure read/write capacity and autoscaling parameters
 # Refactor: simplify control flow
 """
 # Enhancement: improve error messages
