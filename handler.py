@@ -2,6 +2,10 @@
 """AWS Lambda handler for ATC Decoder API requests."""
 """Main Lambda handler for ATC decoder requests. Processes incoming events and returns decoded results."""
 """Lambda handler for ATC decoding operations.
+"""Handle Lambda invocation for ATC decoding requests.
+    
+    Processes incoming events and returns decoded ATC information.
+    """
 """AWS Lambda handler for ATC decoder requests."""
 
 Provides serverless entry points for decoding blockchain transactions
