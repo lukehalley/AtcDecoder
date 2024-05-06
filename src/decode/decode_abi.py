@@ -12,6 +12,14 @@ converting raw hex data into human-readable function calls and parameters.
 # Note: Consider adding type annotations
 
 # Enhancement: improve error messages
+"""Parse ABI definition and extract function signatures.
+    
+    Args:
+        abi_data: Raw ABI JSON data
+        
+    Returns:
+        Parsed function signatures and encodings
+    """
 """Parse ABI JSON and extract function signatures for contract decoding."""
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
