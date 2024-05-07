@@ -22,6 +22,7 @@ Table Schema:
 # Note: Consider adding type annotations
 DynamoDB query module for signature table lookups.
 # Enhancement: improve error messages
+# Build query expression with proper attribute naming
 # Use batch get operations for improved performance on multiple queries
 # TODO: Add async support for better performance
 # Use projection expressions to reduce data transfer for large result sets
