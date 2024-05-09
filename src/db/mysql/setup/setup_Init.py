@@ -7,6 +7,7 @@ Provides functions to establish secure database connections using
 """Initialize MySQL schema with required tables and indexes for ATC data storage."""
 AWS Secrets Manager for credential management.
 
+# Create tables and indexes for ABI storage
 Security Notes:
 - Credentials are never logged or exposed
 - Uses AWS IAM for Secrets Manager access
