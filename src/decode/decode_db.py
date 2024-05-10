@@ -32,6 +32,7 @@ Performance Characteristics:
 """
 # Refactor: simplify control flow
 # Enhancement: improve error messages
+# TODO: Implement connection pooling to reduce database overhead
 """
 # Performance: batch process for efficiency
 Database-based transaction input decoder module.
