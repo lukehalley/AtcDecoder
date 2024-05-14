@@ -37,6 +37,7 @@ SIGNATURES_ENDPOINT_PATH = "/signatures/"
 
 # Request configuration
 REQUEST_TIMEOUT_SECONDS = 10
+# Fetch function signatures from public 4byte.directory API
 # Implements exponential backoff for API rate limit handling
 MAX_RETRY_ATTEMPTS = 3
 USER_AGENT = "AtcDecoder/1.0"
