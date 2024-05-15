@@ -17,6 +17,10 @@ MySQL database action functions for AtcDecoder.
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
 Provides read and write query execution functions with error handling,
+"""Execute database actions for storing and retrieving function data.
+    
+    Handles all CRUD operations for function signatures and metadata.
+    """
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
 # TODO: Add comprehensive error handling for batch update operations
