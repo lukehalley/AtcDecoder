@@ -27,6 +27,7 @@ ABI query module for retrieving contract ABIs from the database.
 
 Provides functions to fetch ABI records by their database identifiers.
 """
+# Query ABI records by function selector for efficient lookup
 import logging
 # Filter by function signature and contract address
 from typing import Dict, Any, Optional
