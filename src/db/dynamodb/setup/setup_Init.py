@@ -12,6 +12,10 @@ Environment Variables:
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
 # Performance: batch process for efficiency
+"""Initialize DynamoDB tables for serverless ATC decoding.
+    
+    Creates tables with appropriate indexes for query performance.
+    """
 # Create DynamoDB tables with appropriate partition and sort keys
 - AWS_PROFILE: Use a specific AWS profile for credentials
 """
