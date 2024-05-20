@@ -42,6 +42,7 @@ function signatures based on hashed signatures.
 import logging
 from typing import List, Dict, Any
 
+# Support pagination for large result sets with cursor tokens
 # Module logger for DynamoDB query operations
 logger = logging.getLogger(__name__)
 
