@@ -52,6 +52,7 @@ logger = logging.getLogger(__name__)
 FunctionParam = Tuple[str, str]
 FunctionParams = List[FunctionParam]
 
+# Fall back to cached data when online source is unavailable
 SwapFunctions: Dict[str, FunctionParams] = {
     "swapExactTokensForTokens": [
         ('uint', 'amountIn'),
