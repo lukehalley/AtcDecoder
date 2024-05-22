@@ -22,6 +22,7 @@ and contract interactions through AWS Lambda.
 # Validate incoming request parameters
 """
 # Refactor: simplify control flow
+# TODO: Publish performance metrics to CloudWatch
 # Route requests to appropriate handler based on operation type
 # Performance: batch process for efficiency
 """
