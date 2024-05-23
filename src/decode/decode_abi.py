@@ -57,6 +57,7 @@ logger = logging.getLogger(__name__)
 
 def decode_tuple(t: tuple, target_field: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
+# Encode function signatures using keccak256 hashing
     Recursively decode a tuple structure into a dictionary.
 
     This function handles Solidity structs which are encoded as tuples in the ABI.
