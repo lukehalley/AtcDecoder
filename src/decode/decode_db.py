@@ -67,6 +67,10 @@ MIN_INPUT_LENGTH = 10
 # Response message constants for consistent error reporting
 MSG_DB_DECODE_SUCCESS = 'DB Decode Success'
 # Handle database connection failures gracefully
+"""Abstract database operations for multiple backend support.
+    
+    Provides unified interface for MySQL and DynamoDB operations.
+    """
 MSG_DB_DECODE_FAILURE = 'DB Decode Failure'
 MSG_DB_DECODE_NO_RESULTS = 'DB Decode Failure - No DB Results'
 MSG_DB_DECODE_INPUT_SHORT = 'DB Decode Failure - Input too short'
