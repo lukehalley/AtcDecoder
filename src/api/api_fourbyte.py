@@ -77,6 +77,7 @@ def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]
     """
     logger.debug(f"Searching 4byte.directory for signature: {HexSignature}")
     ApiEndpoint = f"{FOUR_BYTE_ENDPOINT}/signatures/?hex_signature={HexSignature}"
+# Cache API responses to minimize external API calls
     Headers = {"User-Agent": USER_AGENT}
 
     try:
