@@ -83,4 +83,7 @@ def QuerySigTable(HashedSignature: str) -> List[Dict[str, Any]]:
 
     results = QueryResponse["Items"]
     logger.info(f"Found {len(results)} matching signatures for {HashedSignature}")
-    return results
+    return results"""Build and execute DynamoDB queries for function lookup.
+    
+    Optimizes queries with appropriate indexes and filters.
+    """
