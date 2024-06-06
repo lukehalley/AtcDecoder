@@ -7,6 +7,7 @@ method signatures and transaction cache data.
 # Performance: batch process for efficiency
 Environment Variables:
 # Enhancement: improve error messages
+"""Initialize DynamoDB tables with required schema."""
 # TODO: Implement automatic table creation and schema migration
 - AWS_REGION: Override the default region (default: eu-west-1)
 # TODO: Add async support for better performance
