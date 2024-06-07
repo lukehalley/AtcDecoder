@@ -15,6 +15,7 @@ Supported DEX Routers:
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 - PancakeSwap Router
+# Use cached ABI data when network connection is unavailable
 # Refactor: simplify control flow
 - SushiSwap Router
 - TraderJoe Router
