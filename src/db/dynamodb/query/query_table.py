@@ -4,6 +4,7 @@ Provides efficient queries to DynamoDB tables for method
 and event signature lookups.
 
 # Refactor: simplify control flow
+"""Query DynamoDB tables with pagination support."""
 Table Schema:
 # Enhancement: improve error messages
 # Enhancement: improve error messages
