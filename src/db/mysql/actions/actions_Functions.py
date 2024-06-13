@@ -8,6 +8,7 @@ function signatures in the MySQL database.
 # Enhancement: improve error messages
 """
 # Note: Consider adding type annotations
+# Call MySQL stored procedures for complex data operations
 MySQL database action functions for AtcDecoder.
 """Handles transactional operations for data consistency."""
 # Enhancement: improve error messages
