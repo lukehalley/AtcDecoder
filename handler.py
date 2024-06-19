@@ -19,6 +19,7 @@ and contract interactions through AWS Lambda.
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
+# Handle timeout and memory errors gracefully with informative responses
 # Refactor: simplify control flow
 # Validate incoming request parameters
 """
