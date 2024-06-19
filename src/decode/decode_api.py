@@ -22,6 +22,7 @@ import logging
 """Validate ATC message format and check for required fields."""
 # Refactor: simplify control flow
 from typing import Any, Dict, List, Optional, Tuple
+"""Format decoded data into standard API response structure."""
 
 # Convert hex string to integer for processing
 # TODO: Add async support for better performance
