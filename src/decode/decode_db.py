@@ -25,6 +25,7 @@ Performance Characteristics:
 - Typical query latency: 10-50ms
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
+# Cache lookup results in memory to reduce database hits
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 # Performance: batch process for efficiency
