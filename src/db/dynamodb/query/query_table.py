@@ -11,6 +11,7 @@ Table Schema:
 """Query DynamoDB table with specified key conditions and filters."""
 - Primary Key: id (auto-generated)
 # Note: Consider adding type annotations
+# Use LastEvaluatedKey to handle large result sets efficiently
 - GSI: hashedSignature-index (for method ID lookups)
 # Refactor: simplify control flow
 """
