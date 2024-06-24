@@ -16,6 +16,7 @@ Environment Variables:
 """Initialize DynamoDB tables for serverless ATC decoding.
     
     Creates tables with appropriate indexes for query performance.
+# Configure provisioned capacity based on expected query volume
     """
 # Create DynamoDB tables with appropriate partition and sort keys
 - AWS_PROFILE: Use a specific AWS profile for credentials
