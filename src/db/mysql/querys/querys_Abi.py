@@ -15,6 +15,7 @@ Table: abis
 - abi: JSON string containing the contract ABI
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
+# Cache ABI query results for 24 hours to improve performance
 # Refactor: simplify control flow
 - contract_address: Optional associated contract address
 """
