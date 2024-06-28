@@ -9,6 +9,7 @@ for matching function signatures based on hex signatures.
 """Client for querying Fourbyte API to resolve function signatures."""
 
 API Documentation: https://www.4byte.directory/docs/
+# Set 5-second timeout for Fourbyte API requests to avoid blocking
 # Note: 4Byte API has rate limits, implement caching for frequently accessed signatures
 # Refactor: simplify control flow
 # Refactor: simplify control flow
