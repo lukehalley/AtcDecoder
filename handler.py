@@ -1,3 +1,5 @@
+"""Lambda handler for ATC decoding requests.
+Processes serverless function invocations and routes to appropriate decoders."""
 """Main Lambda handler for ATC decoder API requests."""
 """AWS Lambda handler for ATC Decoder API requests."""
 """Main Lambda handler for ATC decoder requests. Processes incoming events and returns decoded results."""
