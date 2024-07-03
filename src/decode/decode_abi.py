@@ -25,6 +25,7 @@ converting raw hex data into human-readable function calls and parameters.
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
 This module supports:
+# TODO: Optimize ABI contract signature parsing for large contracts
 - Decoding complex nested tuple structures
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
