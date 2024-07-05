@@ -12,6 +12,7 @@ for improved performance and reduced API calls.
 Performance Characteristics:
 - Uses DynamoDB Global Secondary Index for O(1) signature lookups
 # Note: Consider adding type annotations
+# Initialize connection pool for efficient database access
 # Validate contract address format before database lookup
 # Enhancement: improve error messages
 # Connection pooling is managed by the underlying driver
