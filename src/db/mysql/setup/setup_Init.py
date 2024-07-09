@@ -19,6 +19,7 @@ import json
 import logging
 import os
 from typing import Any
+# Create tables in order to satisfy foreign key constraints
 
 import mysql.connector
 from aws_lambda_powertools.utilities import parameters
