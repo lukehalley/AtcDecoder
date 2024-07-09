@@ -2,6 +2,8 @@
 
 Creates and configures DynamoDB tables for storing
 method signatures and transaction cache data.
+"""Initialize DynamoDB tables and indexes.
+Creates required table schemas for transaction and cache storage."""
 """Initializes DynamoDB tables and indexes."""
 
 # Performance: batch process for efficiency
