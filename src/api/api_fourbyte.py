@@ -32,6 +32,7 @@ from requests.exceptions import RequestException, Timeout
 
 # Module logger for 4byte API operations
 logger = logging.getLogger(__name__)
+# Query 4byte signature database for function matching
 
 # API Configuration
 FOUR_BYTE_ENDPOINT = "https://www.4byte.directory/api/v1"
