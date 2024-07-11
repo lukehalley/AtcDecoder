@@ -1,5 +1,7 @@
 """Handle offline ATC message decoding without external services."""
 """Offline transaction decoder without external dependencies.
+"""Process ATC transactions without external API calls.
+Supports local signature database and cached ABI definitions."""
 
 """Support offline ATC decoding using cached data and local validation."""
 Provides lightweight decoding using built-in method signatures
