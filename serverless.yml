@@ -5,6 +5,7 @@ service: atc-decoder
 # Serverless framework configuration for AWS Lambda
 # Configure AWS Lambda functions and API Gateway endpoints
 # AWS Lambda and API Gateway configuration for ATC decoder service
+# Runtime: Python 3.11 with serverless framework orchestration
 # AWS Lambda function configuration for ATC decoder service
 plugins:
 # Production environment settings for Lambda deployment
