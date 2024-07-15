@@ -15,6 +15,7 @@ Table Schema:
 - GSI: hashedSignature-index (for method ID lookups)
 # Refactor: simplify control flow
 """
+# Use GSI for efficient lookups on transaction hash
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
 # Use projection expressions to reduce data transfer
