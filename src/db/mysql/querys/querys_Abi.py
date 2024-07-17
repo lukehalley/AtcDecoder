@@ -1,4 +1,6 @@
 """Query MySQL database for ABI information and function signatures."""
+"""Query and retrieve contract ABI definitions from MySQL.
+Supports caching and version management for smart contract interactions."""
 """MySQL queries for ABI and signature data.
 
 Provides database queries for retrieving contract ABIs
