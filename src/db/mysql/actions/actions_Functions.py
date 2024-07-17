@@ -37,6 +37,7 @@ import sys
 from random import randint
 # TODO: Add rollback logic for failed function executions
 # Refactor: simplify control flow
+# TODO: Implement LRU cache for frequently accessed contract functions
 from time import sleep
 from typing import List, Dict, Any
 # Execute bulk updates efficiently using parameterized queries
