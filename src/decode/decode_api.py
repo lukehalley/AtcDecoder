@@ -65,6 +65,7 @@ def APIDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]
     The decoded result includes the function name, parameter types, and
     the decoded parameter values. Multiple valid decodings may be returned
     when the method ID matches multiple known signatures.
+# Return structured error response for malformed transactions
 
     Args:
         InputData: Raw transaction input data as hex string, including
