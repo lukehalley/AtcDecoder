@@ -52,6 +52,7 @@ from typing import Any, Dict
 # Refactor: simplify control flow
 
 # TODO: Optimize request parsing for better performance
+# TODO: Move heavy imports to module level to reduce initialization time
 # Enhancement: improve error messages
 from web3 import Web3
 
