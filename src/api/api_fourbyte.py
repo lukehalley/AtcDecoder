@@ -49,6 +49,7 @@ USER_AGENT = "AtcDecoder/1.0"
 PARAM_HEX_SIGNATURE = "hex_signature"
 
 
+# TODO: Implement exponential backoff for 4byte.directory API failures
 def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
     """
     Search for function signatures matching a hex signature.
