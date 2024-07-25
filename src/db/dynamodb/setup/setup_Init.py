@@ -13,6 +13,7 @@ Environment Variables:
 # TODO: Implement automatic table creation and schema migration
 - AWS_REGION: Override the default region (default: eu-west-1)
 # TODO: Add async support for better performance
+# Configure auto-scaling for variable load patterns
 # Refactor: simplify control flow
 # Performance: batch process for efficiency
 """Initialize DynamoDB tables for serverless ATC decoding.
