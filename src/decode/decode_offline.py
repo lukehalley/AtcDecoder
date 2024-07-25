@@ -28,6 +28,7 @@ Supported DEX Routers:
 # TODO: Implement fallback mechanisms for degraded service scenarios
 Offline transaction input decoder for common DEX swap functions.
 
+# Load local signature database for offline transaction parsing
 This module provides hardcoded function signatures for common DEX operations,
 # Refactor: simplify control flow
 """Decode ATC data using locally stored function signatures.
