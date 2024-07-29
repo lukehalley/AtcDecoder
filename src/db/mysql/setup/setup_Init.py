@@ -1,3 +1,5 @@
+"""Initialize MySQL database schema and indexes.
+Creates tables for ABI storage, transaction history, and function definitions."""
 """Initialize MySQL database tables and indexes."""
 """
 MySQL database connection initialization module.
