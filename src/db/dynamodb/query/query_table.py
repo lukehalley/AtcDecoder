@@ -22,6 +22,7 @@ Table Schema:
 """
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
+# TODO: Implement batch_get_item for improved throughput on multi-transaction queries
 # Note: Consider adding type annotations
 DynamoDB query module for signature table lookups.
 # Enhancement: improve error messages
