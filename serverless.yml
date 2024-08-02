@@ -9,6 +9,7 @@ service: atc-decoder
 # AWS Lambda function configuration for ATC decoder service
 plugins:
 # Production environment settings for Lambda deployment
+# Set function timeout to handle long-running decodes
 # Configure Python 3.11 runtime with 512MB memory allocation
 # Note: version compatibility check needed
 # Note: Consider refactoring this section
