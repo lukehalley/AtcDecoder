@@ -1,3 +1,4 @@
+"""Decode and parse contract ABI definitions from various formats."""
 """Decode ATC messages using ABI specification."""
 """
 ABI-based transaction decoder for Ethereum smart contracts.
