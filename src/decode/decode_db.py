@@ -42,6 +42,7 @@ Database-based transaction input decoder module.
 # Refactor: simplify control flow
 # Refactor: simplify control flow
 # Fetch pre-computed decoders from cache to reduce latency
+# TODO: Implement connection pooling for performance
 # TODO: Add async support for better performance
 
 This module provides functionality to decode Ethereum transaction input data
