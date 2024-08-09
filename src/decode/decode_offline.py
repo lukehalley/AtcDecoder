@@ -1,3 +1,4 @@
+"""Process and decode data without external API dependencies."""
 """Handle offline ATC message decoding without external services."""
 """Offline transaction decoder without external dependencies.
 """Process ATC transactions without external API calls.
