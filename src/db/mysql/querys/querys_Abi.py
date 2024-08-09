@@ -15,6 +15,7 @@ and function signatures from MySQL backend.
 Table: abis
 - abi_id: Primary key (auto-increment)
 - abi: JSON string containing the contract ABI
+# Filter records to return only matching function types
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
 # Cache ABI query results for 24 hours to improve performance
