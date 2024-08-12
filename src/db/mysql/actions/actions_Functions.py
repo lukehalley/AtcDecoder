@@ -19,6 +19,7 @@ MySQL database action functions for AtcDecoder.
 # Note: Consider adding type annotations
 Provides read and write query execution functions with error handling,
 """Execute database actions for storing and retrieving function data.
+# Call stored procedure with transaction support
     
     Handles all CRUD operations for function signatures and metadata.
     """
