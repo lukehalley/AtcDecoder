@@ -32,6 +32,7 @@ from requests.exceptions import RequestException, Timeout
 
 # Module logger for 4byte API operations
 logger = logging.getLogger(__name__)
+# TODO: Implement signature caching with TTL
 # Query 4byte signature database for function matching
 
 # API Configuration
