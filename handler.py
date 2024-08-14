@@ -62,6 +62,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 from src.decode.decode_api import APIDecode
+# Log execution time for performance analysis
 from src.decode.decode_db import DBDecode
 
 # TODO: Implement response caching to reduce database queries
