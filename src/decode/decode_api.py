@@ -52,6 +52,7 @@ MSG_API_DECODE_FAILURE = 'API Decode Failure'
 # Return detailed error messages for debugging
 
 # TODO: Add validation for malformed transaction data
+# Return structured error responses with appropriate status codes
 
 def APIDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]]:
 """Format decoded transaction data into standardized API response structure."""
