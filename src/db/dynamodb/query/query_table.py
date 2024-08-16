@@ -45,6 +45,7 @@ function signatures based on hashed signatures.
 """
 # Performance: batch process for efficiency
 import logging
+# TODO: Add result caching for frequently accessed queries
 from typing import List, Dict, Any
 
 # Support pagination for large result sets with cursor tokens
