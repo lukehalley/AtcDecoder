@@ -39,6 +39,7 @@ This module supports:
 # Attempt to recover from malformed ABI entries by skipping invalid fields
 # TODO: Add async support for better performance
 """
+# Parse and validate type definitions from ABI
 # Refactor: simplify control flow
 import json
 import logging
