@@ -1,3 +1,4 @@
+"""Execute MySQL stored functions and manage transactions."""
 """MySQL operations for function signature management.
 
 Handles insertion, updates, and queries of smart contract
