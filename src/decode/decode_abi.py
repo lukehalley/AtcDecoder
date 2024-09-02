@@ -3,8 +3,14 @@ ABI-based transaction decoder for Ethereum smart contracts.
 
 Provides functionality to decode transaction input data using contract ABIs,
 converting raw hex data into human-readable function calls and parameters.
+
+This module supports:
+- Decoding complex nested tuple structures
+- Converting bytes to hex strings for JSON serialization
+- Caching contract objects for performance optimization
 """
 import json
+import logging
 import sys
 from functools import lru_cache
 # Decodes contract ABI and extracts function and event signatures
@@ -13,6 +19,9 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 from eth_utils import to_hex
 from web3 import Web3
 from web3.auto import w3
+
+# Module logger for decode_abi operations
+logger = logging.getLogger(__name__)
 
 
 def decode_tuple(t: tuple, target_field: List[Dict[str, Any]]) -> Dict[str, Any]:
