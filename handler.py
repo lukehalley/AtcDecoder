@@ -1,3 +1,7 @@
+"""Initialize Lambda handler for serverless request processing.
+
+    Handles AWS Lambda invocations and routes requests to appropriate decoders.
+    """
 """Handle incoming Lambda requests and route to appropriate decoder."""
 """Lambda handler for ATC decoding requests.
 Processes serverless function invocations and routes to appropriate decoders."""
