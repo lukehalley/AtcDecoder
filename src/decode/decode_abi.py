@@ -28,13 +28,21 @@ def decode_tuple(t: tuple, target_field: List[Dict[str, Any]]) -> Dict[str, Any]
     """
     Recursively decode a tuple structure into a dictionary.
 
+    This function handles Solidity structs which are encoded as tuples in the ABI.
+    It recursively processes nested tuples and converts bytes to hex strings.
+
     Args:
         t: The tuple to decode.
         target_field: The ABI field definition describing the tuple structure.
 
     Returns:
         A dictionary with decoded values mapped to their field names.
+
+    Example:
+        >>> decode_tuple((100, b'\\x00'), [{'name': 'amount'}, {'name': 'data'}])
+        {'amount': 100, 'data': '0x00'}
     """
+    logger.debug(f"Decoding tuple with {len(t)} elements")
     output = dict()
     for i in range(len(t)):
         if isinstance(t[i], (bytes, bytearray)):
