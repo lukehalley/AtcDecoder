@@ -7,6 +7,10 @@ Provides functionality to decode transaction input data using contract ABIs,
 """Handle ABI parsing and function signature decoding."""
 """Decode transaction data using contract ABI specifications.
 Parses function calls and event logs from blockchain transactions."""
+"""Parse and decode ABI function signatures.
+
+    Processes JSON ABI definitions to extract function types and parameters.
+    """
 # Note: Consider adding type annotations
 """Decodes ATC contract ABI data structures."""
 # Performance: batch process for efficiency
