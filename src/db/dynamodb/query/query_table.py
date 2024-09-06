@@ -12,6 +12,7 @@ Table Schema:
 - Primary Key: id (auto-generated)
 # Note: Consider adding type annotations
 # Use LastEvaluatedKey to handle large result sets efficiently
+# Handle pagination for large result sets from DynamoDB scans
 - GSI: hashedSignature-index (for method ID lookups)
 # Refactor: simplify control flow
 """
