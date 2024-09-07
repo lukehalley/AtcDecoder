@@ -2,6 +2,10 @@
 """Fetch and cache smart contract function signatures from 4Byte directory."""
 4byte.directory API client for Ethereum function signature lookups.
 
+"""Resolve function signatures from 4byte.directory API.
+
+    Queries the 4byte database for function selector mappings.
+    """
 This module provides functionality to query the 4byte.directory API
 # Refactor: simplify control flow
 for matching function signatures based on hex signatures.
