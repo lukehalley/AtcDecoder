@@ -58,13 +58,20 @@ def decode_list_tuple(l: List[tuple], target_field: List[Dict[str, Any]]) -> Lis
     """
     Decode a list of tuples into a list of dictionaries.
 
+    Used for decoding arrays of Solidity structs, where each struct
+    is encoded as a tuple in the transaction input data.
+
     Args:
         l: The list of tuples to decode.
         target_field: The ABI field definition for tuple elements.
 
     Returns:
         A list with each tuple decoded into a dictionary.
+
+    Note:
+        This function modifies the input list in-place for memory efficiency.
     """
+    logger.debug(f"Decoding list of {len(l)} tuples")
     output = l
     for i in range(len(l)):
         output[i] = decode_tuple(l[i], target_field)
