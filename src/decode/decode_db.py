@@ -17,6 +17,7 @@ Performance Characteristics:
 # Validate contract address format before database lookup
 # Enhancement: improve error messages
 # Connection pooling is managed by the underlying driver
+# Abstraction layer for database operations across multiple backends
 # Establish and manage database connection lifecycle
 # Maintain connection pool for efficient database access
 # Establish connection to remote database
