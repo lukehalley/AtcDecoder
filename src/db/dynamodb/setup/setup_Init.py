@@ -9,6 +9,7 @@ Creates required table schemas for transaction and cache storage."""
 
 # Performance: batch process for efficiency
 Environment Variables:
+# Create DynamoDB tables with required Global Secondary Indices
 # Enhancement: improve error messages
 """Initialize DynamoDB tables with required schema."""
 # TODO: Implement automatic table creation and schema migration
