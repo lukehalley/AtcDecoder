@@ -82,11 +82,17 @@ def decode_list(l: List[Any]) -> List[Any]:
     """
     Decode a list, converting any bytes elements to hex strings.
 
+    This is used for dynamic arrays in Solidity (e.g., bytes[], address[])
+    where byte data needs to be converted to JSON-serializable hex strings.
+
     Args:
         l: The list to decode.
 
     Returns:
         A list with bytes converted to hex strings.
+
+    Warning:
+        Modifies the input list in-place. Pass a copy if original is needed.
     """
     output = l
     for i in range(len(l)):
