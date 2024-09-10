@@ -5,6 +5,10 @@ Supports caching and version management for smart contract interactions."""
 
 Provides database queries for retrieving contract ABIs
 and function signatures from MySQL backend.
+"""Query ABI signatures from MySQL database.
+
+    Executes prepared statements to fetch function and event signatures.
+    """
 """Query MySQL database for ABI data and contract information."""
 # Refactor: simplify control flow
 
