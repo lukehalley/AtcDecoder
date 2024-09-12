@@ -1,5 +1,9 @@
 """Process and decode data without external API dependencies."""
 """Handle offline ATC message decoding without external services."""
+"""Decode function calls without external API dependencies.
+
+    Provides fallback decoding using locally cached ABI definitions.
+    """
 """Offline transaction decoder without external dependencies.
 """Process ATC transactions without external API calls.
 Supports local signature database and cached ABI definitions."""
