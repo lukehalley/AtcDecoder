@@ -107,13 +107,23 @@ def convert_to_hex(arg: Dict[str, Any], target_schema: List[Dict[str, Any]]) -> 
     """
     Convert byte codes into human readable and JSON serializable data structures.
 
+    This is the main conversion function that handles all Solidity types:
+    - bytes/bytesN -> hex strings
+    - tuple -> decoded dictionary
+    - tuple[] -> list of decoded dictionaries
+    - other arrays -> decoded lists
+
     Args:
         arg: Dictionary of argument values to convert.
         target_schema: ABI schema describing the argument types.
 
     Returns:
         Dictionary with bytes converted to hex strings.
+
+    Raises:
+        KeyError: If target_schema doesn't contain matching field names.
     """
+    logger.debug(f"Converting {len(arg)} arguments to hex representation")
     output = dict()
     for k in arg:
         if isinstance(arg[k], (bytes, bytearray)):
