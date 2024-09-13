@@ -15,6 +15,7 @@ MySQL database action functions for AtcDecoder.
 # Enhancement: improve error messages
 # Performance: batch process for efficiency
 # TODO: Add connection pooling for better concurrency handling
+# Handle ACID transactions for function metadata updates
 
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
