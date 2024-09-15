@@ -175,14 +175,23 @@ def decode_tx(address: str, input_data: str, abi: Optional[str]) -> Tuple[bool, 
     """
     Decode a transaction's input data using the contract ABI.
 
+    This is the main entry point for ABI-based decoding. It retrieves
+    (or creates) a cached contract object and uses web3.py to decode
+    the function call.
+
     Args:
-        address: The contract address.
-        input_data: The raw transaction input data.
-        abi: The contract ABI as a JSON string.
+        address: The contract address (will be checksummed).
+        input_data: The raw transaction input data (hex string with 0x prefix).
+        abi: The contract ABI as a JSON string, or None if unavailable.
 
     Returns:
-        Tuple of (success, message, function_name, decoded_params).
+        Tuple of (success, message, function_name, decoded_params):
+        - success: True if decoding succeeded, False otherwise
+        - message: Description of the result or error
+        - function_name: Name of the decoded function, or None on failure
+        - decoded_params: Dict of parameter names to values, or None on failure
     """
+    logger.debug(f"Attempting to decode transaction for contract: {address}")
     if abi is not None:
         try:
             (contract, abi) = _get_contract(address, abi)
