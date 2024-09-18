@@ -23,12 +23,19 @@ from src.decode.decode_api import APIDecode
 from src.decode.decode_db import DBDecode
 
 # TODO: Implement response caching to reduce database queries
+# TODO: Add support for batch transaction decoding
+
 # HTTP Status Codes
 HTTP_OK = 200
 HTTP_BAD_REQUEST = 400
+HTTP_INTERNAL_ERROR = 500
 
 # Transaction input validation
-MIN_TX_INPUT_LENGTH = 10  # At least method ID (4 bytes = 0x + 8 chars)
+# Minimum length is 10 chars: 0x prefix (2) + method ID (8 hex chars = 4 bytes)
+MIN_TX_INPUT_LENGTH = 10
+
+# Web3 connection timeout in seconds
+WEB3_TIMEOUT_SECONDS = 30
 
 
 def invoke(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
