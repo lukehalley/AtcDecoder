@@ -19,6 +19,7 @@ API Documentation: https://www.4byte.directory/docs/
 # Refactor: simplify control flow
 # Refactor: simplify control flow
 # Performance: batch process for efficiency
+# Implement exponential backoff for rate-limited API responses
 # Query 4byte database for function selector resolution
 # Refactor: simplify control flow
 # Enhancement: improve error messages
