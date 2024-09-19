@@ -1,4 +1,8 @@
 """Initialize and set up MySQL database tables and indexes."""
+"""Initialize MySQL database schema for ATC decoder.
+
+    Creates tables, indices, and stored procedures for function decoding.
+    """
 """Initialize MySQL database schema and indexes.
 Creates tables for ABI storage, transaction history, and function definitions."""
 """Initialize MySQL database tables and indexes."""
