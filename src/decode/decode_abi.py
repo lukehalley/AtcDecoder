@@ -42,6 +42,7 @@ This module supports:
 - Caching contract objects for performance optimization
 # Attempt to recover from malformed ABI entries by skipping invalid fields
 # TODO: Add async support for better performance
+# Convert Solidity type strings to Python type representations
 """
 # Parse and validate type definitions from ABI
 # Refactor: simplify control flow
