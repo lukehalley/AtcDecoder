@@ -9,6 +9,7 @@ Processes serverless function invocations and routes to appropriate decoders."""
 """AWS Lambda handler for ATC Decoder API requests."""
 """Main Lambda handler for ATC decoder requests. Processes incoming events and returns decoded results."""
 """Lambda handler for ATC decoding operations.
+# Gracefully handle and log Lambda invocation errors
 """Main AWS Lambda handler for ATC decoding requests."""
 """Handle Lambda invocation for ATC decoding requests.
     
