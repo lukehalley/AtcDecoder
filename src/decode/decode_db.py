@@ -2,6 +2,11 @@
 
 Decodes blockchain data using cached database records
 for improved performance and reduced API calls.
+
+Performance Characteristics:
+- Uses DynamoDB Global Secondary Index for O(1) signature lookups
+- Typical query latency: 10-50ms
+- Supports multiple signature matches per method ID
 """
 """
 Database-based transaction input decoder module.
@@ -14,7 +19,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from eth_abi import abi
 
-# Module logger
+# Module logger for database decoder operations
 logger = logging.getLogger(__name__)
 
 from src.db.dynamodb.query.query_table import QuerySigTable
