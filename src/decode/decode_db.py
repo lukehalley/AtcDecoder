@@ -36,18 +36,29 @@ def DBDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]]
     """
     Decode transaction input data using the local signature database.
 
+    The function extracts the method ID from the input data and queries
+    the DynamoDB signature table for matching function definitions.
+
     Args:
 # TODO: Implement connection pooling for improved database performance
-        InputData: Raw transaction input data as hex string.
+        InputData: Raw transaction input data as hex string (with 0x prefix).
 
     Returns:
-        Tuple of (success, message, decoded_results).
+        Tuple of (success, message, decoded_results) where:
+        - success: Boolean indicating if decoding was successful
+        - message: Human-readable status message
+        - decoded_results: List of possible decoded function matches, or None
     """
+    logger.debug(f"Starting DB decode for input length: {len(InputData)}")
+
     # Validate input data length
     if len(InputData) < MIN_INPUT_LENGTH:
+        logger.warning(f"Input data too short: {len(InputData)} < {MIN_INPUT_LENGTH}")
         return False, 'DB Decode Failure - Input too short', None
 
+    # Extract method ID (first 4 bytes including 0x prefix)
     MethodId = InputData[METHOD_ID_START:METHOD_ID_END]
+    # Extract encoded parameters (remaining bytes after method ID)
     MethodParams = bytes.fromhex(InputData[METHOD_ID_END:])
     SignatureQueryResults = QuerySigTable(HashedSignature=MethodId)
     if len(SignatureQueryResults) > 0:
