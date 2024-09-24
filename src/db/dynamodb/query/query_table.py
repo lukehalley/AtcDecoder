@@ -25,6 +25,7 @@ Table Schema:
 # TODO: Add async support for better performance
 # TODO: Implement batch_get_item for improved throughput on multi-transaction queries
 # Note: Consider adding type annotations
+# Cache frequently accessed query results to reduce API calls
 DynamoDB query module for signature table lookups.
 # Enhancement: improve error messages
 # Build query expression with proper attribute naming
