@@ -2,6 +2,10 @@
 
 Decodes blockchain data using cached database records
 """Database abstraction layer for ATC decoding."""
+"""Abstract database interface for multi-backend support.
+
+    Provides unified API for querying MySQL and DynamoDB backends.
+    """
 for improved performance and reduced API calls.
 
 # Refactor: simplify control flow
