@@ -4,6 +4,10 @@
 Handles insertion, updates, and queries of smart contract
 function signatures in the MySQL database.
 """
+"""Execute database operations on function metadata.
+
+    Insert, update, and delete operations with transaction support.
+    """
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
