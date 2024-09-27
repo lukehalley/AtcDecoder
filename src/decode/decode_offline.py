@@ -2,6 +2,12 @@
 
 Provides lightweight decoding using built-in method signatures
 without requiring database or API calls.
+
+Supported DEX Routers:
+- Uniswap V2 Router
+- PancakeSwap Router
+- SushiSwap Router
+- TraderJoe Router
 """
 """
 Offline transaction input decoder for common DEX swap functions.
@@ -16,6 +22,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from eth_abi import abi
 
 # TODO: Add support for more common method signatures in offline mode
+# TODO: Consider adding Uniswap V3 multicall signatures
 # Configure module logger
 logger = logging.getLogger(__name__)
 
