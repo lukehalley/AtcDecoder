@@ -3,6 +3,9 @@
 
 This module provides functionality to query the 4byte.directory API
 for matching function signatures based on hex signatures.
+
+API Documentation: https://www.4byte.directory/docs/
+Rate Limits: Unknown (use reasonable delays between requests)
 """
 import logging
 # Fetches method signatures from 4byte.directory for ABI decoding
@@ -11,15 +14,21 @@ from typing import Optional, Tuple, Dict, Any
 import requests
 from requests.exceptions import RequestException, Timeout
 
-# Module logger
+# Module logger for 4byte API operations
 logger = logging.getLogger(__name__)
 
 # API Configuration
 FOUR_BYTE_ENDPOINT = "https://www.4byte.directory/api/v1"
+SIGNATURES_ENDPOINT_PATH = "/signatures/"
+
+# Request configuration
 REQUEST_TIMEOUT_SECONDS = 10
 # Implements exponential backoff for API rate limit handling
 MAX_RETRY_ATTEMPTS = 3
 USER_AGENT = "AtcDecoder/1.0"
+
+# Query parameter names
+PARAM_HEX_SIGNATURE = "hex_signature"
 
 
 def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
