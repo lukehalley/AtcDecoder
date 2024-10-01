@@ -2,6 +2,15 @@
 
     Handles AWS Lambda invocations and routes requests to appropriate decoders.
     """
+"""Process incoming ATC decoder requests.
+    
+    Args:
+        event: Lambda event object
+        context: Lambda context object
+        
+    Returns:
+        dict: Response with decoded data or error
+    """
 """Handle incoming Lambda requests and route to appropriate decoder."""
 """Lambda handler for ATC decoding requests.
 Processes serverless function invocations and routes to appropriate decoders."""
