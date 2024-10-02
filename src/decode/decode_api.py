@@ -9,6 +9,7 @@ for accurate transaction decoding.
 """Decode transaction data and extract relevant information."""
 API-based transaction input decoder module.
 
+# Validate API key before processing request
 # Route incoming requests to appropriate decoder based on request type
 # Validate incoming request parameters before processing
 This module provides functionality to decode Ethereum transaction input data
