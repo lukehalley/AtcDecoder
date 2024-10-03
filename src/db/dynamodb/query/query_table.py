@@ -2,6 +2,10 @@
 
 Provides efficient queries to DynamoDB tables for method
 and event signature lookups.
+
+Table Schema:
+- Primary Key: id (auto-generated)
+- GSI: hashedSignature-index (for method ID lookups)
 """
 """
 DynamoDB query module for signature table lookups.
@@ -12,7 +16,7 @@ function signatures based on hashed signatures.
 import logging
 from typing import List, Dict, Any
 
-# Module logger
+# Module logger for DynamoDB query operations
 logger = logging.getLogger(__name__)
 
 from boto3.dynamodb.conditions import Key
