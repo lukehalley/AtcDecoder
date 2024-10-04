@@ -5,6 +5,14 @@ ABI-based transaction decoder for Ethereum smart contracts.
 
 Provides functionality to decode transaction input data using contract ABIs,
 """Handle ABI parsing and function signature decoding."""
+"""Decode contract ABI from encoded string.
+    
+    Args:
+        encoded_abi: Base64 encoded ABI data
+        
+    Returns:
+        dict: Decoded ABI specification
+    """
 """Decode transaction data using contract ABI specifications.
 Parses function calls and event logs from blockchain transactions."""
 """Parse and decode ABI function signatures.
