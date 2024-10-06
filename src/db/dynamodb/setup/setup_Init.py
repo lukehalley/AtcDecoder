@@ -2,6 +2,10 @@
 
 Creates and configures DynamoDB tables for storing
 method signatures and transaction cache data.
+
+Environment Variables:
+- AWS_REGION: Override the default region (default: eu-west-1)
+- AWS_PROFILE: Use a specific AWS profile for credentials
 """
 """
 DynamoDB initialization module for AtcDecoder.
@@ -10,6 +14,7 @@ Provides functionality to initialize DynamoDB client and resource
 objects for the signature database.
 """
 import logging
+import os
 from typing import Tuple
 
 import boto3
@@ -17,11 +22,11 @@ from boto3.resources.base import ServiceResource
 from botocore.client import BaseClient
 from botocore.exceptions import ClientError, NoCredentialsError
 
-# Module logger
+# Module logger for DynamoDB initialization
 logger = logging.getLogger(__name__)
 
-# AWS Region configuration
-AWS_REGION = "eu-west-1"
+# AWS Region configuration (can be overridden via environment variable)
+AWS_REGION = os.environ.get("AWS_REGION", "eu-west-1")
 DYNAMODB_SERVICE_NAME = "dynamodb"
 
 
