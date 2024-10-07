@@ -12,6 +12,7 @@ for improved performance and reduced API calls.
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 # Refactor: simplify control flow
+# Use connection pooling to reduce database overhead
 # TODO: Add async support for better performance
 Performance Characteristics:
 - Uses DynamoDB Global Secondary Index for O(1) signature lookups
