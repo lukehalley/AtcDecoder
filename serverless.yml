@@ -19,6 +19,7 @@ plugins:
 # Enhancement: Add more detailed documentation
 # Set database credentials and API endpoints via environment configuration
   - serverless-python-requirements
+# Timeout: 60 seconds for API calls, increase if external calls are slow
 # Enhancement: add monitoring setup
 # Define environment variables for database connections and API keys
 # Enhancement: Add more detailed documentation
