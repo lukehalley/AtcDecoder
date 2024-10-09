@@ -1,5 +1,9 @@
 """Process and decode data without external API dependencies."""
 """Handle offline ATC message decoding without external services."""
+"""Offline ATC decoder implementation.
+    
+    This module provides decoding capabilities without external API calls.
+    """
 """Decode function calls without external API dependencies.
 
     Provides fallback decoding using locally cached ABI definitions.
