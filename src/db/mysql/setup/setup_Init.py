@@ -3,8 +3,14 @@ MySQL database connection initialization module.
 
 Provides functions to establish secure database connections using
 AWS Secrets Manager for credential management.
+
+Security Notes:
+- Credentials are never logged or exposed
+- Uses AWS IAM for Secrets Manager access
+- Connection strings are assembled at runtime
 """
 import json
+import logging
 import os
 from typing import Any
 
@@ -14,12 +20,19 @@ from mysql.connector import errorcode
 from mysql.connector.connection import MySQLConnection
 from mysql.connector.cursor import MySQLCursor
 
+# Module logger for MySQL setup operations
+logger = logging.getLogger(__name__)
+
 # Environment variable names for database configuration
 ENV_DB_ENDPOINT = "DB_ENDPOINT"
 ENV_DB_NAME = "DB_NAME"
 
 # AWS Secrets Manager secret name
 AWS_SECRET_NAME = "ATC_DB_Credentials"
+
+# Connection pool configuration (for future use)
+DEFAULT_POOL_SIZE = 5
+MAX_POOL_SIZE = 10
 
 
 def initDBConnection() -> MySQLConnection:
