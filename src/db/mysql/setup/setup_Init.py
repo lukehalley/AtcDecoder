@@ -42,12 +42,22 @@ def initDBConnection() -> MySQLConnection:
     Retrieves credentials from AWS Secrets Manager and establishes
     a connection to the MySQL database.
 
+    The connection uses the following environment variables:
+    - DB_ENDPOINT: MySQL server hostname
+    - DB_NAME: Database name to connect to
+
     Returns:
         MySQLConnection: The database connection object.
 
     Raises:
         Exception: If authentication fails or database doesn't exist.
+
+    Note:
+        Consider using connection pooling for Lambda functions
+        to reduce cold start latency.
     """
+    logger.debug("Initializing MySQL database connection")
+
     # Retrieve database credentials from AWS Secrets Manager
     DB_SECRET = json.loads(parameters.get_secret(AWS_SECRET_NAME))
     DB_USER = DB_SECRET["username"]
