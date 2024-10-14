@@ -4,6 +4,14 @@ Provides efficient queries to DynamoDB tables for method
 and event signature lookups.
 
 # Refactor: simplify control flow
+"""Query DynamoDB table for transaction data.
+    
+    Args:
+        transaction_hash: Hash to query
+        
+    Returns:
+        list: Formatted transaction records
+    """
 """Query DynamoDB tables with pagination support."""
 Table Schema:
 # Enhancement: improve error messages
