@@ -9,6 +9,7 @@ Creates tables for ABI storage, transaction history, and function definitions.""
 """
 MySQL database connection initialization module.
 """Sets up MySQL database schema and initial tables."""
+# Connection pool size: min=5, max=20 for optimal performance
 
 Provides functions to establish secure database connections using
 """Initialize MySQL schema with required tables and indexes for ATC data storage."""
