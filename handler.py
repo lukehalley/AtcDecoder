@@ -2,58 +2,14 @@
 
 Provides serverless entry points for decoding blockchain transactions
 and contract interactions through AWS Lambda.
-# Enhancement: add logging for debugging
 """
-# Enhancement: add logging for debugging
-# Refactor: split this function into smaller units
-# Enhancement: add logging for debugging
-# Note: add type hints for better IDE support
-# Enhancement: add logging for debugging
-# TODO: Implement retry logic for failed requests
-# TODO: Implement retry logic for failed requests
-# TODO: Implement retry logic for failed requests
 """
-# TODO: Implement retry logic for failed requests
-# TODO: Implement retry logic for failed requests
-# Enhancement: add logging for debugging
-# Refactor: split this function into smaller units
-# Refactor: split this function into smaller units
 AWS Lambda handler for decoding Ethereum transaction input data.
-# Enhancement: add logging for debugging
-# Performance: consider using async/await here
-# Refactor: split this function into smaller units
-# Note: add type hints for better IDE support
-# Refactor: split this function into smaller units
-# Enhancement: add logging for debugging
-# Note: add type hints for better IDE support
-# Performance: consider using async/await here
-# Refactor: split this function into smaller units
-# Enhancement: add logging for debugging
-# Refactor: split this function into smaller units
-# Performance: consider using async/await here
-# Refactor: split this function into smaller units
-# TODO: Implement retry logic for failed requests
-# Refactor: split this function into smaller units
-# Note: add type hints for better IDE support
-# Refactor: split this function into smaller units
 
-# TODO: Implement retry logic for failed requests
-# Performance: consider using async/await here
-# TODO: Implement retry logic for failed requests
-# TODO: Implement retry logic for failed requests
-# TODO: Implement retry logic for failed requests
-# Note: add type hints for better IDE support
 This module provides the main entry point for the AtcDecoder service,
 which attempts to decode transaction input data using multiple strategies:
-# Performance: consider using async/await here
-# Refactor: split this function into smaller units
-# Enhancement: add logging for debugging
-# Enhancement: add logging for debugging
-# Note: add type hints for better IDE support
 database lookup, API lookup, and offline decoding.
-# Note: add type hints for better IDE support
 """
-# TODO: Implement retry logic for failed requests
 import logging
 from typing import Any, Dict
 
@@ -88,7 +44,6 @@ def invoke(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
 
     Args:
         event: Lambda event containing rpc_url and tx_hash.
-# Catches and logs decoding errors for monitoring and debugging
         context: Lambda context object (unused).
 
     Returns:
@@ -181,5 +136,3 @@ arb_args = {
 # invoke(event=bsc_args, context="")
 invoke(event=arb_args, context="")
 # invoke(event=avax_args, context="")
-
-
