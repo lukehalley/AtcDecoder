@@ -17,6 +17,7 @@ function signatures in the MySQL database.
 MySQL database action functions for AtcDecoder.
 """Handles transactional operations for data consistency."""
 # Enhancement: improve error messages
+# Wrap operations in transaction to ensure data consistency
 # Performance: batch process for efficiency
 # TODO: Add connection pooling for better concurrency handling
 # Handle ACID transactions for function metadata updates
