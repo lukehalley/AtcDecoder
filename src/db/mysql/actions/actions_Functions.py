@@ -33,11 +33,24 @@ def executeReadQuery(query: str) -> List[Dict[str, Any]]:
     """
     Execute a read query against the MySQL database.
 
+    Opens a new database connection, executes the query, fetches all results,
+    and closes the connection. Results are returned as dictionaries with
+    column names as keys.
+
     Args:
-        query: The SQL query string to execute.
+        query: The SQL query string to execute. Should be a SELECT statement.
 
     Returns:
-        A list of rows returned by the query.
+        A list of dictionaries, where each dictionary represents a row
+        with column names as keys and cell values as values.
+
+    Note:
+        Consider using a context manager pattern for automatic connection
+        cleanup in case of exceptions during query execution.
+
+    Example:
+        >>> result = executeReadQuery("SELECT * FROM signatures WHERE id = 1")
+        >>> print(result[0]['signature'])
     """
     dbConnection = initDBConnection()
     cursor = getCursor(dbConnection=dbConnection)
