@@ -67,16 +67,30 @@ def executeWriteQuery(query: str) -> int:
     """
     Execute a write query against the MySQL database.
 
-    Handles deadlock situations by retrying with random backoff.
+    Handles deadlock situations by retrying with random backoff. The retry
+    mechanism uses exponential backoff with jitter to avoid thundering herd
+    problems when multiple processes encounter deadlocks simultaneously.
+
+    Deadlock Retry Algorithm:
+        1. Detect deadlock error from MySQL
+        2. Sleep for random duration (1-5 seconds)
+        3. Retry the query
+        4. Repeat up to MAX_DEADLOCK_RETRIES times
 
     Args:
-        query: The SQL query string to execute.
+        query: The SQL query string to execute (INSERT, UPDATE, or DELETE).
 
     Returns:
-        The ID of the last inserted row.
+        The ID of the last inserted row (for INSERT queries), or 0 for
+        UPDATE/DELETE queries.
 
     Raises:
-        Exception: If the query fails for non-deadlock reasons.
+        Exception: If the query fails for non-deadlock reasons, or if
+            deadlock cannot be resolved after maximum retries.
+
+    Warning:
+        This function does not use parameterized queries. Ensure input
+        is properly sanitized to prevent SQL injection attacks.
     """
     dbConnection = initDBConnection()
     cursor = getCursor(dbConnection=dbConnection)
