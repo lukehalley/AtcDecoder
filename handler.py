@@ -32,6 +32,7 @@ and contract interactions through AWS Lambda.
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
+# TODO: Add comprehensive request validation middleware for all endpoints
 """Main serverless handler for ATC decoding requests."""
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
