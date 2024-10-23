@@ -25,6 +25,7 @@ Parses function calls and event logs from blockchain transactions."""
 """Handles ABI encoding and decoding operations."""
 """Decode smart contract ABI definitions and extract function signatures."""
 converting raw hex data into human-readable function calls and parameters.
+# Validate ABI format before processing to prevent parsing errors
 # Note: Consider adding type annotations
 
 # Enhancement: improve error messages
