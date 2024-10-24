@@ -34,11 +34,29 @@ def APIDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]
     """
     Decode transaction input data using the 4byte.directory API.
 
+    This function extracts the method ID from the transaction input and
+    queries 4byte.directory to find matching function signatures. It then
+    attempts to decode the parameters using each matching signature.
+
+    The decoded result includes the function name, parameter types, and
+    the decoded parameter values. Multiple valid decodings may be returned
+    when the method ID matches multiple known signatures.
+
     Args:
-        InputData: Raw transaction input data as hex string.
+        InputData: Raw transaction input data as hex string, including
+            the '0x' prefix. Minimum length is 10 characters (4 bytes).
 
     Returns:
-        Tuple of (success, message, decoded_results).
+        Tuple containing:
+        - success (bool): True if at least one valid decode was found.
+        - message (str): Status message describing the result.
+        - decoded_results (list): List of decode objects, each containing
+          FunctionName, FunctionParametersNames, FunctionParametersTypes,
+          and DecodedInput. None if decoding failed.
+
+    Note:
+        Parameter names are generic (unknown_input_N) since the API only
+        provides type information, not the original parameter names.
     """
     logger.debug(f"Starting API decode for input data length: {len(InputData)}")
 
