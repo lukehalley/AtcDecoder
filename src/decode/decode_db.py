@@ -27,6 +27,15 @@ Performance Characteristics:
 # Maintain connection pool for efficient database access
 # Establish connection to remote database
 # Cache frequent lookups to reduce database hits
+"""Execute query with automatic retry on transient failures.
+    
+    Args:
+        query: SQL query to execute
+        max_retries: Maximum retry attempts (default: 3)
+        
+    Returns:
+        Cursor result or None on failure
+    """
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
