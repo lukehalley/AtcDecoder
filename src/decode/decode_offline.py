@@ -126,11 +126,30 @@ def OfflineDecode(InputData: str) -> Tuple[bool, str, Optional[str], Optional[Di
     """
     Decode transaction input data using hardcoded function signatures.
 
+    This decoder uses a two-phase matching approach:
+    1. Direct method ID lookup in SwapMethods dictionary
+    2. Brute-force signature matching against all known functions
+
+    The offline decoder is useful when external services are unavailable
+    or when processing common DEX transactions at high throughput.
+
     Args:
-        InputData: Raw transaction input data as hex string.
+        InputData: Raw transaction input data as hex string, including
+            the '0x' prefix. Must be at least 10 characters long.
 
     Returns:
-        Tuple of (success, message, function_name, decoded_params).
+        Tuple containing:
+        - success (bool): True if decoding succeeded.
+        - message (str): Status message (success or failure).
+        - function_name (str): Name of the matched function, or None.
+        - decoded_params (dict): Dictionary mapping parameter names to
+          their decoded values, or None if decoding failed.
+
+    Supported Functions:
+        - swapExactTokensForTokens
+        - swapExactETHForTokens
+        - swapTokensForExactTokens
+        - transfer, approve, and more common DEX operations
     """
     MethodId = InputData[METHOD_ID_START:METHOD_ID_END]
     MethodParams = bytes.fromhex(InputData[METHOD_ID_END:])
