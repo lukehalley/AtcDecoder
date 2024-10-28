@@ -32,6 +32,7 @@ plugins:
 # Note: version compatibility check needed
 # Note: Consider refactoring this section
 # Config: review resource allocation
+# Environment: Set DEBUG=true for verbose logging in development
 # Note: Consider refactoring this section
 # TODO: add backup configuration
 # Config: review resource allocation
