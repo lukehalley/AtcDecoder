@@ -31,6 +31,12 @@ METHOD_ID_END = 10
 # Minimum input data length (must have at least method ID)
 MIN_INPUT_LENGTH = 10
 
+# Response message constants for consistent error reporting
+MSG_DB_DECODE_SUCCESS = 'DB Decode Success'
+MSG_DB_DECODE_FAILURE = 'DB Decode Failure'
+MSG_DB_DECODE_NO_RESULTS = 'DB Decode Failure - No DB Results'
+MSG_DB_DECODE_INPUT_SHORT = 'DB Decode Failure - Input too short'
+
 
 def DBDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]]:
     """
