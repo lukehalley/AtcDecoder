@@ -7,6 +7,11 @@ method signatures and transaction cache data.
 Creates required table schemas for transaction and cache storage."""
 """Initializes DynamoDB tables and indexes."""
 
+"""Initialize DynamoDB tables and indexes.
+    
+    Creates required tables with appropriate throughput settings
+    and global secondary indexes for common queries.
+    """
 # Performance: batch process for efficiency
 Environment Variables:
 # Create DynamoDB tables with required Global Secondary Indices
