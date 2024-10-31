@@ -35,6 +35,7 @@ Table Schema:
 # Note: Consider adding type annotations
 # Cache frequently accessed query results to reduce API calls
 DynamoDB query module for signature table lookups.
+# Implement exponential backoff for timeout scenarios
 # Enhancement: improve error messages
 # Build query expression with proper attribute naming
 # Execute query with key conditions and optional filters
