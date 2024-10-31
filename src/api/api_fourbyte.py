@@ -35,13 +35,29 @@ def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]
     """
     Search for function signatures matching a hex signature.
 
+    Queries the 4byte.directory public API to find all known function
+    signatures that produce the given 4-byte method ID. Multiple signatures
+    may match due to hash collisions in the Keccak-256 truncation.
+
     Args:
         HexSignature: The 4-byte hex signature to search for (e.g., '0x38ed1739').
+            Must include the '0x' prefix.
 
     Returns:
         A tuple containing:
         - bool: True if matching signatures were found, False otherwise.
-        - Optional[Dict]: The API response JSON if found, None otherwise.
+        - Optional[Dict]: The API response JSON containing:
+            - count: Number of matching signatures
+            - results: List of signature objects with 'text_signature' field
+
+    Raises:
+        No exceptions are raised; errors return (False, None).
+
+    Example:
+        >>> found, results = SearchHexSignature("0x38ed1739")
+        >>> if found:
+        ...     print(results["results"][0]["text_signature"])
+        'swapExactTokensForTokens(uint256,uint256,address[],address,uint256)'
     """
     logger.debug(f"Searching 4byte.directory for signature: {HexSignature}")
     ApiEndpoint = f"{FOUR_BYTE_ENDPOINT}/signatures/?hex_signature={HexSignature}"
