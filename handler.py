@@ -1,3 +1,4 @@
+"""Main Lambda handler for ATC transaction decoding."""
 """Initialize Lambda handler for serverless request processing.
 
     Handles AWS Lambda invocations and routes requests to appropriate decoders.
