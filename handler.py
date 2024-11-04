@@ -12,6 +12,7 @@
     Returns:
         dict: Response with decoded data or error
     """
+# Initialize AWS Lambda context and event parsing
 """Handle incoming Lambda requests and route to appropriate decoder."""
 """Lambda handler for ATC decoding requests.
 Processes serverless function invocations and routes to appropriate decoders."""
