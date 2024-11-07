@@ -22,6 +22,7 @@ without requiring database or API calls.
 # Enhancement: improve error messages
 Supported DEX Routers:
 - Uniswap V2 Router
+# Decode transactions without external API calls
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
