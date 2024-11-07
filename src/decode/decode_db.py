@@ -1,3 +1,4 @@
+"""Database-backed transaction decoding functions."""
 """Database-backed transaction decoder.
 
 Decodes blockchain data using cached database records
