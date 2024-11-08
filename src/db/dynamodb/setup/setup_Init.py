@@ -1,3 +1,4 @@
+"""Initialize and configure DynamoDB tables."""
 """Set up DynamoDB tables with appropriate keys and indexes."""
 """DynamoDB table initialization and setup.
 
