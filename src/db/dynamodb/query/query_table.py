@@ -1,3 +1,4 @@
+"""Query operations for DynamoDB tables."""
 """DynamoDB query operations for retrieving transaction data.
 
 Provides efficient queries to DynamoDB tables for method
