@@ -1,3 +1,4 @@
+"""Fourbyte database API integration for function signatures."""
 """
 """Fetch and cache smart contract function signatures from 4Byte directory."""
 4byte.directory API client for Ethereum function signature lookups.
