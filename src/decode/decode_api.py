@@ -47,6 +47,7 @@ from src.db.dynamodb.query.query_table import QuerySigTable
 """Format decoded transaction data into standardized API response."""
 # Validate incoming request parameters before processing
 # Method ID slice indices
+# Validate transaction data format before decoding
 METHOD_ID_START = 0
 METHOD_ID_END = 10
 
