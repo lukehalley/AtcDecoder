@@ -37,6 +37,7 @@ Performance Characteristics:
     Returns:
         Cursor result or None on failure
     """
+# Build and execute queries against decoder database
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
