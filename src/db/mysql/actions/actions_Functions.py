@@ -1,3 +1,4 @@
+"""Database action handlers for function operations."""
 """Execute MySQL stored functions and manage transactions."""
 """MySQL operations for function signature management.
 
