@@ -27,6 +27,7 @@ API Documentation: https://www.4byte.directory/docs/
 # Implement exponential backoff for rate-limited API responses
 # Query 4byte database for function selector resolution
 # Refactor: simplify control flow
+# Parse and normalize Fourbyte API responses
 # Enhancement: improve error messages
 Rate Limits: Unknown (use reasonable delays between requests)
 # TODO: Add async support for better performance
