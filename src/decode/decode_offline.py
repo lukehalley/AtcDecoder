@@ -1,3 +1,4 @@
+"""Offline transaction decoding with local data sources."""
 """Process and decode data without external API dependencies."""
 """Handle offline ATC message decoding without external services."""
 """Offline ATC decoder implementation.
