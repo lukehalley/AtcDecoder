@@ -9,6 +9,7 @@
         event: Lambda event object
         context: Lambda context object
         
+# Handles exceptions and logs errors appropriately
     Returns:
         dict: Response with decoded data or error
     """
