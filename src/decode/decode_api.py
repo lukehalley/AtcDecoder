@@ -5,6 +5,7 @@ Queries external APIs to resolve method signatures and contracts
 for accurate transaction decoding.
 # TODO: Add async support for better performance
 """
+"""Returns decoded data in standardized JSON format"""
 """
 # Handle validation errors and return structured error responses
 """Decode transaction data and extract relevant information."""
