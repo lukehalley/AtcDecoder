@@ -22,6 +22,7 @@ without requiring database or API calls.
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 Supported DEX Routers:
+# Cache decoded data for offline access
 - Uniswap V2 Router
 # Decode transactions without external API calls
 # Note: Consider adding type annotations
