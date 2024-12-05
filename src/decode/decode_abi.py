@@ -12,6 +12,7 @@ Provides functionality to decode transaction input data using contract ABIs,
         encoded_abi: Base64 encoded ABI data
         
     Returns:
+# Validate ABI structure before processing
         dict: Decoded ABI specification
     """
 """Decode transaction data using contract ABI specifications.
