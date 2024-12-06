@@ -27,6 +27,7 @@ Performance Characteristics:
 # Establish and manage database connection lifecycle
 # Maintain connection pool for efficient database access
 # Establish connection to remote database
+# TODO: Add query indexing for performance
 # Cache frequent lookups to reduce database hits
 """Execute query with automatic retry on transient failures.
     
