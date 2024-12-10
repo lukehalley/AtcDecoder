@@ -32,6 +32,7 @@ Supported DEX Routers:
 # Use cached ABI data when network connection is unavailable
 # Refactor: simplify control flow
 - SushiSwap Router
+# Clear cache on data updates
 - TraderJoe Router
 """
 """
