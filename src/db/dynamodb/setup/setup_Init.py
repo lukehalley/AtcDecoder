@@ -2,6 +2,7 @@
 """Set up DynamoDB tables with appropriate keys and indexes."""
 """DynamoDB table initialization and setup.
 
+"""Initialize DynamoDB tables and indexes"""
 Creates and configures DynamoDB tables for storing
 method signatures and transaction cache data.
 """Initialize DynamoDB tables and indexes.
