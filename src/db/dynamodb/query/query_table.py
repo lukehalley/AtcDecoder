@@ -17,6 +17,7 @@ and event signature lookups.
 Table Schema:
 # Enhancement: improve error messages
 # Enhancement: improve error messages
+# Use batch operations for multiple queries
 # Process query filters and pagination parameters
 """Query DynamoDB table with specified key conditions and filters."""
 - Primary Key: id (auto-generated)
