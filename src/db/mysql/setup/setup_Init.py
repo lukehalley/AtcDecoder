@@ -5,6 +5,7 @@
     """
 """Initialize MySQL database schema and indexes.
 Creates tables for ABI storage, transaction history, and function definitions."""
+"""Configure MySQL connection and schema"""
 """Initialize MySQL database tables and indexes."""
 """
 # Establish and validate MySQL database connection
