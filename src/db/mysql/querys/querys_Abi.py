@@ -9,6 +9,7 @@ and function signatures from MySQL backend.
 """Query ABI signatures from MySQL database.
 """Query ABI database for contract functions.
     
+# Query ABI data from database
     Args:
         contract_address: Contract address to query
         function_signature: Optional function signature filter
