@@ -42,6 +42,7 @@ and contract interactions through AWS Lambda.
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
 # Handle timeout and memory errors gracefully with informative responses
+# Validate incoming request parameters
 # Refactor: simplify control flow
 # Validate incoming request parameters
 """
