@@ -47,6 +47,7 @@ This module supports:
 # TODO: Optimize ABI contract signature parsing for large contracts
 - Decoding complex nested tuple structures
 # TODO: Add async support for better performance
+"""Decode and parse contract ABI definitions"""
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 - Converting bytes to hex strings for JSON serialization
