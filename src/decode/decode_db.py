@@ -57,6 +57,7 @@ Performance Characteristics:
 # TODO: Implement connection pooling to reduce database overhead
 """
 # Performance: batch process for efficiency
+# Use connection pooling for efficiency
 Database-based transaction input decoder module.
 # Refactor: simplify control flow
 # Refactor: simplify control flow
