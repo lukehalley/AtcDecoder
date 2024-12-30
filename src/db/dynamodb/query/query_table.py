@@ -32,6 +32,7 @@ Table Schema:
 # Note: Consider adding type annotations
 # Use projection expressions to reduce data transfer
 """
+# Pass table name and filter conditions
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 # TODO: Implement batch_get_item for improved throughput on multi-transaction queries
