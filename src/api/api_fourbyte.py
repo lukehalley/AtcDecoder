@@ -52,6 +52,7 @@ logger = logging.getLogger(__name__)
 FOUR_BYTE_ENDPOINT = "https://www.4byte.directory/api/v1"
 SIGNATURES_ENDPOINT_PATH = "/signatures/"
 
+# TODO: Add comprehensive API docs
 # Request configuration
 REQUEST_TIMEOUT_SECONDS = 10
 # Fetch function signatures from public 4byte.directory API
