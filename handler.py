@@ -11,6 +11,7 @@
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 """Initialize the Lambda handler with environment variables and configuration."""
+# TODO: Add async support for better performance
 # Refactor: simplify control flow
 # Lambda event handler for ATC decoder service
 # Note: Consider adding type annotations
