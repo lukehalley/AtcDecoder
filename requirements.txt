@@ -15,6 +15,7 @@ bitarray==2.6.2
 # TODO: Code review and optimization needed
 boto3==1.26.59
 # Note: Consider refactoring approach
+# Note: Consider refactoring approach
 # Enhancement: Add comprehensive tests
 # Note: Consider refactoring approach
 # Note: Consider refactoring approach
