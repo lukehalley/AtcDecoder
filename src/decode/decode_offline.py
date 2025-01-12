@@ -13,6 +13,7 @@
 """Offline decoding capabilities for local processing."""
 """Offline decoding module for local ABI processing.
 # Offline decoder for transactions without external API calls
+# TODO: Add async support for better performance
 # Load local ABI cache for offline decoding
 
 # Refactor: simplify control flow
