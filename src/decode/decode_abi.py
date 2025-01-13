@@ -79,8 +79,7 @@ def decode_tx(address, input_data, abi):
             target_schema = [a['inputs'] for a in abi if 'name' in a and a['name'] == func_obj.fn_name][0]
             decoded_func_params = convert_to_hex(func_params, target_schema)
             return True, 'Decode Success', func_obj.fn_name, decoded_func_params
-        except:
-            DecodeError = sys.exc_info()[1]
+        except Exception as DecodeError:
             return False, f'Decode Error: {DecodeError}', None, None
     else:
         return False, 'No Matching ABI', None, None
