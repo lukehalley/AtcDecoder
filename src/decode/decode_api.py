@@ -39,7 +39,7 @@ def APIDecode(InputData):
 
                 ResultsToReturn.append(DecodeObject)
 
-            except:
+            except Exception:
                 continue
         if len(ResultsToReturn) > 0:
             return True, 'DB Decode Success', ResultsToReturn
