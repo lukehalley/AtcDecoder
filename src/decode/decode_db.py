@@ -34,7 +34,7 @@ def DBDecode(InputData):
 
                 ResultsToReturn.append(DecodeObject)
 
-            except:
+            except Exception:
                 continue
 
         if len(ResultsToReturn) > 0:
