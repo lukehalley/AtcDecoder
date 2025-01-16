@@ -98,7 +98,7 @@ def OfflineDecode(InputData):
                 Index = FunctionArgs.index(FunctionArg)
                 DecodedMapped[FunctionName] = DecodedInput[Index]
             return True, 'Offline Decode Success', MethodName, DecodedMapped
-        except:
+        except Exception:
             return False, 'Offline Decode Failure', None, None
     else:
         for SwapFunction in SwapFunctions:
@@ -112,6 +112,6 @@ def OfflineDecode(InputData):
                     Index = FunctionArgs.index(FunctionArg)
                     DecodedMapped[FunctionName] = DecodedInput[Index]
                 return True, 'Offline Decode Success', SwapFunction, DecodedMapped
-            except:
+            except Exception:
                 continue
         return False, 'Offline Decode Failure', None, None
