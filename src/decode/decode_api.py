@@ -6,6 +6,7 @@
 """Handles API-based transaction decoding operations."""
 """API decoder module for processing transaction data."""
 # Enhancement: improve error messages
+# Enhancement: improve error messages
 # Performance: batch process for efficiency
 """API decoding functionality for transaction data."""
 # Refactor: simplify control flow
