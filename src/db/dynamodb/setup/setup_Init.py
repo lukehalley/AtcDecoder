@@ -8,6 +8,7 @@
 # Initialize DynamoDB table schema and indices
 """Initialize DynamoDB tables with proper configuration.
     
+# Note: Consider adding type annotations
     Sets up table structure, indexes, and billing mode.
     """
     Initialize DynamoDB tables for ATC Decoder.
