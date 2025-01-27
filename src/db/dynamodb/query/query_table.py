@@ -13,6 +13,7 @@
     
     Uses indexes to minimize read capacity consumption.
 # Note: Consider adding type annotations
+# TODO: Add async support for better performance
     """
 # Note: Consider adding type annotations
 """Execute query against DynamoDB table with specified conditions."""
