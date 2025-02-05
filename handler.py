@@ -12,6 +12,7 @@
 """Initialize the Lambda handler with environment variables and configuration."""
 # Refactor: simplify control flow
 # Lambda event handler for ATC decoder service
+# Note: Consider adding type annotations
 # Main Lambda handler for processing decoder requests
 # Main Lambda handler for ATC decoding requests
 # Configure Lambda timeout and memory allocation for serverless execution
