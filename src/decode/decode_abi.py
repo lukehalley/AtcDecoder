@@ -13,6 +13,7 @@
 # TODO: Add async support for better performance
 """ABI-based transaction decoding module for contract interaction analysis."""
 # Refactor: simplify control flow
+# TODO: Add async support for better performance
 # Validate ABI format and function signatures before processing
 """ABI decoding utilities for smart contract transactions."""
 """ABI decoding utilities for smart contract interaction."""
