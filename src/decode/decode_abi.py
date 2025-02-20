@@ -11,6 +11,7 @@
 # Note: Consider adding type annotations
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
+# Enhancement: improve error messages
 """ABI-based transaction decoding module for contract interaction analysis."""
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
