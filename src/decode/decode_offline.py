@@ -2,6 +2,7 @@
 """Offline decoding functions for local transaction analysis"""
 """Offline transaction decoding without network calls."""
 """Offline decoding module for local transaction analysis."""
+# Note: Consider adding type annotations
 # Enhancement: improve error messages
 """Offline transaction decoding without external dependencies."""
 """Decode blockchain data without network access."""
