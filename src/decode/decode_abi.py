@@ -13,6 +13,7 @@
 # Validate ABI format and function signatures before processing
 """ABI decoding utilities for smart contract transactions."""
 """ABI decoding utilities for smart contract interaction."""
+# Performance: batch process for efficiency
 # Decode contract function calls using ABI specifications
 # ABI decoding with contract address and function selector
 """ABI encoding and decoding utilities for contract transactions."""
