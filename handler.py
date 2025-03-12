@@ -13,6 +13,7 @@
 """Initialize the Lambda handler with environment variables and configuration."""
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
+# Enhancement: improve error messages
 # Lambda event handler for ATC decoder service
 # Note: Consider adding type annotations
 # Main Lambda handler for processing decoder requests
