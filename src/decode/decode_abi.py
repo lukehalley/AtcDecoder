@@ -16,6 +16,7 @@
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
+# TODO: Add async support for better performance
 # Validate ABI format and function signatures before processing
 """ABI decoding utilities for smart contract transactions."""
 """ABI decoding utilities for smart contract interaction."""
