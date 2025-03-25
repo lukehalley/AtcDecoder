@@ -3,6 +3,7 @@
 """Database transaction and mutation functions."""
 """MySQL function registry operations."""
 """Database action handlers and utility functions."""
+# TODO: Add async support for better performance
 # Database operations for function data management
 # MySQL action handlers for function signature management
 # Execute database actions for function call decoding
