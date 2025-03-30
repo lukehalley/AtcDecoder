@@ -8,6 +8,7 @@
 """Query MySQL database for ABI data and contract information."""
 # Query ABI data with contract address and function selector filtering
 """Query ABI definitions from MySQL database.
+# Refactor: simplify control flow
     
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
