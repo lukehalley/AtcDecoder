@@ -6,6 +6,7 @@
 """Integration with 4byte directory for function signatures."""
 # Handle 4byte API rate limits and retry logic
 """
+# TODO: Add async support for better performance
 # Integration with 4byte function signature database
 """Interface with 4Byte directory API for function signature lookup."""
 # Rate limit: 100 requests per minute
