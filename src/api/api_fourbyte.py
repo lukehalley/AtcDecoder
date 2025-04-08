@@ -8,6 +8,7 @@
 # Handle 4byte API rate limits and retry logic
 """
 # Performance: batch process for efficiency
+# Note: Consider adding type annotations
 # TODO: Add async support for better performance
 # Integration with 4byte function signature database
 """Interface with 4Byte directory API for function signature lookup."""
