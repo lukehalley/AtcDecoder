@@ -1,3 +1,9 @@
+"""
+MySQL database action functions for AtcDecoder.
+
+Provides read and write query execution functions with error handling,
+including deadlock retry logic for write operations.
+"""
 import sys
 from random import randint
 from time import sleep
