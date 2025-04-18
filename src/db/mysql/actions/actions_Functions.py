@@ -15,7 +15,15 @@ from src.db.mysql.setup.setup_Init import initDBConnection, getCursor
 
 
 def executeReadQuery(query):
+    """
+    Execute a read query against the MySQL database.
 
+    Args:
+        query: The SQL query string to execute.
+
+    Returns:
+        A list of rows returned by the query.
+    """
     dbConnection = initDBConnection()
     cursor = getCursor(dbConnection=dbConnection)
 
@@ -28,7 +36,20 @@ def executeReadQuery(query):
     return result
 
 def executeWriteQuery(query):
+    """
+    Execute a write query against the MySQL database.
 
+    Handles deadlock situations by retrying with random backoff.
+
+    Args:
+        query: The SQL query string to execute.
+
+    Returns:
+        The ID of the last inserted row.
+
+    Raises:
+        Exception: If the query fails for non-deadlock reasons.
+    """
     dbConnection = initDBConnection()
     cursor = getCursor(dbConnection=dbConnection)
 
