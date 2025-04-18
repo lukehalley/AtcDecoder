@@ -7,6 +7,7 @@ including deadlock retry logic for write operations.
 import sys
 from random import randint
 from time import sleep
+from typing import List, Dict, Any
 
 import mysql
 from mysql.connector import OperationalError
@@ -14,7 +15,7 @@ from mysql.connector import OperationalError
 from src.db.mysql.setup.setup_Init import initDBConnection, getCursor
 
 
-def executeReadQuery(query):
+def executeReadQuery(query: str) -> List[Dict[str, Any]]:
     """
     Execute a read query against the MySQL database.
 
@@ -35,7 +36,7 @@ def executeReadQuery(query):
 
     return result
 
-def executeWriteQuery(query):
+def executeWriteQuery(query: str) -> int:
     """
     Execute a write query against the MySQL database.
 
