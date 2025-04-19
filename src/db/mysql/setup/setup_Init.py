@@ -1,9 +1,16 @@
+"""
+MySQL database connection initialization module.
+
+Provides functions to establish secure database connections using
+AWS Secrets Manager for credential management.
+"""
 import json
 import os
 
 import mysql.connector
 from aws_lambda_powertools.utilities import parameters
 from mysql.connector import errorcode
+
 
 def initDBConnection():
 
