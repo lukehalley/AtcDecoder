@@ -1,6 +1,24 @@
+"""
+ABI query module for retrieving contract ABIs from the database.
+
+Provides functions to fetch ABI records by their database identifiers.
+"""
 from src.db.mysql.actions.actions_Functions import executeReadQuery
 
+
 def getAbiByDbId(abiDbId):
+    """
+    Retrieve a contract ABI by its database ID.
+
+    Args:
+        abiDbId: The unique database identifier for the ABI record.
+
+    Returns:
+        The ABI record dictionary containing the contract ABI data.
+
+    Raises:
+        Exception: If no ABI found or multiple ABIs found for the given ID.
+    """
 
     query = f"SELECT abis.* " \
             f"FROM abis " \
