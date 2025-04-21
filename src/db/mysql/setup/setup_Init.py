@@ -13,7 +13,18 @@ from mysql.connector import errorcode
 
 
 def initDBConnection():
+    """
+    Initialize a MySQL database connection using AWS Secrets Manager.
 
+    Retrieves credentials from AWS Secrets Manager and establishes
+    a connection to the MySQL database.
+
+    Returns:
+        mysql.connector.connection.MySQLConnection: The database connection object.
+
+    Raises:
+        Exception: If authentication fails or database doesn't exist.
+    """
     DB_SECRET = json.loads(parameters.get_secret("ATC_DB_Credentials"))
     DB_USER = DB_SECRET["username"]
     DB_PASSWORD = DB_SECRET["password"]
@@ -38,4 +49,15 @@ def initDBConnection():
         return dbConnection
 
 def getCursor(dbConnection, dictionary=True, buffered=True):
+    """
+    Get a cursor object for executing database queries.
+
+    Args:
+        dbConnection: The MySQL database connection object.
+        dictionary: If True, return rows as dictionaries. Defaults to True.
+        buffered: If True, use a buffered cursor. Defaults to True.
+
+    Returns:
+        A MySQL cursor object configured with the specified options.
+    """
     return dbConnection.cursor(dictionary=dictionary, buffered=buffered)
