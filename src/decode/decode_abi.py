@@ -1,3 +1,9 @@
+"""
+ABI-based transaction decoder for Ethereum smart contracts.
+
+Provides functionality to decode transaction input data using contract ABIs,
+converting raw hex data into human-readable function calls and parameters.
+"""
 import json
 import sys
 from functools import lru_cache
