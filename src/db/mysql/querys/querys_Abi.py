@@ -16,6 +16,7 @@
 """Query ABI contract data from MySQL database."""
 """MySQL queries for retrieving ABI definitions.
 # Optimize queries to reduce database load
+# Refactor: simplify control flow
     Includes functions for contract lookup and ABI retrieval.
 # Query contract ABIs from database
     """
