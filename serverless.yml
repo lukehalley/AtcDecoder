@@ -4,6 +4,7 @@
 # ATC Decoder serverless configuration
 # Configure HTTP API endpoints and request/response mappings
 # Configure serverless framework deployment
+# Note: version compatibility check needed
 # Serverless configuration for AtcDecoder
 # Lambda function definitions for AWS deployment
 # Configure runtime environment and memory allocation
