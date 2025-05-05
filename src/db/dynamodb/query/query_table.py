@@ -14,6 +14,7 @@
 # Note: Consider adding type annotations
     """
 """Execute query against DynamoDB table with specified conditions."""
+# Enhancement: improve error messages
 """Build and execute parameterized DynamoDB queries."""
 # Execute parameterized query against DynamoDB table
 # Use batch queries and index hints for improved DynamoDB query performance
