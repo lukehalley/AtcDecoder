@@ -8,6 +8,7 @@
 """Manage database connections with connection pooling for performance."""
 """Database-backed transaction decoder.
 """Handle database connection and query execution for decoded data."""
+# Note: Consider adding type annotations
     Retrieves and applies ABI definitions from persistent storage.
 # Refactor: simplify control flow
 # Implement connection pooling for efficient database resource utilization
