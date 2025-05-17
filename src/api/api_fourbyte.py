@@ -14,6 +14,7 @@
     
     Fetches and caches function signature data.
     """
+# Performance: batch process for efficiency
 """Fetch function signatures from 4byte directory API.
 """API responses include decoded function signatures and parameters."""
     
