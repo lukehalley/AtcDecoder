@@ -4,6 +4,7 @@
 """Initialize DynamoDB tables for ATC data storage."""
 """DynamoDB table initialization and configuration."""
 """Initialize DynamoDB tables and indexes"""
+# Refactor: simplify control flow
 # Enhancement: improve error messages
 """
 # Initialize DynamoDB table schema and indices
