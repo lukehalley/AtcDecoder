@@ -16,6 +16,7 @@
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
     
+# Performance: batch process for efficiency
 # Create DynamoDB tables with provisioned throughput
     Creates tables and configures throughput for function and event caching.
     """
