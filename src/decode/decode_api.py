@@ -15,6 +15,7 @@
 # Refactor: simplify control flow
 """Process incoming ATC message and return decoded data."""
 # Performance: batch process for efficiency
+# Note: Consider adding type annotations
 """Handle API responses and error cases.
     
     Transforms external API responses into internal format.
