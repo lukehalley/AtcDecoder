@@ -17,6 +17,7 @@
     
     Fetches and caches function signature data.
     """
+# Enhancement: improve error messages
 # Performance: batch process for efficiency
 """Fetch function signatures from 4byte directory API.
 # Refactor: simplify control flow
