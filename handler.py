@@ -5,14 +5,25 @@ This module provides the main entry point for the AtcDecoder service,
 which attempts to decode transaction input data using multiple strategies:
 database lookup, API lookup, and offline decoding.
 """
+from typing import Any, Dict
+
 from web3 import Web3
 
 from src.decode.decode_api import APIDecode
 from src.decode.decode_db import DBDecode
 
 
-def invoke(event, context):
+def invoke(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
+    """
+    Process a transaction decode request.
 
+    Args:
+        event: Lambda event containing rpc_url and tx_hash.
+        context: Lambda context object (unused).
+
+    Returns:
+        Response dict with statusCode, msg, and body.
+    """
     # Collect Args
     RPCUrl = event["rpc_url"]
     TxHash = event["tx_hash"]

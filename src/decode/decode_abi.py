@@ -13,6 +13,16 @@ from web3 import Web3
 from web3.auto import w3
 
 def decode_tuple(t, target_field):
+    """
+    Recursively decode a tuple structure into a dictionary.
+
+    Args:
+        t: The tuple to decode.
+        target_field: The ABI field definition describing the tuple structure.
+
+    Returns:
+        A dictionary with decoded values mapped to their field names.
+    """
     output = dict()
     for i in range(len(t)):
         if isinstance(t[i], (bytes, bytearray)):
@@ -25,6 +35,16 @@ def decode_tuple(t, target_field):
 
 
 def decode_list_tuple(l, target_field):
+    """
+    Decode a list of tuples into a list of dictionaries.
+
+    Args:
+        l: The list of tuples to decode.
+        target_field: The ABI field definition for tuple elements.
+
+    Returns:
+        A list with each tuple decoded into a dictionary.
+    """
     output = l
     for i in range(len(l)):
         output[i] = decode_tuple(l[i], target_field)
@@ -32,6 +52,15 @@ def decode_list_tuple(l, target_field):
 
 
 def decode_list(l):
+    """
+    Decode a list, converting any bytes elements to hex strings.
+
+    Args:
+        l: The list to decode.
+
+    Returns:
+        A list with bytes converted to hex strings.
+    """
     output = l
     for i in range(len(l)):
         if isinstance(l[i], (bytes, bytearray)):
