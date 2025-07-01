@@ -12,6 +12,10 @@ from web3 import Web3
 from src.decode.decode_api import APIDecode
 from src.decode.decode_db import DBDecode
 
+# HTTP Status Codes
+HTTP_OK = 200
+HTTP_BAD_REQUEST = 400
+
 
 def invoke(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     """
@@ -57,11 +61,11 @@ def invoke(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     # Collect Results
     if DecodeSuccessful:
 
-        ReturnBody = {"statusCode": 200, "msg": DecodeMsg, "body": DecodeResults}
+        ReturnBody = {"statusCode": HTTP_OK, "msg": DecodeMsg, "body": DecodeResults}
 
     else:
 
-        ReturnBody = {"statusCode": 400, "msg": DecodeMsg, "body": {}, "isBase64Encoded": True}
+        ReturnBody = {"statusCode": HTTP_BAD_REQUEST, "msg": DecodeMsg, "body": {}, "isBase64Encoded": True}
 
 
     return ReturnBody
