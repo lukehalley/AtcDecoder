@@ -4,6 +4,7 @@
 """Initialize DynamoDB tables for ATC data storage."""
 """DynamoDB table initialization and configuration."""
 """Initialize DynamoDB tables and indexes"""
+# Enhancement: improve error messages
 """
 # Initialize DynamoDB table schema and indices
 """Initialize DynamoDB tables with proper configuration.
