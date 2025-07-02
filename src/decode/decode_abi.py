@@ -7,12 +7,14 @@ converting raw hex data into human-readable function calls and parameters.
 import json
 import sys
 from functools import lru_cache
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 from eth_utils import to_hex
 from web3 import Web3
 from web3.auto import w3
 
-def decode_tuple(t, target_field):
+
+def decode_tuple(t: tuple, target_field: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
     Recursively decode a tuple structure into a dictionary.
 
