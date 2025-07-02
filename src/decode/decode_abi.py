@@ -72,9 +72,16 @@ def decode_list(l: List[Any]) -> List[Any]:
     return output
 
 
-def convert_to_hex(arg, target_schema):
+def convert_to_hex(arg: Dict[str, Any], target_schema: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
-    utility function to convert byte codes into human readable and json serializable data structures
+    Convert byte codes into human readable and JSON serializable data structures.
+
+    Args:
+        arg: Dictionary of argument values to convert.
+        target_schema: ABI schema describing the argument types.
+
+    Returns:
+        Dictionary with bytes converted to hex strings.
     """
     output = dict()
     for k in arg:
@@ -108,7 +115,18 @@ def _get_contract(address, abi):
     return contract, abi
 
 
-def decode_tx(address, input_data, abi):
+def decode_tx(address: str, input_data: str, abi: Optional[str]) -> Tuple[bool, str, Optional[str], Optional[Dict[str, Any]]]:
+    """
+    Decode a transaction's input data using the contract ABI.
+
+    Args:
+        address: The contract address.
+        input_data: The raw transaction input data.
+        abi: The contract ABI as a JSON string.
+
+    Returns:
+        Tuple of (success, message, function_name, decoded_params).
+    """
     if abi is not None:
         try:
             (contract, abi) = _get_contract(address, abi)
