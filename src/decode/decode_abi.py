@@ -36,7 +36,7 @@ def decode_tuple(t: tuple, target_field: List[Dict[str, Any]]) -> Dict[str, Any]
     return output
 
 
-def decode_list_tuple(l, target_field):
+def decode_list_tuple(l: List[tuple], target_field: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
     Decode a list of tuples into a list of dictionaries.
 
@@ -53,7 +53,7 @@ def decode_list_tuple(l, target_field):
     return output
 
 
-def decode_list(l):
+def decode_list(l: List[Any]) -> List[Any]:
     """
     Decode a list, converting any bytes elements to hex strings.
 
