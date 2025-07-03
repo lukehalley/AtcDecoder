@@ -17,8 +17,17 @@ METHOD_ID_END = 10
 
 
 def APIDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]]:
-    MethodId = InputData[0:10]
-    MethodParams = bytes.fromhex(InputData[10:])
+    """
+    Decode transaction input data using the 4byte.directory API.
+
+    Args:
+        InputData: Raw transaction input data as hex string.
+
+    Returns:
+        Tuple of (success, message, decoded_results).
+    """
+    MethodId = InputData[METHOD_ID_START:METHOD_ID_END]
+    MethodParams = bytes.fromhex(InputData[METHOD_ID_END:])
     HexFound, APIResults = SearchHexSignature(MethodId)
     ResultsToReturn = []
     if HexFound and len(APIResults) > 0:
