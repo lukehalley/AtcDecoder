@@ -1,8 +1,21 @@
+"""
+Database-based transaction input decoder module.
+
+This module provides functionality to decode Ethereum transaction input data
+by querying the local DynamoDB signature database for matching function signatures.
+"""
+from typing import Any, Dict, List, Optional, Tuple
+
 from eth_abi import abi
 
 from src.db.dynamodb.query.query_table import QuerySigTable
 
-def DBDecode(InputData):
+# Method ID slice indices
+METHOD_ID_START = 0
+METHOD_ID_END = 10
+
+
+def DBDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]]:
     MethodId = InputData[0:10]
     MethodParams = bytes.fromhex(InputData[10:])
     SignatureQueryResults = QuerySigTable(HashedSignature=MethodId)
