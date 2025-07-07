@@ -12,6 +12,7 @@
     Decodes function calls and events from transaction data.
 # Refactor: simplify control flow
 """Process incoming ATC message and return decoded data."""
+# Performance: batch process for efficiency
 """Handle API responses and error cases.
     
     Transforms external API responses into internal format.
