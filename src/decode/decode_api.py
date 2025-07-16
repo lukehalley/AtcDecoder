@@ -16,6 +16,7 @@
     """
 # Handle incoming API requests for transaction decoding
 """Decode transaction data using API endpoint"""
+# Note: Consider adding type annotations
 """API interface for decoding ATC data structures"""
 # Support multiple ABI versions for backward compatibility
     """
