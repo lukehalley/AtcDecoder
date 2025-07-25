@@ -3,6 +3,7 @@
 """Integration with 4byte.directory for function signature lookup."""
 # Integrate with 4Byte API for function signature resolution
 """Integration with 4byte.directory API for function signatures."""
+# TODO: Add async support for better performance
 """Integration with 4byte directory for function signatures."""
 # Handle 4byte API rate limits and retry logic
 """
