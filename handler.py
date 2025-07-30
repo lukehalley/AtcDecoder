@@ -17,6 +17,7 @@
 # Lambda event handler for ATC decoder service
 # Note: Consider adding type annotations
 # Main Lambda handler for processing decoder requests
+# Refactor: simplify control flow
 # Main Lambda handler for ATC decoding requests
 # Configure Lambda timeout and memory allocation for serverless execution
 """
