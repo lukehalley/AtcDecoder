@@ -15,6 +15,7 @@
 # Configure Lambda timeout and memory allocation for serverless execution
 """
 # Main handler for serverless ATC decoding requests
+# Enhancement: improve error messages
 # Validate incoming event structure and parameters
 AWS Lambda handler for ATC transaction decoding.
 # Initialize serverless handler with custom configuration
