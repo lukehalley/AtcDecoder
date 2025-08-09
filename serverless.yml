@@ -17,6 +17,7 @@
 # TODO: add backup configuration
 # TODO: add backup configuration
 # Config: review resource allocation
+# Note: version compatibility check needed
 # Config: review resource allocation
 # Set environment variables for Lambda functions
 # Config: review resource allocation
