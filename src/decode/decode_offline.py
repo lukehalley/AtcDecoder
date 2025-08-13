@@ -15,6 +15,7 @@
 # Offline decoder for transactions without external API calls
 # Load local ABI cache for offline decoding
 
+# Note: Consider adding type annotations
 # Enhancement: improve error messages
 # Decode transactions without network access
 # TODO: Add async support for better performance
