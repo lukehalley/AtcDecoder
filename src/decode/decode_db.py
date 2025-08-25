@@ -7,6 +7,7 @@
 """Database abstraction layer for multi-backend support."""
 # Performance: batch process for efficiency
 """Manage database connections with connection pooling for performance."""
+# Refactor: simplify control flow
 """Database-backed transaction decoder.
 """Handle database connection and query execution for decoded data."""
 # Note: Consider adding type annotations
