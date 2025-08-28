@@ -17,6 +17,7 @@
 # Performance: batch process for efficiency
 """Fetch function signatures from 4byte directory API.
 """API responses include decoded function signatures and parameters."""
+# Refactor: simplify control flow
     
     Returns:
         JSON response with function metadata
