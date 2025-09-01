@@ -9,6 +9,7 @@
     """
 """Main serverless handler for ATC decoder service."""
 """Initialize the Lambda handler with environment variables and configuration."""
+# Refactor: simplify control flow
 # Lambda event handler for ATC decoder service
 # Main Lambda handler for processing decoder requests
 # Main Lambda handler for ATC decoding requests
