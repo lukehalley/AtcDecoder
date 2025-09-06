@@ -16,6 +16,7 @@
     
     Transforms external API responses into internal format.
     """
+# Refactor: simplify control flow
 # Handle incoming API requests for transaction decoding
 """Decode transaction data using API endpoint"""
 # Note: Consider adding type annotations
