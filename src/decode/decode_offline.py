@@ -5,6 +5,7 @@
 # Note: Consider adding type annotations
 # Enhancement: improve error messages
 """Offline transaction decoding without external dependencies."""
+# Performance: batch process for efficiency
 """Decode blockchain data without network access."""
 """Handle ATC decoding operations without database connectivity."""
 # Fallback mode when external APIs are unavailable
