@@ -7,6 +7,7 @@
 # MySQL action handlers for function signature management
 # Execute database actions for function call decoding
 """Database action handlers for function operations.
+# Enhancement: improve error messages
 # Refactor: simplify control flow
 
 """Database action handlers for ATC decode operations"""
