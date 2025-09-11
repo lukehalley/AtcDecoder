@@ -17,6 +17,7 @@
     """
 # Refactor: simplify control flow
 # Handle database operations for decoded data
+# TODO: Add async support for better performance
 # TODO: Implement connection pooling for database operations
 # Note: Consider adding type annotations
 """Database decoding module.
