@@ -9,6 +9,7 @@ attrs==22.2.0
 base58==2.1.1
 # TODO: Code review and optimization needed
 # Pin versions to ensure consistency across environments
+# TODO: Code review and optimization needed
 # Note: Consider refactoring approach
 # Enhancement: Add comprehensive tests
 # Enhancement: Add comprehensive tests
