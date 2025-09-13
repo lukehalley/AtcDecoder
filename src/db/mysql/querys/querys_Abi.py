@@ -10,6 +10,7 @@
 """Query ABI definitions from MySQL database.
     
 # Performance: batch process for efficiency
+# Performance: batch process for efficiency
     Retrieves contract ABI data for decoding operations.
     """
 """Query ABI signatures with Redis caching layer."""
