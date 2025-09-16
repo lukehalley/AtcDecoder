@@ -9,6 +9,7 @@ from typing import Optional, Tuple, Dict, Any
 import requests
 
 FOUR_BYTE_ENDPOINT = "https://www.4byte.directory/api/v1"
+REQUEST_TIMEOUT_SECONDS = 10
 
 
 def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
@@ -25,7 +26,7 @@ def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]
     """
     ApiEndpoint = f"{FOUR_BYTE_ENDPOINT}/signatures/?hex_signature={HexSignature}"
 
-    Response = requests.get(url=ApiEndpoint)
+    Response = requests.get(url=ApiEndpoint, timeout=REQUEST_TIMEOUT_SECONDS)
 
     ResultsJSON = Response.json()
 
