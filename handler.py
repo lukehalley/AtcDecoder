@@ -5,9 +5,14 @@ This module provides the main entry point for the AtcDecoder service,
 which attempts to decode transaction input data using multiple strategies:
 database lookup, API lookup, and offline decoding.
 """
+import logging
 from typing import Any, Dict
 
 from web3 import Web3
+
+# Configure logging
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 from src.decode.decode_api import APIDecode
 from src.decode.decode_db import DBDecode
