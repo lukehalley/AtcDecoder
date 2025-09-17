@@ -15,6 +15,10 @@ from src.db.dynamodb.query.query_table import QuerySigTable
 METHOD_ID_START = 0
 METHOD_ID_END = 10
 
+# Response message constants
+MSG_API_DECODE_SUCCESS = 'API Decode Success'
+MSG_API_DECODE_FAILURE = 'API Decode Failure'
+
 
 def APIDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]]:
     """
@@ -62,8 +66,8 @@ def APIDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]
             except Exception:
                 continue
         if len(ResultsToReturn) > 0:
-            return True, 'DB Decode Success', ResultsToReturn
+            return True, MSG_API_DECODE_SUCCESS, ResultsToReturn
         else:
-            return False, 'DB Decode Failure', None
+            return False, MSG_API_DECODE_FAILURE, None
     else:
-        return False, 'DB Decode Failure', None
+        return False, MSG_API_DECODE_FAILURE, None
