@@ -14,10 +14,26 @@ from src.db.dynamodb.query.query_table import QuerySigTable
 METHOD_ID_START = 0
 METHOD_ID_END = 10
 
+# Minimum input data length (must have at least method ID)
+MIN_INPUT_LENGTH = 10
+
 
 def DBDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]]:
-    MethodId = InputData[0:10]
-    MethodParams = bytes.fromhex(InputData[10:])
+    """
+    Decode transaction input data using the local signature database.
+
+    Args:
+        InputData: Raw transaction input data as hex string.
+
+    Returns:
+        Tuple of (success, message, decoded_results).
+    """
+    # Validate input data length
+    if len(InputData) < MIN_INPUT_LENGTH:
+        return False, 'DB Decode Failure - Input too short', None
+
+    MethodId = InputData[METHOD_ID_START:METHOD_ID_END]
+    MethodParams = bytes.fromhex(InputData[METHOD_ID_END:])
     SignatureQueryResults = QuerySigTable(HashedSignature=MethodId)
     if len(SignatureQueryResults) > 0:
         ResultsToReturn = []
