@@ -76,7 +76,8 @@ SwapFunctions: Dict[str, FunctionParams] = {
     ]
 }
 
-SwapMethods = {
+# Method ID to function name mapping
+SwapMethods: Dict[str, str] = {
     "0x38ed1739": "swapExactTokensForTokens",
     "0x7ff36ab5": "swapExactETHForTokens",
     "0x791ac947": "swapExactTokensForETHSupportingFeeOnTransferTokens",
@@ -96,7 +97,16 @@ SwapMethods = {
     "0x7f8661a1": "exit"
 }
 
-def OfflineDecode(InputData):
+def OfflineDecode(InputData: str) -> Tuple[bool, str, Optional[str], Optional[Dict[str, Any]]]:
+    """
+    Decode transaction input data using hardcoded function signatures.
+
+    Args:
+        InputData: Raw transaction input data as hex string.
+
+    Returns:
+        Tuple of (success, message, function_name, decoded_params).
+    """
     MethodId = InputData[0:10]
     MethodParams = bytes.fromhex(InputData[10:])
     if MethodId in SwapMethods:
