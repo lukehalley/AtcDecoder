@@ -10,6 +10,7 @@ import requests
 
 FOUR_BYTE_ENDPOINT = "https://www.4byte.directory/api/v1"
 REQUEST_TIMEOUT_SECONDS = 10
+MAX_RETRY_ATTEMPTS = 3
 
 
 def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
