@@ -11,6 +11,7 @@ import requests
 FOUR_BYTE_ENDPOINT = "https://www.4byte.directory/api/v1"
 REQUEST_TIMEOUT_SECONDS = 10
 MAX_RETRY_ATTEMPTS = 3
+USER_AGENT = "AtcDecoder/1.0"
 
 
 def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]]]:
@@ -26,8 +27,9 @@ def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]
         - Optional[Dict]: The API response JSON if found, None otherwise.
     """
     ApiEndpoint = f"{FOUR_BYTE_ENDPOINT}/signatures/?hex_signature={HexSignature}"
+    Headers = {"User-Agent": USER_AGENT}
 
-    Response = requests.get(url=ApiEndpoint, timeout=REQUEST_TIMEOUT_SECONDS)
+    Response = requests.get(url=ApiEndpoint, timeout=REQUEST_TIMEOUT_SECONDS, headers=Headers)
 
     ResultsJSON = Response.json()
 
