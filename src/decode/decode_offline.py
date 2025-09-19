@@ -5,9 +5,13 @@ This module provides hardcoded function signatures for common DEX operations,
 allowing offline decoding without database or API lookups. Supports major
 DEX routers like Uniswap, PancakeSwap, and SushiSwap.
 """
+import logging
 from typing import Any, Dict, List, Optional, Tuple
 
 from eth_abi import abi
+
+# Configure module logger
+logger = logging.getLogger(__name__)
 
 # Type alias for function parameter definition (type, name)
 FunctionParam = Tuple[str, str]
@@ -81,8 +85,8 @@ METHOD_ID_START = 0
 METHOD_ID_END = 10
 
 # Response message constants
-MSG_OFFLINE_DECODE_SUCCESS = MSG_OFFLINE_DECODE_SUCCESS
-MSG_OFFLINE_DECODE_FAILURE = MSG_OFFLINE_DECODE_FAILURE
+MSG_OFFLINE_DECODE_SUCCESS = 'Offline Decode Success'
+MSG_OFFLINE_DECODE_FAILURE = 'Offline Decode Failure'
 
 # Method ID to function name mapping
 SwapMethods: Dict[str, str] = {
@@ -117,6 +121,8 @@ def OfflineDecode(InputData: str) -> Tuple[bool, str, Optional[str], Optional[Di
     """
     MethodId = InputData[METHOD_ID_START:METHOD_ID_END]
     MethodParams = bytes.fromhex(InputData[METHOD_ID_END:])
+    logger.debug(f"Attempting offline decode for method ID: {MethodId}")
+
     if MethodId in SwapMethods:
         MethodName = SwapMethods[MethodId]
         FunctionArgs = SwapFunctions[MethodName]
@@ -128,8 +134,10 @@ def OfflineDecode(InputData: str) -> Tuple[bool, str, Optional[str], Optional[Di
                 FunctionName = FunctionArg[1]
                 Index = FunctionArgs.index(FunctionArg)
                 DecodedMapped[FunctionName] = DecodedInput[Index]
+            logger.info(f"Successfully decoded function: {MethodName}")
             return True, MSG_OFFLINE_DECODE_SUCCESS, MethodName, DecodedMapped
-        except Exception:
+        except Exception as e:
+            logger.warning(f"Failed to decode known method {MethodId}: {e}")
             return False, MSG_OFFLINE_DECODE_FAILURE, None, None
     else:
         for SwapFunction in SwapFunctions:
