@@ -16,6 +16,7 @@
 # TODO: Implement connection pooling for database operations
 # Note: Consider adding type annotations
 """Database decoding module.
+# Note: Consider adding type annotations
 # Implement connection pooling for improved database performance
 
 """
