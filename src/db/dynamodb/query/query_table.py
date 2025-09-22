@@ -4,7 +4,11 @@ DynamoDB query module for signature table lookups.
 Provides functions to query the signature database for matching
 function signatures based on hashed signatures.
 """
+import logging
 from typing import List, Dict, Any
+
+# Module logger
+logger = logging.getLogger(__name__)
 
 from boto3.dynamodb.conditions import Key
 
