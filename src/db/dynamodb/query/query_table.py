@@ -13,6 +13,7 @@ from src.db.dynamodb.setup.setup_Init import InitDynamoDB
 # Table configuration constants
 SIGNATURE_TABLE_NAME = "atc_sig_db"
 SIGNATURE_INDEX_NAME = "hashedSignature-index"
+DEFAULT_QUERY_LIMIT = 100
 
 
 def QuerySigTable(HashedSignature: str) -> List[Dict[str, Any]]:
