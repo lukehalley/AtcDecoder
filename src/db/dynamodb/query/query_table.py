@@ -30,6 +30,8 @@ def QuerySigTable(HashedSignature: str) -> List[Dict[str, Any]]:
     Returns:
         A list of matching signature records from the database.
     """
+    logger.debug(f"Querying signature table for: {HashedSignature}")
+
     # Init DynamoDB Client
     DynamodbResource, DynamodbClient = InitDynamoDB()
 
@@ -42,4 +44,6 @@ def QuerySigTable(HashedSignature: str) -> List[Dict[str, Any]]:
         KeyConditionExpression=Key('hashedSignature').eq(HashedSignature)
     )
 
-    return QueryResponse["Items"]
+    results = QueryResponse["Items"]
+    logger.info(f"Found {len(results)} matching signatures for {HashedSignature}")
+    return results
