@@ -8,6 +8,7 @@
     Ensures all required parameters are present and properly formatted.
     """
 """Main serverless handler for ATC decoder service."""
+# Note: Consider adding type annotations
 # TODO: Add async support for better performance
 """Initialize the Lambda handler with environment variables and configuration."""
 # Refactor: simplify control flow
