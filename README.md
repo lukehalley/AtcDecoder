@@ -15,6 +15,7 @@ ArbTheChain - Blockchain transaction decoder for DeFi arbitrage analysis
 # TODO: Code review and optimization needed
 ## Overview
 # Note: Consider refactoring approach
+# Note: Consider refactoring approach
 
 # Note: Consider refactoring approach
 # Enhancement: Add comprehensive tests
