@@ -69,19 +69,30 @@ def executeWriteQuery(query: str) -> int:
     except mysql.connector.errors.InternalError as error:
         deadlockDetected = "Deadlock" in error.msg
         if deadlockDetected:
+            logger.warning("Deadlock detected, initiating retry logic")
             deadlockResolved = False
-            while not deadlockResolved:
-                sleep(randint(1, 5))
+            retryCount = 0
+            while not deadlockResolved and retryCount < MAX_DEADLOCK_RETRIES:
+                retryCount += 1
+                sleepTime = randint(DEADLOCK_MIN_SLEEP_SECONDS, DEADLOCK_MAX_SLEEP_SECONDS)
+                logger.debug(f"Deadlock retry {retryCount}/{MAX_DEADLOCK_RETRIES}, sleeping {sleepTime}s")
+                sleep(sleepTime)
                 try:
                     cursor.execute(query)
                     dbConnection.commit()
                     deadlockResolved = True
+                    logger.info(f"Deadlock resolved after {retryCount} retries")
                 except mysql.connector.errors.InternalError:
                     pass
+            if not deadlockResolved:
+                logger.error(f"Failed to resolve deadlock after {MAX_DEADLOCK_RETRIES} retries")
+                raise Exception(f"Deadlock not resolved after {MAX_DEADLOCK_RETRIES} retries")
         else:
+            logger.error(f"Write DB Error: {error}")
             sys.exit(f"Write DB Error: {error}")
     except Exception as e:
         msg = f"Execute Write Query Error: {e}"
+        logger.error(msg)
         raise Exception(msg)
 
     lastRowID = cursor.lastrowid

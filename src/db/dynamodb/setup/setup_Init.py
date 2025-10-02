@@ -12,6 +12,7 @@ from botocore.client import BaseClient
 
 # AWS Region configuration
 AWS_REGION = "eu-west-1"
+DYNAMODB_SERVICE_NAME = "dynamodb"
 
 
 def InitDynamoDB() -> Tuple[ServiceResource, BaseClient]:

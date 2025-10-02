@@ -4,9 +4,13 @@
 This module provides functionality to query the 4byte.directory API
 for matching function signatures based on hex signatures.
 """
+import logging
 from typing import Optional, Tuple, Dict, Any
 
 import requests
+
+# Module logger
+logger = logging.getLogger(__name__)
 
 FOUR_BYTE_ENDPOINT = "https://www.4byte.directory/api/v1"
 REQUEST_TIMEOUT_SECONDS = 10
