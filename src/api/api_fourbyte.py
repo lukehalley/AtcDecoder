@@ -30,6 +30,7 @@ def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]
         - bool: True if matching signatures were found, False otherwise.
         - Optional[Dict]: The API response JSON if found, None otherwise.
     """
+    logger.debug(f"Searching 4byte.directory for signature: {HexSignature}")
     ApiEndpoint = f"{FOUR_BYTE_ENDPOINT}/signatures/?hex_signature={HexSignature}"
     Headers = {"User-Agent": USER_AGENT}
 
@@ -38,6 +39,8 @@ def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]
     ResultsJSON = Response.json()
 
     if Response.ok and ResultsJSON["count"] > 0:
+        logger.info(f"Found {ResultsJSON['count']} signatures for {HexSignature}")
         return True, ResultsJSON
     else:
+        logger.debug(f"No signatures found for {HexSignature}")
         return False, None
