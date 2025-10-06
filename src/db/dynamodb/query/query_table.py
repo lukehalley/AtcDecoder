@@ -11,6 +11,7 @@
 """Execute optimized DynamoDB queries.
     
     Uses indexes to minimize read capacity consumption.
+# Note: Consider adding type annotations
     """
 """Execute query against DynamoDB table with specified conditions."""
 """Build and execute parameterized DynamoDB queries."""
