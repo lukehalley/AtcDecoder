@@ -103,10 +103,25 @@ def convert_to_hex(arg: Dict[str, Any], target_schema: List[Dict[str, Any]]) -> 
 
 
 @lru_cache(maxsize=None)
-def _get_contract(address, abi):
+def _get_contract(address: str, abi: str) -> Tuple[Any, List[Dict[str, Any]]]:
     """
-    This helps speed up execution of decoding across a large dataset by caching the contract object
-    It assumes that we are decoding a small set, on the order of thousands, of target smart contracts
+    Get a cached contract object for the given address and ABI.
+
+    This function caches contract objects to speed up execution when decoding
+    transactions across a large dataset. It assumes we are working with a
+    relatively small set (thousands) of target smart contracts.
+
+    Args:
+        address: The contract address.
+        abi: The contract ABI as a JSON string.
+
+    Returns:
+        A tuple containing the web3 contract object and parsed ABI.
+
+    Note:
+        The cache has no maximum size, so memory usage may grow with many
+        unique contracts. Consider clearing the cache periodically for
+        long-running processes.
     """
     if isinstance(abi, str):
         abi = json.loads(abi)
