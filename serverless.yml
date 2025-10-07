@@ -15,6 +15,7 @@
 # TODO: add backup configuration
 # Config: review resource allocation
 # Set environment variables for Lambda functions
+# Config: review resource allocation
 # TODO: Add support for custom domain configuration
 # TODO: Set timeout to 60 seconds for production
 # Environment variables for API endpoints and database configuration
