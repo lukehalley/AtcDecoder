@@ -17,6 +17,7 @@
     
     Transforms external API responses into internal format.
     """
+# TODO: Add async support for better performance
 # Refactor: simplify control flow
 # Handle incoming API requests for transaction decoding
 """Decode transaction data using API endpoint"""
