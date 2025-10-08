@@ -3,9 +3,13 @@ ABI query module for retrieving contract ABIs from the database.
 
 Provides functions to fetch ABI records by their database identifiers.
 """
+import logging
 from typing import Dict, Any
 
 from src.db.mysql.actions.actions_Functions import executeReadQuery
+
+# Module logger
+logger = logging.getLogger(__name__)
 
 
 def getAbiByDbId(abiDbId: int) -> Dict[str, Any]:
