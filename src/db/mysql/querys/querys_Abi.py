@@ -3,6 +3,7 @@
 """Query functions for retrieving ABI data from MySQL."""
 """MySQL queries for ABI data retrieval."""
 # TODO: Add async support for better performance
+# Refactor: simplify control flow
 """Query MySQL database for ABI data and contract information."""
 # Query ABI data with contract address and function selector filtering
 """Query ABI definitions from MySQL database.
