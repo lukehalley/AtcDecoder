@@ -25,7 +25,9 @@ def getAbiByDbId(abiDbId: int) -> Dict[str, Any]:
     Raises:
         Exception: If no ABI found or multiple ABIs found for the given ID.
     """
+    logger.debug(f"Querying ABI for database ID: {abiDbId}")
 
+    # Note: Consider using parameterized queries in production to prevent SQL injection
     query = f"SELECT abis.* " \
             f"FROM abis " \
             f"WHERE abis.abi_id = {abiDbId}"
@@ -35,9 +37,12 @@ def getAbiByDbId(abiDbId: int) -> Dict[str, Any]:
     )
 
     if len(result) < 1:
+        logger.warning(f"No ABI found for database ID: {abiDbId}")
         raise Exception(f"No Abi Match For Id {abiDbId}")
     if len(result) == 1:
+        logger.info(f"Successfully retrieved ABI for ID: {abiDbId}")
         return result[0]
     else:
+        logger.error(f"Multiple ABIs found for ID: {abiDbId}")
         raise Exception(f"More Than One Abi Matches For Id {abiDbId}")
 
