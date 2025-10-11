@@ -6,6 +6,7 @@
 """Handles API-based transaction decoding operations."""
 """API decoder module for processing transaction data."""
 # Enhancement: improve error messages
+# Performance: batch process for efficiency
 """API decoding functionality for transaction data."""
 """API transaction decoder using 4byte.directory and ABI data.
 """Handle API requests with proper error handling and validation."""
