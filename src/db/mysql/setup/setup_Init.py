@@ -6,10 +6,20 @@ AWS Secrets Manager for credential management.
 """
 import json
 import os
+from typing import Any
 
 import mysql.connector
 from aws_lambda_powertools.utilities import parameters
 from mysql.connector import errorcode
+from mysql.connector.connection import MySQLConnection
+from mysql.connector.cursor import MySQLCursor
+
+# Environment variable names for database configuration
+ENV_DB_ENDPOINT = "DB_ENDPOINT"
+ENV_DB_NAME = "DB_NAME"
+
+# AWS Secrets Manager secret name
+AWS_SECRET_NAME = "ATC_DB_Credentials"
 
 
 def initDBConnection():
