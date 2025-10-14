@@ -22,7 +22,7 @@ ENV_DB_NAME = "DB_NAME"
 AWS_SECRET_NAME = "ATC_DB_Credentials"
 
 
-def initDBConnection():
+def initDBConnection() -> MySQLConnection:
     """
     Initialize a MySQL database connection using AWS Secrets Manager.
 
@@ -30,16 +30,17 @@ def initDBConnection():
     a connection to the MySQL database.
 
     Returns:
-        mysql.connector.connection.MySQLConnection: The database connection object.
+        MySQLConnection: The database connection object.
 
     Raises:
         Exception: If authentication fails or database doesn't exist.
     """
-    DB_SECRET = json.loads(parameters.get_secret("ATC_DB_Credentials"))
+    # Retrieve database credentials from AWS Secrets Manager
+    DB_SECRET = json.loads(parameters.get_secret(AWS_SECRET_NAME))
     DB_USER = DB_SECRET["username"]
     DB_PASSWORD = DB_SECRET["password"]
-    DB_ENDPOINT = os.getenv("DB_ENDPOINT")
-    DB_NAME = os.getenv("DB_NAME")
+    DB_ENDPOINT = os.getenv(ENV_DB_ENDPOINT)
+    DB_NAME = os.getenv(ENV_DB_NAME)
 
     try:
         dbConnection = mysql.connector.connect(
