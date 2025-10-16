@@ -59,7 +59,7 @@ def initDBConnection() -> MySQLConnection:
     else:
         return dbConnection
 
-def getCursor(dbConnection, dictionary=True, buffered=True):
+def getCursor(dbConnection: MySQLConnection, dictionary: bool = True, buffered: bool = True) -> MySQLCursor:
     """
     Get a cursor object for executing database queries.
 
@@ -69,6 +69,11 @@ def getCursor(dbConnection, dictionary=True, buffered=True):
         buffered: If True, use a buffered cursor. Defaults to True.
 
     Returns:
-        A MySQL cursor object configured with the specified options.
+        MySQLCursor: A MySQL cursor object configured with the specified options.
+
+    Note:
+        Dictionary cursors are useful for accessing columns by name rather than
+        index. Buffered cursors fetch all results immediately, which is required
+        when executing multiple queries on the same connection.
     """
     return dbConnection.cursor(dictionary=dictionary, buffered=buffered)
