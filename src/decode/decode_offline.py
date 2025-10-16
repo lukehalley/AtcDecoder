@@ -1,6 +1,19 @@
+"""
+Offline transaction input decoder for common DEX swap functions.
+
+This module provides hardcoded function signatures for common DEX operations,
+allowing offline decoding without database or API lookups. Supports major
+DEX routers like Uniswap, PancakeSwap, and SushiSwap.
+"""
+from typing import Any, Dict, List, Optional, Tuple
+
 from eth_abi import abi
 
-SwapFunctions = {
+# Type alias for function parameter definition (type, name)
+FunctionParam = Tuple[str, str]
+FunctionParams = List[FunctionParam]
+
+SwapFunctions: Dict[str, FunctionParams] = {
     "swapExactTokensForTokens": [
         ('uint', 'amountIn'),
         ('uint', 'amountOutMin'),
