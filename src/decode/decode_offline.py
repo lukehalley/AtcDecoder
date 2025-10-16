@@ -76,6 +76,10 @@ SwapFunctions: Dict[str, FunctionParams] = {
     ]
 }
 
+# Method ID slice indices (first 4 bytes as hex with 0x prefix)
+METHOD_ID_START = 0
+METHOD_ID_END = 10
+
 # Method ID to function name mapping
 SwapMethods: Dict[str, str] = {
     "0x38ed1739": "swapExactTokensForTokens",
@@ -107,8 +111,8 @@ def OfflineDecode(InputData: str) -> Tuple[bool, str, Optional[str], Optional[Di
     Returns:
         Tuple of (success, message, function_name, decoded_params).
     """
-    MethodId = InputData[0:10]
-    MethodParams = bytes.fromhex(InputData[10:])
+    MethodId = InputData[METHOD_ID_START:METHOD_ID_END]
+    MethodParams = bytes.fromhex(InputData[METHOD_ID_END:])
     if MethodId in SwapMethods:
         MethodName = SwapMethods[MethodId]
         FunctionArgs = SwapFunctions[MethodName]

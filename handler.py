@@ -21,6 +21,9 @@ from src.decode.decode_db import DBDecode
 HTTP_OK = 200
 HTTP_BAD_REQUEST = 400
 
+# Transaction input validation
+MIN_TX_INPUT_LENGTH = 10  # At least method ID (4 bytes = 0x + 8 chars)
+
 
 def invoke(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     """
@@ -42,6 +45,15 @@ def invoke(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
 
     # Get Transaction
     TransactionDetails = web3Instance.eth.get_transaction(TxHash)
+    InputData = TransactionDetails["input"]
+
+    # Validate input data has sufficient length
+    if len(InputData) < MIN_TX_INPUT_LENGTH:
+        return {
+            "statusCode": HTTP_BAD_REQUEST,
+            "msg": "Transaction input data too short",
+            "body": {}
+        }
 
     # Decode With DB
     DecodeSuccessful, DecodeMsg, DecodeResults = DBDecode(TransactionDetails["input"])
