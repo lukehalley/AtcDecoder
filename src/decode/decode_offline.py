@@ -140,6 +140,7 @@ def OfflineDecode(InputData: str) -> Tuple[bool, str, Optional[str], Optional[Di
             logger.warning(f"Failed to decode known method {MethodId}: {e}")
             return False, MSG_OFFLINE_DECODE_FAILURE, None, None
     else:
+        logger.debug(f"Unknown method ID {MethodId}, trying signature matching")
         for SwapFunction in SwapFunctions:
             FunctionArgs = SwapFunctions[SwapFunction]
             try:
@@ -150,7 +151,9 @@ def OfflineDecode(InputData: str) -> Tuple[bool, str, Optional[str], Optional[Di
                     FunctionName = FunctionArg[1]
                     Index = FunctionArgs.index(FunctionArg)
                     DecodedMapped[FunctionName] = DecodedInput[Index]
+                logger.info(f"Matched function by signature: {SwapFunction}")
                 return True, MSG_OFFLINE_DECODE_SUCCESS, SwapFunction, DecodedMapped
             except Exception:
                 continue
+        logger.debug(f"No matching signature found for method ID: {MethodId}")
         return False, MSG_OFFLINE_DECODE_FAILURE, None, None
