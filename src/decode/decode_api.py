@@ -4,9 +4,13 @@ API-based transaction input decoder module.
 This module provides functionality to decode Ethereum transaction input data
 by querying the 4byte.directory API for matching function signatures.
 """
+import logging
 from typing import Any, Dict, List, Optional, Tuple
 
 from eth_abi import abi
+
+# Module logger
+logger = logging.getLogger(__name__)
 
 from src.api.api_fourbyte import SearchHexSignature
 from src.db.dynamodb.query.query_table import QuerySigTable

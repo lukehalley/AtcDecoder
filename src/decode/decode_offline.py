@@ -80,6 +80,10 @@ SwapFunctions: Dict[str, FunctionParams] = {
 METHOD_ID_START = 0
 METHOD_ID_END = 10
 
+# Response message constants
+MSG_OFFLINE_DECODE_SUCCESS = MSG_OFFLINE_DECODE_SUCCESS
+MSG_OFFLINE_DECODE_FAILURE = MSG_OFFLINE_DECODE_FAILURE
+
 # Method ID to function name mapping
 SwapMethods: Dict[str, str] = {
     "0x38ed1739": "swapExactTokensForTokens",
@@ -124,9 +128,9 @@ def OfflineDecode(InputData: str) -> Tuple[bool, str, Optional[str], Optional[Di
                 FunctionName = FunctionArg[1]
                 Index = FunctionArgs.index(FunctionArg)
                 DecodedMapped[FunctionName] = DecodedInput[Index]
-            return True, 'Offline Decode Success', MethodName, DecodedMapped
+            return True, MSG_OFFLINE_DECODE_SUCCESS, MethodName, DecodedMapped
         except Exception:
-            return False, 'Offline Decode Failure', None, None
+            return False, MSG_OFFLINE_DECODE_FAILURE, None, None
     else:
         for SwapFunction in SwapFunctions:
             FunctionArgs = SwapFunctions[SwapFunction]
@@ -138,7 +142,7 @@ def OfflineDecode(InputData: str) -> Tuple[bool, str, Optional[str], Optional[Di
                     FunctionName = FunctionArg[1]
                     Index = FunctionArgs.index(FunctionArg)
                     DecodedMapped[FunctionName] = DecodedInput[Index]
-                return True, 'Offline Decode Success', SwapFunction, DecodedMapped
+                return True, MSG_OFFLINE_DECODE_SUCCESS, SwapFunction, DecodedMapped
             except Exception:
                 continue
-        return False, 'Offline Decode Failure', None, None
+        return False, MSG_OFFLINE_DECODE_FAILURE, None, None
