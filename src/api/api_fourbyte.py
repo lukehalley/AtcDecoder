@@ -8,10 +8,12 @@ import logging
 from typing import Optional, Tuple, Dict, Any
 
 import requests
+from requests.exceptions import RequestException, Timeout
 
 # Module logger
 logger = logging.getLogger(__name__)
 
+# API Configuration
 FOUR_BYTE_ENDPOINT = "https://www.4byte.directory/api/v1"
 REQUEST_TIMEOUT_SECONDS = 10
 MAX_RETRY_ATTEMPTS = 3
