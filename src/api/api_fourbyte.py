@@ -36,9 +36,15 @@ def SearchHexSignature(HexSignature: str) -> Tuple[bool, Optional[Dict[str, Any]
     ApiEndpoint = f"{FOUR_BYTE_ENDPOINT}/signatures/?hex_signature={HexSignature}"
     Headers = {"User-Agent": USER_AGENT}
 
-    Response = requests.get(url=ApiEndpoint, timeout=REQUEST_TIMEOUT_SECONDS, headers=Headers)
-
-    ResultsJSON = Response.json()
+    try:
+        Response = requests.get(url=ApiEndpoint, timeout=REQUEST_TIMEOUT_SECONDS, headers=Headers)
+        ResultsJSON = Response.json()
+    except Timeout:
+        logger.warning(f"Request timed out for signature: {HexSignature}")
+        return False, None
+    except RequestException as e:
+        logger.error(f"Request failed for signature {HexSignature}: {e}")
+        return False, None
 
     if Response.ok and ResultsJSON["count"] > 0:
         logger.info(f"Found {ResultsJSON['count']} signatures for {HexSignature}")
