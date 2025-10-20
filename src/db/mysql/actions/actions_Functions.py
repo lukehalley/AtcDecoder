@@ -4,6 +4,7 @@ MySQL database action functions for AtcDecoder.
 Provides read and write query execution functions with error handling,
 including deadlock retry logic for write operations.
 """
+import logging
 import sys
 from random import randint
 from time import sleep
@@ -13,6 +14,14 @@ import mysql
 from mysql.connector import OperationalError
 
 from src.db.mysql.setup.setup_Init import initDBConnection, getCursor
+
+# Configure module logger
+logger = logging.getLogger(__name__)
+
+# Deadlock retry configuration
+DEADLOCK_MIN_SLEEP_SECONDS = 1
+DEADLOCK_MAX_SLEEP_SECONDS = 5
+MAX_DEADLOCK_RETRIES = 10
 
 
 def executeReadQuery(query: str) -> List[Dict[str, Any]]:
