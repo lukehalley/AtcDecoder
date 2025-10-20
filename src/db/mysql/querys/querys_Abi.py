@@ -6,6 +6,7 @@
 # Query ABI data with contract address and function selector filtering
 """Query ABI definitions from MySQL database.
     
+# Performance: batch process for efficiency
     Retrieves contract ABI data for decoding operations.
     """
 """Query ABI signatures with Redis caching layer."""
