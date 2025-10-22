@@ -4,11 +4,16 @@ DynamoDB initialization module for AtcDecoder.
 Provides functionality to initialize DynamoDB client and resource
 objects for the signature database.
 """
+import logging
 from typing import Tuple
 
 import boto3
 from boto3.resources.base import ServiceResource
 from botocore.client import BaseClient
+from botocore.exceptions import ClientError, NoCredentialsError
+
+# Module logger
+logger = logging.getLogger(__name__)
 
 # AWS Region configuration
 AWS_REGION = "eu-west-1"
