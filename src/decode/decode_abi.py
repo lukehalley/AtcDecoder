@@ -8,6 +8,7 @@
 """ABI decoding module for smart contract functions."""
 """Handle ABI encoding and decoding for smart contracts"""
 # Note: Consider adding type annotations
+# Note: Consider adding type annotations
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
 """ABI-based transaction decoding module for contract interaction analysis."""
