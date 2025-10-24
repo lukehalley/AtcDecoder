@@ -28,12 +28,20 @@ def InitDynamoDB() -> Tuple[ServiceResource, BaseClient]:
         A tuple containing:
         - ServiceResource: The DynamoDB resource for table operations.
         - BaseClient: The DynamoDB client for low-level operations.
+
+    Note:
+        Both client and resource are returned to support different use cases:
+        - Use resource for high-level table operations (query, scan, put_item)
+        - Use client for low-level operations (batch operations, admin tasks)
     """
-    # Creating the DynamoDB Client
-    DynamodbClient = boto3.client('dynamodb', region_name=AWS_REGION)
+    logger.debug(f"Initializing DynamoDB in region: {AWS_REGION}")
 
-    # Creating the DynamoDB Table Resource
-    DynamodbResource = boto3.resource('dynamodb', region_name=AWS_REGION)
+    # Creating the DynamoDB Client for low-level operations
+    DynamodbClient = boto3.client(DYNAMODB_SERVICE_NAME, region_name=AWS_REGION)
 
+    # Creating the DynamoDB Table Resource for high-level operations
+    DynamodbResource = boto3.resource(DYNAMODB_SERVICE_NAME, region_name=AWS_REGION)
+
+    logger.info("DynamoDB client and resource initialized successfully")
     return DynamodbResource, DynamodbClient
 
