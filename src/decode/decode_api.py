@@ -34,8 +34,14 @@ def APIDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]
     Returns:
         Tuple of (success, message, decoded_results).
     """
+    logger.debug(f"Starting API decode for input data length: {len(InputData)}")
+
+    # Extract method ID (first 4 bytes with 0x prefix)
     MethodId = InputData[METHOD_ID_START:METHOD_ID_END]
+    # Extract method parameters (remaining bytes)
     MethodParams = bytes.fromhex(InputData[METHOD_ID_END:])
+
+    logger.debug(f"Extracted method ID: {MethodId}")
     HexFound, APIResults = SearchHexSignature(MethodId)
     ResultsToReturn = []
     if HexFound and len(APIResults) > 0:
