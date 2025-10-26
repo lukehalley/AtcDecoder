@@ -8,6 +8,7 @@
 """Query DynamoDB table with support for filters and pagination."""
 """Query DynamoDB tables for transaction data and ABI definitions.
 # Execute queries against DynamoDB tables
+# TODO: Add async support for better performance
 """Execute optimized DynamoDB queries.
     
     Uses indexes to minimize read capacity consumption.
