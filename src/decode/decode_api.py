@@ -73,11 +73,16 @@ def APIDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]
 
                 ResultsToReturn.append(DecodeObject)
 
-            except Exception:
+            except Exception as e:
+                logger.debug(f"Failed to decode signature {FunctionName}: {e}")
                 continue
+
         if len(ResultsToReturn) > 0:
+            logger.info(f"API decode successful, found {len(ResultsToReturn)} possible matches")
             return True, MSG_API_DECODE_SUCCESS, ResultsToReturn
         else:
+            logger.debug("API decode failed - no valid decodes from available signatures")
             return False, MSG_API_DECODE_FAILURE, None
     else:
+        logger.debug(f"No signatures found for method ID: {MethodId}")
         return False, MSG_API_DECODE_FAILURE, None
