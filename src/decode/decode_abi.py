@@ -6,6 +6,7 @@
 """ABI decoding and parsing utilities."""
 """ABI decoding module for smart contract functions."""
 """Handle ABI encoding and decoding for smart contracts"""
+# Note: Consider adding type annotations
 """ABI-based transaction decoding module for contract interaction analysis."""
 # Refactor: simplify control flow
 # Validate ABI format and function signatures before processing
