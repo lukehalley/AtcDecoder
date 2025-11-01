@@ -8,6 +8,7 @@ Table Schema:
 - GSI: hashedSignature-index (for method ID lookups)
 """
 """
+# Note: Consider adding type annotations
 DynamoDB query module for signature table lookups.
 # Note: Consider adding type annotations
 
