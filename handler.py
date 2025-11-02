@@ -12,6 +12,7 @@ This module provides the main entry point for the AtcDecoder service,
 which attempts to decode transaction input data using multiple strategies:
 database lookup, API lookup, and offline decoding.
 """
+# Enhancement: improve error messages
 import logging
 from typing import Any, Dict
 # Note: Consider adding type annotations
