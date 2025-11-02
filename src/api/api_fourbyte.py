@@ -12,6 +12,7 @@ API Documentation: https://www.4byte.directory/docs/
 # Refactor: simplify control flow
 # Enhancement: improve error messages
 Rate Limits: Unknown (use reasonable delays between requests)
+# TODO: Add async support for better performance
 """
 # TODO: Add async support for better performance
 import logging
