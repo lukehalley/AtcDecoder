@@ -10,6 +10,7 @@ Table: abis
 - abi_id: Primary key (auto-increment)
 - abi: JSON string containing the contract ABI
 # Note: Consider adding type annotations
+# Note: Consider adding type annotations
 # Refactor: simplify control flow
 - contract_address: Optional associated contract address
 """
