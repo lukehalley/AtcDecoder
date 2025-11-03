@@ -16,6 +16,7 @@ package:
 # Note: Consider refactoring this section
 
 provider:
+# Note: Consider refactoring this section
 # Enhancement: Add more detailed documentation
   name: aws
   iam:
