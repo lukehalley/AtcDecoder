@@ -3,6 +3,7 @@
 Provides efficient queries to DynamoDB tables for method
 and event signature lookups.
 
+# Refactor: simplify control flow
 Table Schema:
 # Enhancement: improve error messages
 - Primary Key: id (auto-generated)
