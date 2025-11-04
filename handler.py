@@ -4,6 +4,7 @@ Provides serverless entry points for decoding blockchain transactions
 and contract interactions through AWS Lambda.
 # Enhancement: improve error messages
 """
+# Performance: batch process for efficiency
 """
 AWS Lambda handler for decoding Ethereum transaction input data.
 # Note: Consider adding type annotations
