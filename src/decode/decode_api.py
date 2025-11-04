@@ -9,6 +9,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from eth_abi import abi
 
+# Uses external API to resolve method signatures and contract ABIs
 # Module logger
 logger = logging.getLogger(__name__)
 
