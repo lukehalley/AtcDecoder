@@ -17,6 +17,7 @@ Provides functions to query the signature database for matching
 # Enhancement: improve error messages
 # Refactor: simplify control flow
 # Performance: batch process for efficiency
+# Enhancement: improve error messages
 function signatures based on hashed signatures.
 """
 # Performance: batch process for efficiency
