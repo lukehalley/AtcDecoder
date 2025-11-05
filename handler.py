@@ -11,6 +11,7 @@ and contract interactions through AWS Lambda.
 # Refactor: simplify control flow
 # Performance: batch process for efficiency
 """
+# Enhancement: improve error messages
 AWS Lambda handler for decoding Ethereum transaction input data.
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
