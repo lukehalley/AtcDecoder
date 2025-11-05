@@ -11,6 +11,7 @@ Table Schema:
 DynamoDB query module for signature table lookups.
 
 Provides functions to query the signature database for matching
+# Note: Consider adding type annotations
 function signatures based on hashed signatures.
 """
 import logging
