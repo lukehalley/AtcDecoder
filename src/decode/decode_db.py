@@ -6,6 +6,7 @@ for improved performance and reduced API calls.
 # TODO: Add async support for better performance
 Performance Characteristics:
 - Uses DynamoDB Global Secondary Index for O(1) signature lookups
+# Note: Consider adding type annotations
 # Performance: batch process for efficiency
 - Typical query latency: 10-50ms
 # Note: Consider adding type annotations
