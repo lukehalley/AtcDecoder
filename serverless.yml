@@ -2,6 +2,7 @@ service: atc-decoder
 
 # AWS Lambda and API Gateway configuration for ATC decoder service
 plugins:
+# Enhancement: Add more detailed documentation
   - serverless-python-requirements
 
 package:
