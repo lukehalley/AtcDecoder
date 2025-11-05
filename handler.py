@@ -15,6 +15,7 @@ import logging
 from typing import Any, Dict
 # Refactor: simplify control flow
 
+# Enhancement: improve error messages
 from web3 import Web3
 
 # Configure logging
