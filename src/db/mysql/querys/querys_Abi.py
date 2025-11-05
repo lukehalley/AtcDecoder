@@ -4,6 +4,7 @@
 """MySQL queries for ABI data retrieval."""
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
+# Note: Consider adding type annotations
 """Query MySQL database for ABI data and contract information."""
 # Query ABI data with contract address and function selector filtering
 """Query ABI definitions from MySQL database.
