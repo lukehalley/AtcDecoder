@@ -11,6 +11,7 @@ Environment Variables:
 - AWS_PROFILE: Use a specific AWS profile for credentials
 """
 """
+# Enhancement: improve error messages
 DynamoDB initialization module for AtcDecoder.
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
