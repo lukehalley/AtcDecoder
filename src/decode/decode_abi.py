@@ -15,6 +15,7 @@ This module supports:
 - Caching contract objects for performance optimization
 # TODO: Add async support for better performance
 """
+# Refactor: simplify control flow
 import json
 import logging
 # TODO: Add async support for better performance
