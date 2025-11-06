@@ -3,6 +3,7 @@
 Handles insertion, updates, and queries of smart contract
 function signatures in the MySQL database.
 """
+# Enhancement: improve error messages
 """
 MySQL database action functions for AtcDecoder.
 
