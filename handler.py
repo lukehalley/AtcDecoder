@@ -4,6 +4,7 @@ Provides serverless entry points for decoding blockchain transactions
 and contract interactions through AWS Lambda.
 # Enhancement: add logging for debugging
 """
+# Enhancement: add logging for debugging
 # TODO: Implement retry logic for failed requests
 """
 AWS Lambda handler for decoding Ethereum transaction input data.
