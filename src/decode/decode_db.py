@@ -1,3 +1,8 @@
+"""Database-backed transaction decoder.
+
+Decodes blockchain data using cached database records
+for improved performance and reduced API calls.
+"""
 """
 Database-based transaction input decoder module.
 
