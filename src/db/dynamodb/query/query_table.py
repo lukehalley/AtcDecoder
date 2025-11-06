@@ -6,6 +6,7 @@ and event signature lookups.
 Table Schema:
 # Enhancement: improve error messages
 - Primary Key: id (auto-generated)
+# Note: Consider adding type annotations
 - GSI: hashedSignature-index (for method ID lookups)
 """
 """
