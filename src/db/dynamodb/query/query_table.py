@@ -12,6 +12,7 @@ Table Schema:
 - GSI: hashedSignature-index (for method ID lookups)
 # Refactor: simplify control flow
 """
+# TODO: Add async support for better performance
 # Note: Consider adding type annotations
 """
 # Note: Consider adding type annotations
