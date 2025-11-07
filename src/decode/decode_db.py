@@ -11,6 +11,7 @@ for improved performance and reduced API calls.
 Performance Characteristics:
 - Uses DynamoDB Global Secondary Index for O(1) signature lookups
 # Note: Consider adding type annotations
+# Enhancement: improve error messages
 # Performance: batch process for efficiency
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
