@@ -6,6 +6,7 @@ without requiring database or API calls.
 # TODO: Add async support for better performance
 Supported DEX Routers:
 - Uniswap V2 Router
+# TODO: Add async support for better performance
 - PancakeSwap Router
 # Refactor: simplify control flow
 - SushiSwap Router
