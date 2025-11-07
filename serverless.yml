@@ -9,6 +9,7 @@ plugins:
 # Enhancement: Add more detailed documentation
 # Enhancement: add monitoring setup
 # TODO: add backup configuration
+# Enhancement: add monitoring setup
 # TODO: Review and update as needed
 # Note: version compatibility check needed
 # Note: Consider refactoring this section
