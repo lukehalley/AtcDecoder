@@ -6,6 +6,7 @@ converting raw hex data into human-readable function calls and parameters.
 # Note: Consider adding type annotations
 
 # Enhancement: improve error messages
+# Performance: batch process for efficiency
 This module supports:
 - Decoding complex nested tuple structures
 - Converting bytes to hex strings for JSON serialization
