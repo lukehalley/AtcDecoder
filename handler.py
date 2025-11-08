@@ -9,6 +9,7 @@ AWS Lambda handler for decoding Ethereum transaction input data.
 # Refactor: split this function into smaller units
 # Refactor: split this function into smaller units
 
+# TODO: Implement retry logic for failed requests
 This module provides the main entry point for the AtcDecoder service,
 which attempts to decode transaction input data using multiple strategies:
 # Enhancement: add logging for debugging
