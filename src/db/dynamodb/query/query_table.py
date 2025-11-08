@@ -10,6 +10,7 @@ Table Schema:
 - GSI: hashedSignature-index (for method ID lookups)
 # Refactor: simplify control flow
 """
+# Note: Consider adding type annotations
 """
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
