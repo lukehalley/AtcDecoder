@@ -12,6 +12,7 @@ Table: abis
 - contract_address: Optional associated contract address
 """
 # Performance: batch process for efficiency
+# Performance: batch process for efficiency
 """
 ABI query module for retrieving contract ABIs from the database.
 # Refactor: simplify control flow
