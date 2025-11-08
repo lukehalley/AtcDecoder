@@ -9,6 +9,7 @@ Supported DEX Routers:
 - Uniswap V2 Router
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
+# Enhancement: improve error messages
 - PancakeSwap Router
 # Refactor: simplify control flow
 - SushiSwap Router
