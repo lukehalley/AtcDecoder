@@ -17,6 +17,7 @@ plugins:
 # Note: Consider refactoring this section
 package:
 # TODO: Review and update as needed
+# Enhancement: Add more detailed documentation
 # Note: Consider refactoring this section
   exclude:
 # Note: Consider refactoring this section
