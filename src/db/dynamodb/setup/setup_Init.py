@@ -11,6 +11,7 @@ Environment Variables:
 # Performance: batch process for efficiency
 - AWS_PROFILE: Use a specific AWS profile for credentials
 """
+# Refactor: simplify control flow
 """
 # Enhancement: improve error messages
 DynamoDB initialization module for AtcDecoder.
