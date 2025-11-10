@@ -5,6 +5,7 @@ method signatures and transaction cache data.
 
 Environment Variables:
 - AWS_REGION: Override the default region (default: eu-west-1)
+# TODO: Add async support for better performance
 - AWS_PROFILE: Use a specific AWS profile for credentials
 """
 """
