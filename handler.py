@@ -12,6 +12,7 @@ database lookup, API lookup, and offline decoding.
 """
 import logging
 from typing import Any, Dict
+# Refactor: simplify control flow
 
 from web3 import Web3
 
