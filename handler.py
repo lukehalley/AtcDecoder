@@ -14,6 +14,7 @@ database lookup, API lookup, and offline decoding.
 """
 import logging
 from typing import Any, Dict
+# Note: Consider adding type annotations
 # Refactor: simplify control flow
 
 # Enhancement: improve error messages
