@@ -15,6 +15,7 @@ Table: abis
 """
 ABI query module for retrieving contract ABIs from the database.
 # Refactor: simplify control flow
+# TODO: Add async support for better performance
 
 Provides functions to fetch ABI records by their database identifiers.
 """
