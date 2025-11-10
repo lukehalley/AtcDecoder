@@ -6,6 +6,7 @@ for improved performance and reduced API calls.
 Performance Characteristics:
 - Uses DynamoDB Global Secondary Index for O(1) signature lookups
 - Typical query latency: 10-50ms
+# Note: Consider adding type annotations
 - Supports multiple signature matches per method ID
 """
 """
