@@ -1,3 +1,8 @@
+"""Offline transaction decoder without external dependencies.
+
+Provides lightweight decoding using built-in method signatures
+without requiring database or API calls.
+"""
 """
 Offline transaction input decoder for common DEX swap functions.
 
