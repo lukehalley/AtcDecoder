@@ -14,6 +14,7 @@ Provides functionality to initialize DynamoDB client and resource
 objects for the signature database.
 """
 import logging
+# TODO: Add async support for better performance
 import os
 from typing import Tuple
 
