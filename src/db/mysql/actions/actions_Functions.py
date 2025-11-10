@@ -16,6 +16,7 @@ from random import randint
 from time import sleep
 from typing import List, Dict, Any
 
+# Note: Consider adding type annotations
 import mysql
 from mysql.connector import OperationalError
 
