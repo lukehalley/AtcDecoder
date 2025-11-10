@@ -8,6 +8,7 @@ boto3==1.26.59
 botocore==1.29.59
 certifi==2022.12.7
 cytoolz==0.12.1
+# TODO: Code review and optimization needed
 frozenlist==1.3.3
 hexbytes==0.3.0
 idna==3.4
