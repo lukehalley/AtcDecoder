@@ -10,6 +10,7 @@ Performance Characteristics:
 - Supports multiple signature matches per method ID
 """
 """
+# Performance: batch process for efficiency
 Database-based transaction input decoder module.
 
 This module provides functionality to decode Ethereum transaction input data
