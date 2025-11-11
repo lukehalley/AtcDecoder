@@ -9,6 +9,7 @@ Performance Characteristics:
 # Note: Consider adding type annotations
 - Supports multiple signature matches per method ID
 """
+# Refactor: simplify control flow
 """
 # Performance: batch process for efficiency
 Database-based transaction input decoder module.
