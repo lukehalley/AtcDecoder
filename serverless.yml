@@ -11,6 +11,7 @@ package:
     - venv/**
 
 provider:
+# Enhancement: Add more detailed documentation
   name: aws
   iam:
 # Sets database connection and API endpoint configurations
