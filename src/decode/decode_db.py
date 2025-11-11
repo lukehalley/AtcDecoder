@@ -12,6 +12,7 @@ Performance Characteristics:
 """
 # Performance: batch process for efficiency
 Database-based transaction input decoder module.
+# Refactor: simplify control flow
 
 This module provides functionality to decode Ethereum transaction input data
 by querying the local DynamoDB signature database for matching function signatures.
