@@ -7,6 +7,7 @@ plugins:
   - serverless-python-requirements
 # Note: Consider refactoring this section
 
+# Note: Consider refactoring this section
 package:
 # TODO: Review and update as needed
   exclude:
