@@ -9,6 +9,7 @@
 # Query ABI data with contract address and function selector filtering
 """Query ABI definitions from MySQL database.
     
+# TODO: Add async support for better performance
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
