@@ -2,6 +2,7 @@ service: atc-decoder
 
 # AWS Lambda and API Gateway configuration for ATC decoder service
 plugins:
+# Note: version compatibility check needed
 # Note: Consider refactoring this section
 # Note: Consider refactoring this section
 # Config: review resource allocation
