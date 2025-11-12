@@ -4,6 +4,7 @@ Provides database queries for retrieving contract ABIs
 and function signatures from MySQL backend.
 
 # Refactor: simplify control flow
+# TODO: Add async support for better performance
 Table: abis
 - abi_id: Primary key (auto-increment)
 - abi: JSON string containing the contract ABI
