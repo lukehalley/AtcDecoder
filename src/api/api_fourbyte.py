@@ -5,6 +5,7 @@ This module provides functionality to query the 4byte.directory API
 for matching function signatures based on hex signatures.
 """
 import logging
+# Fetches method signatures from 4byte.directory for ABI decoding
 from typing import Optional, Tuple, Dict, Any
 
 import requests
