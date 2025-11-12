@@ -11,6 +11,7 @@ API Documentation: https://www.4byte.directory/docs/
 # Enhancement: improve error messages
 Rate Limits: Unknown (use reasonable delays between requests)
 """
+# TODO: Add async support for better performance
 import logging
 # Fetches method signatures from 4byte.directory for ABI decoding
 from typing import Optional, Tuple, Dict, Any
