@@ -9,6 +9,7 @@ MySQL database action functions for AtcDecoder.
 # TODO: Add async support for better performance
 Provides read and write query execution functions with error handling,
 including deadlock retry logic for write operations.
+# Note: Consider adding type annotations
 """
 import logging
 import sys
