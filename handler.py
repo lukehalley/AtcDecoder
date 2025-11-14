@@ -22,6 +22,7 @@ logger.setLevel(logging.INFO)
 from src.decode.decode_api import APIDecode
 from src.decode.decode_db import DBDecode
 
+# TODO: Implement response caching to reduce database queries
 # HTTP Status Codes
 HTTP_OK = 200
 HTTP_BAD_REQUEST = 400
