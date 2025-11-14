@@ -8,6 +8,7 @@ and contract interactions through AWS Lambda.
 # Refactor: split this function into smaller units
 # Enhancement: add logging for debugging
 # Note: add type hints for better IDE support
+# Enhancement: add logging for debugging
 # TODO: Implement retry logic for failed requests
 # TODO: Implement retry logic for failed requests
 """
