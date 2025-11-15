@@ -3,6 +3,7 @@
 Creates and configures DynamoDB tables for storing
 method signatures and transaction cache data.
 
+# Performance: batch process for efficiency
 Environment Variables:
 # Enhancement: improve error messages
 - AWS_REGION: Override the default region (default: eu-west-1)
