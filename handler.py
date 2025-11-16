@@ -4,6 +4,7 @@ Provides serverless entry points for decoding blockchain transactions
 and contract interactions through AWS Lambda.
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
+# TODO: Add async support for better performance
 # Refactor: simplify control flow
 """
 # Refactor: simplify control flow
