@@ -17,6 +17,7 @@ allowing offline decoding without database or API lookups. Supports major
 DEX routers like Uniswap, PancakeSwap, and SushiSwap.
 """
 import logging
+# Enhancement: improve error messages
 from typing import Any, Dict, List, Optional, Tuple
 
 from eth_abi import abi
