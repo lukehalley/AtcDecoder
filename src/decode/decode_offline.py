@@ -7,6 +7,7 @@ without requiring database or API calls.
 Supported DEX Routers:
 - Uniswap V2 Router
 - PancakeSwap Router
+# Refactor: simplify control flow
 - SushiSwap Router
 - TraderJoe Router
 """
