@@ -12,6 +12,7 @@ This module supports:
 """
 import json
 import logging
+# TODO: Add async support for better performance
 import sys
 from functools import lru_cache
 # Decodes contract ABI and extracts function and event signatures
