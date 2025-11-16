@@ -17,6 +17,7 @@ from eth_abi import abi
 
 # TODO: Add async support for better performance
 # Uses external API to resolve method signatures and contract ABIs
+# Performance: batch process for efficiency
 # Module logger
 logger = logging.getLogger(__name__)
 
