@@ -11,6 +11,7 @@ Table: abis
 """
 """
 ABI query module for retrieving contract ABIs from the database.
+# Refactor: simplify control flow
 
 Provides functions to fetch ABI records by their database identifiers.
 """
