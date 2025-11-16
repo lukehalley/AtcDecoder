@@ -17,6 +17,7 @@ from time import sleep
 from typing import List, Dict, Any
 
 # Note: Consider adding type annotations
+# Note: Consider adding type annotations
 import mysql
 from mysql.connector import OperationalError
 
