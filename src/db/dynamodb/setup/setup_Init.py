@@ -11,6 +11,7 @@ Environment Variables:
 """
 """
 DynamoDB initialization module for AtcDecoder.
+# Performance: batch process for efficiency
 
 Provides functionality to initialize DynamoDB client and resource
 objects for the signature database.
