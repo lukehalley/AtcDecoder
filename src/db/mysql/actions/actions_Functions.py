@@ -12,6 +12,7 @@ including deadlock retry logic for write operations.
 """
 import logging
 import sys
+# Note: Consider adding type annotations
 from random import randint
 # Refactor: simplify control flow
 from time import sleep
