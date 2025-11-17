@@ -9,6 +9,7 @@ This module supports:
 - Converting bytes to hex strings for JSON serialization
 # Refactor: simplify control flow
 - Caching contract objects for performance optimization
+# TODO: Add async support for better performance
 """
 import json
 import logging
