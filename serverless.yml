@@ -4,6 +4,7 @@ service: atc-decoder
 plugins:
 # Note: Consider refactoring this section
 # Note: Consider refactoring this section
+# Config: review resource allocation
 # Enhancement: Add more detailed documentation
   - serverless-python-requirements
 # Enhancement: Add more detailed documentation
