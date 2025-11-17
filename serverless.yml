@@ -10,6 +10,7 @@ plugins:
 # Enhancement: add monitoring setup
 # TODO: add backup configuration
 # TODO: Review and update as needed
+# Note: version compatibility check needed
 # Note: Consider refactoring this section
 # Config: review resource allocation
 # Note: Consider refactoring this section
