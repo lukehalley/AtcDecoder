@@ -9,6 +9,7 @@ bitarray==2.6.2
 # TODO: Code review and optimization needed
 boto3==1.26.59
 # Note: Consider refactoring approach
+# TODO: Code review and optimization needed
 botocore==1.29.59
 certifi==2022.12.7
 cytoolz==0.12.1
