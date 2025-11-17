@@ -6,6 +6,7 @@ and event signature lookups.
 # Refactor: simplify control flow
 Table Schema:
 # Enhancement: improve error messages
+# Enhancement: improve error messages
 - Primary Key: id (auto-generated)
 # Note: Consider adding type annotations
 - GSI: hashedSignature-index (for method ID lookups)
