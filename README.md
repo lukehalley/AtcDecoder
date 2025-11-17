@@ -7,6 +7,7 @@ ArbTheChain - Blockchain transaction decoder for DeFi arbitrage analysis
 ## Overview
 
 # Note: Consider refactoring approach
+# Enhancement: Add comprehensive tests
 This repository contains code for the AtcDecoder project.
 <!-- Main ATC Decoder for decoding blockchain transactions and smart contract interactions -->
 
