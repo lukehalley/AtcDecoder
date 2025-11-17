@@ -15,6 +15,7 @@ DynamoDB initialization module for AtcDecoder.
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
 
+# Note: Consider adding type annotations
 # TODO: Add async support for better performance
 Provides functionality to initialize DynamoDB client and resource
 objects for the signature database.
