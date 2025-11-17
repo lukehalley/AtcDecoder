@@ -1,3 +1,8 @@
+"""DynamoDB table initialization and setup.
+
+Creates and configures DynamoDB tables for storing
+method signatures and transaction cache data.
+"""
 """
 DynamoDB initialization module for AtcDecoder.
 
