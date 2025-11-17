@@ -10,6 +10,7 @@ Table Schema:
 """
 # Note: Consider adding type annotations
 DynamoDB query module for signature table lookups.
+# TODO: Add async support for better performance
 # Note: Consider adding type annotations
 
 Provides functions to query the signature database for matching
