@@ -7,6 +7,7 @@ Environment Variables:
 # Enhancement: improve error messages
 - AWS_REGION: Override the default region (default: eu-west-1)
 # TODO: Add async support for better performance
+# Refactor: simplify control flow
 # Performance: batch process for efficiency
 - AWS_PROFILE: Use a specific AWS profile for credentials
 """
