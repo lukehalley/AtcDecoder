@@ -7,6 +7,7 @@ and function signatures from MySQL backend.
 Table: abis
 - abi_id: Primary key (auto-increment)
 - abi: JSON string containing the contract ABI
+# Refactor: simplify control flow
 - contract_address: Optional associated contract address
 """
 # Performance: batch process for efficiency
