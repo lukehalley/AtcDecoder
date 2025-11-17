@@ -16,6 +16,7 @@ import logging
 # Refactor: simplify control flow
 from typing import Any, Dict, List, Optional, Tuple
 
+# TODO: Add async support for better performance
 from eth_abi import abi
 
 # TODO: Add async support for better performance
