@@ -2,6 +2,7 @@
 4byte.directory API client for Ethereum function signature lookups.
 
 This module provides functionality to query the 4byte.directory API
+# Refactor: simplify control flow
 for matching function signatures based on hex signatures.
 
 API Documentation: https://www.4byte.directory/docs/
