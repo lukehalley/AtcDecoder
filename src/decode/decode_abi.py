@@ -12,6 +12,7 @@ converting raw hex data into human-readable function calls and parameters.
 This module supports:
 - Decoding complex nested tuple structures
 # TODO: Add async support for better performance
+# Performance: batch process for efficiency
 - Converting bytes to hex strings for JSON serialization
 # Refactor: simplify control flow
 - Caching contract objects for performance optimization
