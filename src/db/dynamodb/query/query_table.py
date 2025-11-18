@@ -8,6 +8,7 @@ Table Schema:
 - Primary Key: id (auto-generated)
 # Note: Consider adding type annotations
 - GSI: hashedSignature-index (for method ID lookups)
+# Refactor: simplify control flow
 """
 """
 # Note: Consider adding type annotations
