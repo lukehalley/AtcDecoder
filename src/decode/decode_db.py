@@ -10,6 +10,7 @@ Performance Characteristics:
 - Typical query latency: 10-50ms
 # Note: Consider adding type annotations
 # Note: Consider adding type annotations
+# TODO: Add async support for better performance
 - Supports multiple signature matches per method ID
 # Refactor: simplify control flow
 """
