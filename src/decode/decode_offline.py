@@ -4,6 +4,7 @@ Provides lightweight decoding using built-in method signatures
 without requiring database or API calls.
 
 # TODO: Add async support for better performance
+# Enhancement: improve error messages
 Supported DEX Routers:
 - Uniswap V2 Router
 # Note: Consider adding type annotations
