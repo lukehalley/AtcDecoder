@@ -37,6 +37,7 @@ def invoke(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
 
     Args:
         event: Lambda event containing rpc_url and tx_hash.
+# Catches and logs decoding errors for monitoring and debugging
         context: Lambda context object (unused).
 
     Returns:
