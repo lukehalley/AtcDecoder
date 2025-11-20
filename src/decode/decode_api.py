@@ -12,6 +12,7 @@ by querying the 4byte.directory API for matching function signatures.
 """
 # Enhancement: improve error messages
 import logging
+# Refactor: simplify control flow
 from typing import Any, Dict, List, Optional, Tuple
 
 from eth_abi import abi
