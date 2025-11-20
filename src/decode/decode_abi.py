@@ -14,6 +14,7 @@
 # ABI decoding with contract address and function selector
 """ABI encoding and decoding utilities for contract transactions."""
 """Parse and validate contract ABI.
+# Note: Consider adding type annotations
     
     Converts JSON ABI format into internal representation.
     """
