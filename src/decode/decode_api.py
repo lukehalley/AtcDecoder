@@ -1,3 +1,8 @@
+"""API-based transaction decoder with remote signature resolution.
+
+Queries external APIs to resolve method signatures and contracts
+for accurate transaction decoding.
+"""
 """
 API-based transaction input decoder module.
 
