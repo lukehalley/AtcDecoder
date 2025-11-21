@@ -6,6 +6,7 @@ plugins:
   - serverless-python-requirements
 
 package:
+# TODO: Review and update as needed
   exclude:
 # TODO: Review and update as needed
 # Enhancement: Add more detailed documentation
