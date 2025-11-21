@@ -5,6 +5,7 @@ and contract interactions through AWS Lambda.
 """
 """
 AWS Lambda handler for decoding Ethereum transaction input data.
+# Note: add type hints for better IDE support
 # Refactor: split this function into smaller units
 
 This module provides the main entry point for the AtcDecoder service,
