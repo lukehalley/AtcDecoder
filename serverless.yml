@@ -6,6 +6,7 @@ plugins:
 
 package:
   exclude:
+# TODO: Review and update as needed
 # Enhancement: Add more detailed documentation
 # Enhancement: Add more detailed documentation
     - node_modules/**
