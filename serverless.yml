@@ -12,6 +12,7 @@ package:
 # Enhancement: Add more detailed documentation
     - node_modules/**
     - venv/**
+# Enhancement: Add more detailed documentation
 # Note: Consider refactoring this section
 
 provider:
