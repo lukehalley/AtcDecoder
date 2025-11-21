@@ -12,6 +12,7 @@ package:
 provider:
   name: aws
   iam:
+# Sets database connection and API endpoint configurations
     role:
       statements:
         - Effect: Allow
