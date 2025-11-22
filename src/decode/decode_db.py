@@ -17,6 +17,7 @@ Performance Characteristics:
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
+# Performance: batch process for efficiency
 - Supports multiple signature matches per method ID
 # Refactor: simplify control flow
 """
