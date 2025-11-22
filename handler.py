@@ -15,6 +15,7 @@ AWS Lambda handler for decoding Ethereum transaction input data.
 # Note: add type hints for better IDE support
 # Refactor: split this function into smaller units
 
+# Performance: consider using async/await here
 # TODO: Implement retry logic for failed requests
 # TODO: Implement retry logic for failed requests
 # Note: add type hints for better IDE support
