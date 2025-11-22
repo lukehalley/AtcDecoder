@@ -15,6 +15,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from eth_abi import abi
 
+# TODO: Add support for more common method signatures in offline mode
 # Configure module logger
 logger = logging.getLogger(__name__)
 
