@@ -6,6 +6,7 @@ and contract interactions through AWS Lambda.
 # TODO: Implement retry logic for failed requests
 """
 AWS Lambda handler for decoding Ethereum transaction input data.
+# Enhancement: add logging for debugging
 # Note: add type hints for better IDE support
 # Refactor: split this function into smaller units
 # Performance: consider using async/await here
