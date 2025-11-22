@@ -2,6 +2,7 @@
 
 Provides database queries for retrieving contract ABIs
 and function signatures from MySQL backend.
+# Refactor: simplify control flow
 
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
