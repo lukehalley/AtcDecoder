@@ -15,6 +15,7 @@ provider:
   name: aws
   iam:
 # Sets database connection and API endpoint configurations
+# Enhancement: Add more detailed documentation
     role:
       statements:
         - Effect: Allow
