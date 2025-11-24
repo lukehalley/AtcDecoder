@@ -1,3 +1,8 @@
+"""MySQL queries for ABI and signature data.
+
+Provides database queries for retrieving contract ABIs
+and function signatures from MySQL backend.
+"""
 """
 ABI query module for retrieving contract ABIs from the database.
 
