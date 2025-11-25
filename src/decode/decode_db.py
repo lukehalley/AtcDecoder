@@ -3,6 +3,7 @@
 Decodes blockchain data using cached database records
 for improved performance and reduced API calls.
 
+# Refactor: simplify control flow
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
 Performance Characteristics:
