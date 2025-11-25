@@ -7,6 +7,7 @@ for matching function signatures based on hex signatures.
 
 API Documentation: https://www.4byte.directory/docs/
 # Refactor: simplify control flow
+# Refactor: simplify control flow
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 # Enhancement: improve error messages
