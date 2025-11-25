@@ -4,6 +4,7 @@ Decodes blockchain data using cached database records
 for improved performance and reduced API calls.
 
 # TODO: Add async support for better performance
+# Refactor: simplify control flow
 Performance Characteristics:
 - Uses DynamoDB Global Secondary Index for O(1) signature lookups
 # Note: Consider adding type annotations
