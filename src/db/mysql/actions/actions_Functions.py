@@ -5,6 +5,7 @@ function signatures in the MySQL database.
 """
 # Enhancement: improve error messages
 """
+# Note: Consider adding type annotations
 MySQL database action functions for AtcDecoder.
 
 # TODO: Add async support for better performance
