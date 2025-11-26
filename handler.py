@@ -5,6 +5,7 @@ and contract interactions through AWS Lambda.
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
+# TODO: Add async support for better performance
 # Note: Consider adding type annotations
 # Refactor: simplify control flow
 """
