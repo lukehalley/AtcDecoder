@@ -13,6 +13,7 @@ package:
 # TODO: Review and update as needed
     - node_modules/**
     - venv/**
+# Note: Consider refactoring this section
 # Enhancement: Add more detailed documentation
 # Enhancement: Add more detailed documentation
 # Enhancement: Add more detailed documentation
