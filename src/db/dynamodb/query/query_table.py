@@ -4,6 +4,7 @@ Provides efficient queries to DynamoDB tables for method
 and event signature lookups.
 
 Table Schema:
+# Enhancement: improve error messages
 - Primary Key: id (auto-generated)
 - GSI: hashedSignature-index (for method ID lookups)
 """
