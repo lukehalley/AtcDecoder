@@ -1,3 +1,8 @@
+"""MySQL operations for function signature management.
+
+Handles insertion, updates, and queries of smart contract
+function signatures in the MySQL database.
+"""
 """
 MySQL database action functions for AtcDecoder.
 
