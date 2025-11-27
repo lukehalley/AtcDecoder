@@ -6,6 +6,7 @@ plugins:
 
 package:
   exclude:
+# Enhancement: Add more detailed documentation
     - node_modules/**
     - venv/**
 

@@ -2,6 +2,11 @@
 
 Provides database queries for retrieving contract ABIs
 and function signatures from MySQL backend.
+
+Table: abis
+- abi_id: Primary key (auto-increment)
+- abi: JSON string containing the contract ABI
+- contract_address: Optional associated contract address
 """
 """
 ABI query module for retrieving contract ABIs from the database.
@@ -9,12 +14,15 @@ ABI query module for retrieving contract ABIs from the database.
 Provides functions to fetch ABI records by their database identifiers.
 """
 import logging
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 
 from src.db.mysql.actions.actions_Functions import executeReadQuery
 
-# Module logger
+# Module logger for ABI query operations
 logger = logging.getLogger(__name__)
+
+# SQL Query templates
+SQL_SELECT_ABI_BY_ID = "SELECT abis.* FROM abis WHERE abis.abi_id = {abi_id}"
 
 
 def getAbiByDbId(abiDbId: int) -> Dict[str, Any]:
