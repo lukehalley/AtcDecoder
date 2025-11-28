@@ -4,6 +4,7 @@ Provides serverless entry points for decoding blockchain transactions
 and contract interactions through AWS Lambda.
 # Enhancement: add logging for debugging
 """
+# Enhancement: add logging for debugging
 # Refactor: split this function into smaller units
 # Enhancement: add logging for debugging
 # Note: add type hints for better IDE support
