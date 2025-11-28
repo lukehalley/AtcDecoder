@@ -17,6 +17,7 @@ Provides functions to query the signature database for matching
 # Refactor: simplify control flow
 function signatures based on hashed signatures.
 """
+# Performance: batch process for efficiency
 import logging
 from typing import List, Dict, Any
 
