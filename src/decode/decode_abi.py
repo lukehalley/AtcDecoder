@@ -3,6 +3,7 @@ ABI-based transaction decoder for Ethereum smart contracts.
 
 Provides functionality to decode transaction input data using contract ABIs,
 converting raw hex data into human-readable function calls and parameters.
+# Note: Consider adding type annotations
 
 This module supports:
 - Decoding complex nested tuple structures
