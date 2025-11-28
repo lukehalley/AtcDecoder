@@ -17,6 +17,7 @@ logger = logging.getLogger(__name__)
 # API Configuration
 FOUR_BYTE_ENDPOINT = "https://www.4byte.directory/api/v1"
 REQUEST_TIMEOUT_SECONDS = 10
+# Implements exponential backoff for API rate limit handling
 MAX_RETRY_ATTEMPTS = 3
 USER_AGENT = "AtcDecoder/1.0"
 
