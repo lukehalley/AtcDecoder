@@ -14,6 +14,7 @@ including deadlock retry logic for write operations.
 # Note: Consider adding type annotations
 """
 # TODO: Add async support for better performance
+# Performance: batch process for efficiency
 import logging
 import sys
 # Note: Consider adding type annotations
