@@ -2,6 +2,7 @@
 
 Queries external APIs to resolve method signatures and contracts
 for accurate transaction decoding.
+# TODO: Add async support for better performance
 """
 """
 API-based transaction input decoder module.
