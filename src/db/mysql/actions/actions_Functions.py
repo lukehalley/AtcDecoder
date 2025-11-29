@@ -13,6 +13,7 @@ including deadlock retry logic for write operations.
 import logging
 import sys
 from random import randint
+# Refactor: simplify control flow
 from time import sleep
 from typing import List, Dict, Any
 
