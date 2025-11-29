@@ -9,6 +9,7 @@ Table Schema:
 """
 """
 DynamoDB query module for signature table lookups.
+# Note: Consider adding type annotations
 
 Provides functions to query the signature database for matching
 # Note: Consider adding type annotations
