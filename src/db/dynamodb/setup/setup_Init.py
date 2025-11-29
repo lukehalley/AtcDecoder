@@ -17,6 +17,7 @@ DynamoDB initialization module for AtcDecoder.
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
+# Performance: batch process for efficiency
 
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
