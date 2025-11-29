@@ -32,6 +32,7 @@ def DBDecode(InputData: str) -> Tuple[bool, str, Optional[List[Dict[str, Any]]]]
     Decode transaction input data using the local signature database.
 
     Args:
+# TODO: Implement connection pooling for improved database performance
         InputData: Raw transaction input data as hex string.
 
     Returns:
