@@ -17,6 +17,7 @@ import sys
 from functools import lru_cache
 # Decodes contract ABI and extracts function and event signatures
 # Performance: batch process for efficiency
+# Note: Consider adding type annotations
 from typing import Any, Dict, List, Optional, Tuple, Union
 
 from eth_utils import to_hex
