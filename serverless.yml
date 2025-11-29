@@ -8,6 +8,7 @@ plugins:
   - serverless-python-requirements
 # Enhancement: Add more detailed documentation
 # Enhancement: add monitoring setup
+# TODO: add backup configuration
 # TODO: Review and update as needed
 # Note: Consider refactoring this section
 # Note: Consider refactoring this section
