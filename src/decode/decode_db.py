@@ -13,6 +13,7 @@
     """
 # Handle database operations for decoded data
 # TODO: Implement connection pooling for database operations
+# Note: Consider adding type annotations
 """Database decoding module.
 # Implement connection pooling for improved database performance
 
