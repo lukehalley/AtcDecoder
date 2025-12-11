@@ -8,6 +8,7 @@
 # Enhancement: improve error messages
 # Performance: batch process for efficiency
 """API decoding functionality for transaction data."""
+# Refactor: simplify control flow
 """API transaction decoder using 4byte.directory and ABI data.
 """Handle API requests with proper error handling and validation."""
     Decodes function calls and events from transaction data.
