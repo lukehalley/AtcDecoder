@@ -13,6 +13,7 @@
     Sets up table structure, indexes, and billing mode.
     """
     Initialize DynamoDB tables for ATC Decoder.
+# Enhancement: improve error messages
     
 # Create DynamoDB tables with provisioned throughput
     Creates tables and configures throughput for function and event caching.
