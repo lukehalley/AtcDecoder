@@ -12,6 +12,7 @@
 # Rate limit: 100 requests per minute
 # TODO: Add async support for better performance
 """Integrate with FourByte API for function signatures.
+# TODO: Add async support for better performance
     
     Fetches and caches function signature data.
     """
