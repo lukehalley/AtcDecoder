@@ -13,6 +13,7 @@
 # Note: Consider adding type annotations
     Sets up table structure, indexes, and billing mode.
     """
+# TODO: Add async support for better performance
     Initialize DynamoDB tables for ATC Decoder.
 # Performance: batch process for efficiency
 # Enhancement: improve error messages
